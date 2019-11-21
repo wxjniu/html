@@ -1,0 +1,33 @@
+@charset "utf-8";
+/*头部*/
+.pageTopBox{width: 100%; height: 59px; padding-top: 38px; border-bottom: 3px solid #ffd200; background: #0077c7; font-size: 18px; color: #fff;}
+.pageTopBox .ico-menu{width: 24px; height: 14px; margin-right: 10px; background-image: url(../images/menu-ico.png);}
+.pageTopBox .ico-tel{width: 25px; height: 25px; margin-right: 10px; background-image: url(../images/tel-ico.png);}
+
+/*banner*/
+.homeBanner{width: 100%; height: 500px; position: relative;}
+.homeBanner .slideBox{width:100%; height:100%; overflow:hidden;}
+.homeBanner .slideBox .hd{bottom: 20px; outline: 0; position: absolute; z-index: 1; left: 0; right: 0; text-align: center; line-height: 0;}
+.homeBanner .slideBox .hd ul li{width:12px;height:12px;background:rgba(0,0,0,1);opacity:0.5; display: inline-block; border-radius: 100%; margin: 0 8px; cursor: pointer; font-size: 0; line-height: 0;}
+.homeBanner .slideBox .hd ul li.on{background:rgba(1,149,255,1); opacity: 1;}
+.homeBanner .slideBox .bd{width: 100%; height:100%;}
+.homeBanner .slideBox .bd li{zoom:1; vertical-align:middle; width: 100%; height: 100%;}
+.homeBanner .slideBox .bd li a{display: block; width: 100%; height: 500px; text-align: center; background: url() no-repeat center; cursor: pointer;}
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+.homeBanner .slideBox .prev,.homeBanner .slideBox .next{width: 50px; height: 80px; margin-top: -40px; background: url() no-repeat center; background-size: contain;	opacity: 1;	outline: 0;	position: absolute;	top: 50%;}
+.homeBanner .slideBox .prev{background-image: url(../images/btn_last.png); left: 0;}
+.homeBanner .slideBox .prev:hover{background-image: url(../images/btn_last_pre.png);}
+.homeBanner .slideBox .next{background-image: url(../images/btn_next.png); right: 0;}
+.homeBanner .slideBox .next:hover{background-image: url(../images/btn_next_pre.png);}
+.homeBanner .slideBox .prevStop{ display:none;}
+.homeBanner .slideBox .nextStop{ display:none;}
+
+/*课程*/
+.pageContBox{background: #0073c3; width: 100%; padding: 0 0 1px;}
+
+/*表单*/
+.formBox{background: #004996; width: 100%; height: 334px;}
+
+/*底部*/
+.pageFooterBox{background: #002c47; width: 100%;}
+

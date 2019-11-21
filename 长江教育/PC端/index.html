@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-siteapp">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<title>首页</title>
+	<link rel="stylesheet" href="statics/css/pubui.css">
+	<link rel="stylesheet" href="statics/css/style.css">
+	<script type="text/javascript" src="statics/js/jquery.min.js"></script>
+	<script type="text/javascript" src="statics/js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+<body>
+	<!--顶部-->
+	<div class="pageTopBox">
+		<div class="pagewd">
+			<div class="fl"><i class="ico ico-menu"></i>菜单</div>
+			<div class="fr"><i class="ico ico-tel"></i>13515608638</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	
+	<!--轮播-->
+	<div class="homeBanner">
+		<div id="slideBox" class="slideBox">
+			<div class="hd">
+				<ul><li>1</li><li>2</li><li>3</li></ul>
+			</div>
+			<div class="bd" id="homeBanner">
+				<ul>
+					<li><a target="_blank" style="background-image: url(statics/images/banner1.png);"></a></li>
+					<li><a target="_blank" style="background-image: url(statics/images/banner1.png);"></a></li>
+					<li><a target="_blank" style="background-image: url(statics/images/banner1.png);"></a></li>
+				</ul>
+			</div>
+			<!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+			<a class="prev" href="javascript:void(0)"></a>
+			<a class="next" href="javascript:void(0)"></a>
+		</div>
+	</div>
+	
+	<!--主体部分-->
+	<div class="pageContBox">
+		<div class="pagewd">
+			<div class="courseBox">
+				<h2>美国游学</h2>
+				<div class="box">
+					<div class="pic" style="background-image: url();"></div>
+					<div class="txt-box">
+						<div class="txt"><i class="ico ico1"></i>参加国际冬夏令营，学习地道英语，结交国际朋友，选择寄宿家庭或是学生宿舍，体验海外文化，中外领队全程陪同安全第一。</div>
+						<div class="txt"><i class="ico ico1"></i><span class="mr20">5-18岁</span>  小学、初中、高中生</div>
+						<div class="txt"><i class="ico ico1"></i>2-4周</div>
+						<div class="btn-box">
+							<a href="#" class="btn">了解详情</a>
+							<a href="#" class="btn">咨询课程</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="courseBox">
+				<h2>美国夏令营</h2>
+				<div class="box">
+					<div class="pic" style="background-image: url();"></div>
+					<div class="txt-box">
+						<div class="txt"><i class="ico ico1"></i>参加国际冬夏令营，学习地道英语，结交国际朋友，选择寄宿家庭或是学生宿舍，体验海外文化，中外领队全程陪同安全第一。</div>
+						<div class="txt"><i class="ico ico1"></i><span class="mr20">5-18岁</span>  小学、初中、高中生</div>
+						<div class="txt"><i class="ico ico1"></i>2-4周</div>
+						<div class="btn-box">
+							<a href="#" class="btn">了解详情</a>
+							<a href="#" class="btn">咨询课程</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="courseBox">
+				<h2>美国插班生</h2>
+				<div class="box">
+					<div class="pic" style="background-image: url();"></div>
+					<div class="txt-box">
+						<div class="txt"><i class="ico ico1"></i>参加国际冬夏令营，学习地道英语，结交国际朋友，选择寄宿家庭或是学生宿舍，体验海外文化，中外领队全程陪同安全第一。</div>
+						<div class="txt"><i class="ico ico1"></i><span class="mr20">5-18岁</span>  小学、初中、高中生</div>
+						<div class="txt"><i class="ico ico1"></i>2-4周</div>
+						<div class="btn-box">
+							<a href="#" class="btn">了解详情</a>
+							<a href="#" class="btn">咨询课程</a>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+	<!--表单-->
+	<div class="formBox">
+		<div class="pagewd">
+			<h3>给我们留下您的联系方式吧!</h3>
+			<form>
+				<input type="text" placeholder="姓名" />
+				<input type="text" placeholder="手机号" />
+				<input type="text" placeholder="邮箱" />
+				<input type="submit" value="确认提交" />
+			</form>
+		</div>
+	</div>
+	
+	<!--底部-->
+	<div class="pageFooterBox">
+		<div class="pagewd">
+			
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		//轮播图
+		jQuery(".slideBox").slide({
+			mainCell:".bd ul",
+			effect:"leftLoop",
+			autoPlay:true,
+		});		
+	</script>
+</body>
+</html>
