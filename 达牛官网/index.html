@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-siteapp">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<title>首页</title>
+	<link rel="stylesheet" href="statics/css/pubui.css">
+	<link rel="stylesheet" href="statics/css/style.css">
+	<link rel="stylesheet" href="statics/css/iconfont.css" />
+	<link rel="stylesheet" href="statics/css/animate.css" />
+	<script type="text/javascript" src="statics/js/jquery.min.js"></script>
+	<script type="text/javascript" src="statics/js/scrollReveal.min.js"></script>
+	<script type="text/javascript" src="statics/js/common.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			
+		    bigScroll("#slideBox");
+			
+		});
+	</script>
+</head>
+<body>
+	<!--顶部-->
+	<div class="pageTopBox" id="pageTopBox">
+		<div class="pagewd">
+			<a class="fl logo"  href="#"><img id="logo" src="statics/images/logo@2x.png" height="80"/></a>
+			<div class="fr">
+				<ul class="nav fl">
+					<li><a href="#" class="on">首页</a></li>
+					<li><a href="#">O2O产品</a></li>
+					<li><a href="#">定制服务</a></li>
+					<li><a href="#">案例展示</a></li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+				<a href="#" class="tel fl"><i class="iconfont iconicon_contact_call"></i>13515608638</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	
+	<!--轮播-->
+	<div class="homeBanner">
+		<div id="slideBox" class="slideBox">
+			<ul>
+				<li><a target="_blank" style="background-image: url(statics/pic/banner01.png);">
+						<div class="bnr1-txt">
+							<h2>相信技术的价值，<br/>让美好的事情在达牛牛发生</h2>
+							<small>Believe in the value of technology,<br/>let good things happen in Da Niuniu</small>
+						</div>
+				</a></li>
+				<li><a target="_blank" style="background-image: url(statics/pic/banner01.png);">
+						<div class="warp wxBanner">
+						    <img class="s0" src="statics/images/icon_l@2x.png">
+						</div>
+				</a></li>
+			</ul>
+			<ol>
+				<li>1</li>
+				<li>2</li>
+			</ol>
+			<!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+			<div class="bannerBtn">
+			    <a class="prev iconfont iconslider_last" href="javascript:void(0)"></a>
+			    <a class="next iconfont iconslider_next" href="javascript:void(0)"></a>
+			</div>
+		</div>
+	</div>
+	
+	<!--服务-->
+	<div class="serveCont pagewd">
+		<ul>
+			<li class="one">
+				<span><i class="iconfont iconservice"></i></span>
+				<p>品牌网站建设</p>
+			</li>
+			<li class="two">
+				<span><i class="iconfont iconservice1"></i></span>
+				<p>小程序设计开发</p>
+			</li>
+			<li class="three">
+				<span><i class="iconfont iconservice4"></i></span>
+				<p>APP设计开发</p>
+			</li>
+			<li class="four">
+				<span><i class="iconfont iconservice3"></i></span>
+				<p>O2O系统定制</p>
+			</li>
+		</ul>
+	</div>
+	
+	<!--案列-->
+	<div class="caseCont pagewd">
+		<div class="pubTitleBox">
+			<h1>最新案例</h1>
+			<hr />
+		</div>
+		
+		<ul>
+			<li>
+				<div class="pic" style="background-image: url(statics/pic/img_case01@2x.png);">
+					<a class="btn-box" href="#">
+						<span class="btn">查看案列</span>
+					</a>
+				</div>
+				<p>案例名称</p>
+			</li>
+			<li>
+				<div class="pic" style="background-image: url(statics/pic/img_case02@2x.png);">
+					<a class="btn-box" href="#">
+						<span class="btn">查看案列</span>
+					</a>
+				</div>
+				<p>案例名称</p>
+			</li>
+			<li>
+				<div class="pic" style="background-image: url(statics/pic/img_case03@2x.png);">
+					<a class="btn-box" href="#">
+						<span class="btn">查看案列</span>
+					</a>
+				</div>
+				<p>案例名称</p>
+			</li>
+			<li>
+				<div class="pic" style="background-image: url(statics/pic/img_case04@2x.png);">
+					<a class="btn-box" href="#">
+						<span class="btn">查看案列</span>
+					</a>
+				</div>
+				<p>案例名称</p>
+			</li>
+			<li>
+				<div class="pic" style="background-image: url(statics/pic/img_case05@2x.png);">
+					<a class="btn-box" href="#">
+						<span class="btn">查看案列</span>
+					</a>
+				</div>
+				<p>案例名称</p>
+			</li>
+			<li>
+				<div class="pic" style="background-image: url(statics/pic/img_case06@2x.png);">
+					<a class="btn-box" href="#">
+						<span class="btn">查看案列</span>
+					</a>
+				</div>
+				<p>案例名称</p>
+			</li>
+		</ul>
+		<div class="clear"></div>
+		<a class="home-btn" href="#">更多案例</a>
+	</div>
+	<div class="caseNum">
+		<div class="pagewd">
+			<ul>
+				<li>
+					<big><span class="timer" id="count-number" data-to="200" data-speed="5000"></span>+</big>
+					<p>设计开发项目</p>
+				</li>
+				<li>
+					<big><span class="timer" id="count-number" data-to="50" data-speed="2000"></span>+</big>
+					<p>成功客户</p>
+				</li>
+				<li>
+					<big><span class="timer" id="count-number" data-to="10" data-speed="800"></span>+</big>
+					<p>开发经验</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<!--达牛牛客户说-->
+	<div class="commentBanner">
+		<div class="pubTitleBox">
+			<h1>达牛牛客户说</h1>
+			<hr />
+		</div>
+		
+		<div class="pagewd">
+			<div id="" class="slideBox">
+				<div class="hd">
+					<ul><li>1</li></ul>
+				</div>
+				<div class="bd" id="homeBanner">
+					<ul>
+						<li><a target="_blank" style="background-image: url(statics/pic/images/banner1.jpg);">
+								<img class="txt1" src="statics/pic/images/banner1-1.png" />
+								<!-- <div class="txt-box"></div> -->
+						</a></li>
+					</ul>
+				</div>
+				<!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+				<a class="prev" href="javascript:void(0)"></a>
+				<a class="next" href="javascript:void(0)"></a>
+			</div>
+		</div>
+	</div>
+	
+	<!--关于我们-->
+	<div class="aboutCont">
+		<div class="pubTitleBox">
+			<h1>关于达牛牛</h1>
+			<hr />
+		</div>
+		<p class="txt">达牛牛工作室专注于UI设计及开发，我们有丰富的开发和设计经验及经验丰富的团队，服务内容包括： 网站视觉设计、微信开发、安卓开发、手机应用开发等，为每位客户定制专属的个性化界面及功能。 丰富的开发经验， 灵活的合作模式，合理的价格定位，终身技术支持是我们最大的特点，我们有经验、有梦想、有活力、有担当，与一般团队有独特区别的年轻队伍，我们励志做一家有创意的工作室。</p>
+		<a class="home-btn" href="#">了解更多</a>
+	</div>
+	
+	<!--表单-->
+	<div class="formCont">
+		<div class="pagewd">
+			<div class="pubTitleBox">
+				<h1>联系达牛牛</h1>
+				<hr />
+			</div>
+			<form>
+				<input class="inp" type="text" placeholder="请输入您的手机号" />
+				<input class="inp" type="text" placeholder="邮箱地址" />
+				<div class="style-box" id="form-style">
+					<input class="inp" readonly="readonly" type="text" placeholder="需求类型" />
+					<i class="ico down"></i>
+					<div class="list">
+						<span>品牌网站建设</span>
+						<span>小程序设计开发</span>
+						<span>APP设计开发</span>
+						<span>O2O系统定制</span>
+					</div>
+				</div>
+				<textarea class="inp txt" placeholder="请输入您的需求"></textarea>
+				<input class="btn" type="submit" value="提交" />
+			</form>
+		</div>
+	</div>
+	
+	<!--底部-->
+	<div class="pageFooterBox">
+		<div class="pagewd">
+			<div class="logo fl">
+				<img src="statics/images/logo02@2x.png" height="80" />
+				<p>我们为各种规模的客户设计和开发服务，<br/>专注于创造</p>
+			</div>
+			<div class="list fl">
+				<h3>业务范围</h3>
+				<p>品牌网站建设</p>
+				<p>小程序设计开发</p>
+				<p>APP设计开发</p>
+				<p>O2O系统定制</p>
+			</div>
+			<div class="list fl">
+				<h3>联系我们</h3>
+				<p>电话：13515608638</p>
+				<p>微信：ffy1203605498</p>
+				<p>Q Q：1203605498</p>
+				<p>邮箱：1203605498@qq.com</p>
+			</div>
+			<div class="code fl">
+				<img src="statics/pic/img_ma.png" width="120" height="120" />
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<!-- 右侧浮动 -->
+	<div class="floatRight">
+		<ul>
+			<li>
+				<a href="#" class="kefu">
+					<i class="iconfont iconicon_consult"></i>
+					<p>在线咨询</p>
+				</a>
+				<div class="txt-box">Q Q咨询：1203605498</div>
+			</li>
+			<li>
+				<a href="#" class="tel">
+					<i class="iconfont iconicon_phone"></i>
+					<p>电话咨询</p>
+				</a>
+				<div class="txt-box">电话咨询：13515608638</div>
+			</li>
+			<li>
+				<a href="javascript:;" class="code">
+					<i class="iconfont iconicon_ma"></i>
+					<p>微信扫扫</p>
+				</a>
+				<div class="code-box">
+					<div class="txt">
+						<small>达牛牛微信咨询：</small>
+						<p>ffy1203605498</p>
+					</div>
+					<div class="pic">
+						<img src="statics/pic/img_ma.png" width="120" height="120" />
+						<p>微信扫一扫 联系我们</p>
+					</div>
+				</div>
+			</li>
+			<!-- <li><a href="javascript:;" class="gototop" id="gototop"></a></li> -->
+		</ul>
+	</div>
+	<!-- 右侧浮动end -->
+</body>
+</html>
