@@ -171,6 +171,22 @@ $(document).ready(function () {
 			$("#pageTopBox").removeClass("white");
 			$("#logo").attr("src","statics/images/logo@2x.png");
 		}
+		
+		/**
+		 * 返回顶部
+		 */
+		if ($(window).scrollTop() > 180) {
+			$("#gototop").show();
+		} else {
+			$("#gototop").hide();
+		};
+	});
+	
+	/**
+	 * 返回顶部
+	 */
+	$("#gototop").click(function () {
+		$("html,body").animate({scrollTop: 0}, 200);
 	});
 	
 	/**
@@ -191,4 +207,13 @@ $(document).ready(function () {
 		$("#form-style .ico").addClass("down");
 	});
 	
+});
+
+/**
+ * 动效
+ */
+window.sr = new scrollReveal({
+	//reset: true,
+	// move: '200px',
+	// mobile: true
 });

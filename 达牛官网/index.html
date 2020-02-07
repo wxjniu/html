@@ -13,15 +13,6 @@
 	<link rel="stylesheet" href="statics/css/iconfont.css" />
 	<link rel="stylesheet" href="statics/css/animate.css" />
 	<script type="text/javascript" src="statics/js/jquery.min.js"></script>
-	<script type="text/javascript" src="statics/js/scrollReveal.min.js"></script>
-	<script type="text/javascript" src="statics/js/common.js"></script>
-	<script type="text/javascript">
-		$(function(){
-			
-		    bigScroll("#slideBox");
-			
-		});
-	</script>
 </head>
 <body>
 	<!--顶部-->
@@ -47,15 +38,20 @@
 		<div id="slideBox" class="slideBox">
 			<ul>
 				<li><a target="_blank" style="background-image: url(statics/pic/banner01.png);">
-						<div class="bnr1-txt">
+					<div class="pagewd">
+						<div class="bnr1-txt animated bounceInLeft">
 							<h2>相信技术的价值，<br/>让美好的事情在达牛牛发生</h2>
 							<small>Believe in the value of technology,<br/>let good things happen in Da Niuniu</small>
 						</div>
+					</div>
 				</a></li>
 				<li><a target="_blank" style="background-image: url(statics/pic/banner01.png);">
-						<div class="warp wxBanner">
-						    <img class="s0" src="statics/images/icon_l@2x.png">
+					<div class="pagewd">
+						<div class="bnr1-txt animated bounceInLeft">
+							<h2>相信技术的价值，<br/>让美好的事情在达牛牛发生</h2>
+							<small>Believe in the value of technology,<br/>let good things happen in Da Niuniu</small>
 						</div>
+					</div>
 				</a></li>
 			</ul>
 			<ol>
@@ -172,28 +168,38 @@
 	</div>
 	
 	<!--达牛牛客户说-->
-	<div class="commentBanner">
+	<div class="commentBox">
 		<div class="pubTitleBox">
 			<h1>达牛牛客户说</h1>
 			<hr />
 		</div>
 		
-		<div class="pagewd">
-			<div id="" class="slideBox">
-				<div class="hd">
-					<ul><li>1</li></ul>
-				</div>
-				<div class="bd" id="homeBanner">
-					<ul>
-						<li><a target="_blank" style="background-image: url(statics/pic/images/banner1.jpg);">
-								<img class="txt1" src="statics/pic/images/banner1-1.png" />
-								<!-- <div class="txt-box"></div> -->
-						</a></li>
-					</ul>
-				</div>
+		<div class="commentBanner pagewd">
+			<i class="ico ico-b"></i>
+			<div id="slideBox2" class="slideBox">
+				<ul>
+					<li>
+						<div class="pic"></div>
+						<h3>本白设计</h3>
+						<p>设计的不错，开发速度也快，质量相当好！赞赞赞！设计的不错，开发速度也快，质量相当好！赞赞赞！设计的不错，开发速度也快，质量相当好！赞赞赞！设计的不错，开发速度也快，质量相当好！赞赞赞！设计的不错，开发速度也快，质量相当好！赞赞赞！设计的不错，开发速度也快，质量相当好！赞赞赞！设计的不错，开发速度也快，质量相当好！赞赞赞！</p>
+						<a href="#" target="_blank" class="link">浏览他的项目</a>
+					</li>
+					<li>
+						<div class="pic"></div>
+						<h3>本白设计</h3>
+						<p>设计的不错，开发速度也快，质量相当好！赞赞赞！设计的不错，开发速度也快，质量相当好！赞赞赞！设计的不错，开发速度也快，质量相当好！赞赞赞！设计的不错，开发速度也快，质量相当好！赞赞赞！设计的不错，开发速度也快，质量相当好！赞赞赞！设计的不错，开发速度也快，质量相当好！赞赞赞！设计的不错，开发速度也快，质量相当好！赞赞赞！</p>
+						<a href="#" target="_blank" class="link">浏览他的项目</a>
+					</li>
+				</ul>
+				<ol>
+					<li>1</li>
+					<li>2</li>
+				</ol>
 				<!-- 下面是前/后按钮代码，如果不需要删除即可 -->
-				<a class="prev" href="javascript:void(0)"></a>
-				<a class="next" href="javascript:void(0)"></a>
+				<div class="bannerBtn">
+				    <a class="prev iconfont iconbtn_last_disable" href="javascript:void(0)"></a>
+				    <a class="next iconfont iconbtn_next_disable" href="javascript:void(0)"></a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -204,7 +210,7 @@
 			<h1>关于达牛牛</h1>
 			<hr />
 		</div>
-		<p class="txt">达牛牛工作室专注于UI设计及开发，我们有丰富的开发和设计经验及经验丰富的团队，服务内容包括： 网站视觉设计、微信开发、安卓开发、手机应用开发等，为每位客户定制专属的个性化界面及功能。 丰富的开发经验， 灵活的合作模式，合理的价格定位，终身技术支持是我们最大的特点，我们有经验、有梦想、有活力、有担当，与一般团队有独特区别的年轻队伍，我们励志做一家有创意的工作室。</p>
+		<p class="txt" data-sr="enter top,move 100px,over 1s,wait 0s">达牛牛工作室专注于UI设计及开发，我们有丰富的开发和设计经验及经验丰富的团队，服务内容包括： 网站视觉设计、微信开发、安卓开发、手机应用开发等，为每位客户定制专属的个性化界面及功能。 丰富的开发经验， 灵活的合作模式，合理的价格定位，终身技术支持是我们最大的特点，我们有经验、有梦想、有活力、有担当，与一般团队有独特区别的年轻队伍，我们励志做一家有创意的工作室。</p>
 		<a class="home-btn" href="#">了解更多</a>
 	</div>
 	
@@ -296,9 +302,18 @@
 					</div>
 				</div>
 			</li>
-			<!-- <li><a href="javascript:;" class="gototop" id="gototop"></a></li> -->
+			<li><a href="javascript:;" id="gototop"><i class="ico ico-backtop"></i></a></li>
 		</ul>
 	</div>
 	<!-- 右侧浮动end -->
+	
+	<script type="text/javascript" src="statics/js/scrollReveal.min.js"></script>
+	<script type="text/javascript" src="statics/js/common.js"></script>
+	<script type="text/javascript">
+		$(function(){
+		    bigScroll(".homeBanner #slideBox");
+		    bigScroll(".commentBanner #slideBox2");
+		});
+	</script>
 </body>
 </html>
