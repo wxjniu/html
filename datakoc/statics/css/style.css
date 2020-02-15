@@ -1,0 +1,30 @@
+@charset "utf-8";
+/**
+ * 头部导航
+ */
+#headH100{height: 100px;}
+#head{width: 100%; height: 100px; padding: 1px 0; position: fixed; z-index:10; left: 0; top: 0; background: #fff; box-shadow:0px 2px 8px 0px rgba(0,0,0,0.06); transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;}
+#head.unBg{background: no-repeat;}
+#head .logo{width: 200px; height: 48px; margin-top: 25px;}
+#head .searchBox{margin-left: 40px; margin-top: 31px;}
+#head .searchBox form{width:160px;height:36px;background:#F7F7F7;border-radius:18px;border:1px solid #EDEDED; overflow: hidden; padding-left: 16px;}
+#head .searchBox input{float: left; display: block; outline: 0; border: 0;}
+#head .searchBox .inp{width:92px; height: 34px; background: none;}
+#head .searchBox .subBtn{width: 50px; height: 34px; border-radius: 0 18px 18px 0; text-align: center; background: url(../images/icon_search_gray@2x.png) no-repeat center; background-size: 16px;}
+#head .nav li{float: left; padding-top: 37px; margin-left: 40px;}
+#head .nav li a{display: inline-block;font-size:16px;font-family:PingFangSC-Regular,PingFang SC;font-weight:400;line-height:22px; position: relative;}
+#head .nav li a:after{content: ''; width: 0%; height: 3px; background: #4F80C2; position: absolute; left: 50%; bottom: -17px; transform: translate(-50%,0); transition:all 0.2s ease-in-out;-webkit-transition:all 0.2s ease-in-out;}
+#head .nav li a:hover,#head .nav li a.active{color: #4F80C2;}
+#head .nav li a:hover:after,#head .nav li a.active:after{width: 100%;}
+#head .btnBox{overflow: hidden; margin-left: 40px; margin-top: 31px; text-align: center;} 
+#head .btnBox a{display: block; float: left; width: 72px; height: 36px; font-size:16px;font-family:PingFangSCMedium;line-height:36px;}
+#head .btnBox a.btn2,#head .btnBox a:hover{color: #fff; background: #4F80C2; border-radius: 4px;} 
+
+
+
+
+
+
+
+
+
