@@ -1,5 +1,40 @@
 // JavaScript Document
-//头部导航定位
+$(document).ready(function () {
+	/**
+	 *头部导航搜索框 
+	 */
+	$("#searchBox").click(function (e) {
+		e.stopPropagation();
+		$(this).addClass('active');
+		$("#nav").hide();
+	});
+	$(document).click(function(){
+		$("#searchBox").removeClass('active');
+		$("#nav").show(300);
+	});
+	
+	
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $(document).ready(function () {
 	$(window).scroll(function () {
 		if ($(window).scrollTop() > 40) {

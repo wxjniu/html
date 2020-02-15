@@ -7,10 +7,15 @@
 #head.unBg{background: no-repeat;}
 #head .logo{width: 200px; height: 48px; margin-top: 25px;}
 #head .searchBox{margin-left: 40px; margin-top: 31px;}
-#head .searchBox form{width:160px;height:36px;background:#F7F7F7;border-radius:18px;border:1px solid #EDEDED; overflow: hidden; padding-left: 16px;}
+#head .searchBox .box{height:36px;background:#F7F7F7;border-radius:18px;border:1px solid #EDEDED; overflow: hidden; padding-left: 16px;}
 #head .searchBox input{float: left; display: block; outline: 0; border: 0;}
-#head .searchBox .inp{width:92px; height: 34px; background: none;}
-#head .searchBox .subBtn{width: 50px; height: 34px; border-radius: 0 18px 18px 0; text-align: center; background: url(../images/icon_search_gray@2x.png) no-repeat center; background-size: 16px;}
+#head .searchBox .inp{width:92px; height: 34px; background: none; transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;}
+#head .searchBox .subBtn{width: 50px; height: 34px; border-radius: 0 18px 18px 0; text-align: center; background: url(../images/icon_search_gray@2x.png) no-repeat center; background-size: 16px; float: left; display: block; cursor: pointer;}
+#head .searchBox p{color: #999; font-size: 14px; line-height: 36px; margin-left: 20px; display: none;}
+#head .searchBox.active .box{border-color: #98a0a8;}
+#head .searchBox.active .inp{width: 232px;}
+#head .searchBox.active .subBtn{background-color: #4F80C2; background-image: url(../images/icon_search_white@2x.png);}
+#head .searchBox.active p{display: block;}
 #head .nav li{float: left; padding-top: 37px; margin-left: 40px;}
 #head .nav li a{display: inline-block;font-size:16px;font-family:PingFangSC-Regular,PingFang SC;font-weight:400;line-height:22px; position: relative;}
 #head .nav li a:after{content: ''; width: 0%; height: 3px; background: #4F80C2; position: absolute; left: 50%; bottom: -17px; transform: translate(-50%,0); transition:all 0.2s ease-in-out;-webkit-transition:all 0.2s ease-in-out;}
