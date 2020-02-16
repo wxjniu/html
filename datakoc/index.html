@@ -10,11 +10,11 @@
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="format-detection" content="telephone=no">
 		<title>首页</title>
+		<link rel="stylesheet" href="statics/css/animate.css" />
 		<link rel="stylesheet" href="statics/css/base.css" />
 		<link rel="stylesheet" href="statics/css/widchg.css" />
 		<link rel="stylesheet" href="statics/css/style.css" />
 		<script type="text/javascript" src="statics/js/jquery.js"></script>
-		<script type="text/javascript" src="statics/js/scrollReveal.min.js"></script>
 		<script type="text/javascript" src="statics/js/common.js"></script>
 	</head>
 	<body>
@@ -61,11 +61,22 @@
 		<div class="homeBanner">
 			<div id="slideBox" class="slideBox">
 				<ul>
-					<li><a target="_blank" style="background-image: url(statics/pic/banner01.png);">
+					<li class="bnr1"><a href="#">
 						<div class="pagewd">
-							<div class="bnr1-txt animated bounceInLeft">
+							<div class="txt animated fadeInLeft">
 								<h2>大数据透视网红达人<br/>赋能企业运营</h2>
+								<span class="btn">立即咨询</span>
 							</div>
+							<img src="statics/images/banner_r@2x.png" class="pic animated fadeInUp" />
+						</div>
+					</a></li>
+					<li class="bnr1"><a href="#"">
+						<div class="pagewd">
+							<div class="txt animated fadeInLeft">
+								<h2>大数据透视网红达人<br/>赋能企业运营</h2>
+								<span class="btn">立即咨询</span>
+							</div>
+							<img src="statics/images/banner_r@2x.png" class="pic animated fadeInUp" />
 						</div>
 					</a></li>
 				</ul>
@@ -236,8 +247,8 @@
 			<div class="idxFunct">
 				<hr />
 				<div class="box pagewd">
-					<img class="fr" src="statics/images/img_r01@2x.png" />
-					<div class="txt fl">
+					<img class="fr" src="statics/images/img_r01@2x.png" data-sr="enter right,move 100px,over 1s,wait 0s" />
+					<div class="txt fl" data-sr="enter left,move 100px,over 1s,wait 0s">
 						<h2>多维度数据运营</h2>
 						<p>提供达人内容、互动、频次，带货等多维数据；以及商业价值评估</p>
 						<a href="#" class="btn">了解更多<i class="ico"></i></a>
@@ -245,8 +256,8 @@
 				</div>
 				<hr />
 				<div class="box pagewd">
-					<img class="fl" src="statics/images/img_l01@2x.png" />
-					<div class="txt fr">
+					<img class="fl" src="statics/images/img_l01@2x.png" data-sr="enter left,move 100px,over 1s,wait 0s" />
+					<div class="txt fr" data-sr="enter right,move 100px,over 1s,wait 0s">
 						<h2>粉丝画像</h2>
 						<p>可视化粉丝画像、行为、兴趣偏好等数据分析；<br/>实时、精准、全维度洞察KOC达人背后粉丝数据</p>
 						<a href="#" class="btn">了解更多<i class="ico"></i></a>
@@ -254,8 +265,8 @@
 				</div>
 				<hr />
 				<div class="box pagewd">
-					<img class="fr" src="statics/images/img_r01@2x.png" />
-					<div class="txt fl">
+					<img class="fr" src="statics/images/img_r01@2x.png" data-sr="enter right,move 100px,over 1s,wait 0s" />
+					<div class="txt fl" data-sr="enter left,move 100px,over 1s,wait 0s">
 						<h2>内容变现</h2>
 						<p>严选商家对接：让你的抖音、快手短视频内容变现</p>
 						<a href="#" class="btn">了解更多<i class="ico"></i></a>
@@ -293,6 +304,7 @@
 		</section>
 		
 		<!--js-->
+		<script type="text/javascript" src="statics/js/scrollReveal.min.js"></script>>
 		<script type="text/javascript">
 			$(document).ready(function () {
 				$(window).scroll(function () {
@@ -312,6 +324,15 @@
 			 */
 			$(function(){
 			    bigScroll(".homeBanner #slideBox");
+			});
+			
+			/**
+			 * 动效
+			 */
+			window.sr = new scrollReveal({
+				//reset: true,
+				// move: '200px',
+				// mobile: true
 			});
 		</script>
 	</body>
