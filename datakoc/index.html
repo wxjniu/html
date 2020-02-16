@@ -19,10 +19,10 @@
 	</head>
 	<body>
 		<!--头部导航-->
-		<div id="headH100"><!--占据导航高度-勿删！--></div>
-		<section id="head">
+		<!-- <div id="headH100"></div>--><!--占据导航高度-勿删！ -->
+		<section id="head" class="unBg">
 			<div class="pagewd">
-				<a href="#" class="fl"><img src="statics/images/logo_color@2x.png" class="logo" /></a>
+				<a href="#" class="logo fl"></a>
 				<div class="searchBox fl" id="searchBox">
 					<div class="box fl">
 						<input type="text" placeholder="请输入搜索内容" class="inp" />
@@ -58,9 +58,137 @@
 		</section>
 		
 		<!--轮播图-->
-		<div class=""></div>
+		<div class="homeBanner">
+			<div id="slideBox" class="slideBox">
+				<ul>
+					<li><a target="_blank" style="background-image: url(statics/pic/banner01.png);">
+						<div class="pagewd">
+							<div class="bnr1-txt animated bounceInLeft">
+								<h2>大数据透视网红达人<br/>赋能企业运营</h2>
+							</div>
+						</div>
+					</a></li>
+				</ul>
+				<!-- <ol>
+					<li>1</li>
+					<li>2</li>
+				</ol> -->
+				<!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+				<!-- <div class="bannerBtn">
+				    <a class="prev iconfont iconslider_last" href="javascript:void(0)"></a>
+				    <a class="next iconfont iconslider_next" href="javascript:void(0)"></a>
+				</div> -->
+			</div>
+		</div>
+		
 		<!--内容-->
+		<section id="main">
+			<!--案例统计-->
+			<div class="idxCase pagewd">
+				<ul>
+					<li>
+						<i class="ico ico1"></i>
+						<div class="txt">
+							<div class="num"><big>8</big>家</div>
+							<p>主流短视频、直播新媒体</p>
+						</div>
+					</li>
+					<li>
+						<i class="ico ico2"></i>
+						<div class="txt">
+							<div class="num"><big>500+</big>万</div>
+							<p>自媒体达人</p>
+						</div>
+					</li>
+					<li>
+						<i class="ico ico3"></i>
+						<div class="txt">
+							<div class="num"><big>10</big>亿</div>
+							<p>覆盖消费者</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<!--合作平台-->
+			<div class="idxPlat">
+				<div class="pagewd">
+					<h2>全球创作与交流平台</h2>
+					<ul>
+						<li class="three">
+							<img src="statics/images/icon_platform_bililibilili@2x.png" />
+							<p>bilibili</p>
+						</li>
+						<li class="two">
+							<img src="statics/images/icon_platform_xiaohongshu@2x.png" />
+							<p>小红书</p>
+						</li>
+						<li>
+							<img src="statics/images/icon_platform_douyin@2x.png" />
+							<p>抖音</p>
+						</li>
+						<li>
+							<img src="statics/images/icon_platform_kuaishou@2x.png" />
+							<p>快手</p>
+						</li>
+						<li class="two">
+							<img src="statics/images/icon_platform_taobaozhibo@2x.png" />
+							<p>淘宝直播</p>
+						</li>
+						<li class="three">
+							<img src="statics/images/icon_platform_meipai@2x.png" />
+							<p>美拍</p>
+						</li>
+					</ul>
+					<a href="#" class="btn">立即咨询</a>
+				</div>
+			</div>
+			
+			<!--排行-->
+			<div class="idxRank pagewd">
+				<div class="fl">
+					<div class="title">
+						<i class="ico ico1"></i>带货达人排行
+					</div>
+					<ul>
+						<li class="pub_list">
+							<span class="srl srl1">1</span>
+							<div class="pic"></div>
+							<div class="pub_list_bd"></div>
+							<div class="num"></div>
+							<div class="trg">粉丝</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			
+			
+		</section>
 		
 		<!--底部-->
+		
+		<!--js-->
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$(window).scroll(function () {
+					/**
+					 * 顶部导航
+					 */
+					if($(window).scrollTop() > 20) {
+						$("#head").removeClass("unBg");
+					}else{
+						$("#head").addClass("unBg");
+					}
+				});
+			});
+			
+			/**
+			 * 轮播图
+			 */
+			$(function(){
+			    bigScroll(".homeBanner #slideBox");
+			});
+		</script>
 	</body>
 </html>

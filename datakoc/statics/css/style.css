@@ -4,8 +4,7 @@
  */
 #headH100{height: 100px;}
 #head{width: 100%; height: 100px; padding: 1px 0; position: fixed; z-index:10; left: 0; top: 0; background: #fff; box-shadow:0px 2px 8px 0px rgba(0,0,0,0.06); transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;}
-#head.unBg{background: no-repeat;}
-#head .logo{width: 200px; height: 48px; margin-top: 25px;}
+#head .logo{width: 200px; height: 48px; display: block; margin-top: 25px; background: url(../images/logo_color@2x.png) no-repeat center; background-size: 100%;}
 #head .searchBox{margin-left: 40px; margin-top: 31px;}
 #head .searchBox .box{height:36px;background:#F7F7F7;border-radius:18px;border:1px solid #EDEDED; overflow: hidden; padding-left: 16px;}
 #head .searchBox input{float: left; display: block; outline: 0; border: 0;}
@@ -24,12 +23,70 @@
 #head .btnBox{overflow: hidden; margin-left: 40px; margin-top: 31px; text-align: center;} 
 #head .btnBox a{display: block; float: left; width: 72px; height: 36px; font-size:16px;font-family:PingFangSCMedium;line-height:36px;}
 #head .btnBox a.btn2,#head .btnBox a:hover{color: #fff; background: #4F80C2; border-radius: 4px;} 
+#head.unBg{background: none; box-shadow: unset;}
+#head.unBg .logo{background-image: url(../images/logo_white@2x.png);}
+#head.unBg .searchBox .box{border-color: rgba(255,255,255,0.3); background:none;}
+#head.unBg .searchBox.active .box{border-color: #fff;}
+#head.unBg .searchBox .inp::-webkit-input-placeholder{color: rgba(255,255,255,0.3);}
+#head.unBg .searchBox .inp{color: #fff;}
+#head.unBg .searchBox .subBtn{background-image: url(../images/icon_search_white@2x.png); background-color: unset;}
+#head.unBg .searchBox p{color: #fff; opacity: 0.8;}
+#head.unBg .nav li a{color: #fff;}
+#head.unBg .nav li a:after{background-color: #fff;}
+#head.unBg .btnBox a{color: #fff;}
+#head.unBg .btnBox a.btn2,#head.unBg .btnBox a:hover{color: #147DEE; background: #fff;}
 
 
+/**
+ * 首页
+ */
+.homeBanner{width: 100%; height: 648px; position: relative; z-index: 0; background: #0F6FDE;}
+.homeBanner ol{width:100%;text-align:center;position:absolute;bottom:120px;}
+.homeBanner ol li{width:12px;height:12px;background:rgba(255,255,255,1);opacity:0.4; display: inline-block; border-radius: 100%; margin: 0 8px; cursor: pointer; font-size: 0; line-height: 0;}
+.homeBanner ol li.active{opacity: 1;}
+.homeBanner ul li{zoom:1; vertical-align:middle; width: 100%; height: 100%;}
+.homeBanner ul li a{display: block; width: 100%; height: 648px; background: url() no-repeat center; cursor: pointer; position: relative; color: #fff;}
+.homeBanner .prev,.homeBanner .next{background: none;opacity: 1;outline: 0;	position: absolute;	top: 50%; color: #fff; font-size: 28px; transform: translate(0,-50%);}
+.homeBanner .prev{left: 60px;}
+.homeBanner .next{right: 60px;}
+.homeBanner .prev:hover,.homeBanner .next:hover{color: #00A9DA;}
+.homeBanner .pagewd{position: relative;}
+.homeBanner .bnr1-txt{position: absolute; top: 200px; left: 0;}
+.homeBanner .bnr1-txt h2{font-size: 48px; line-height: 70px; font-weight: normal; margin-bottom: 40px;}
+.homeBanner .bnr1-txt small{font-size: 24px; line-height: 40px; font-weight: 400;}
 
+.idxCase{overflow: hidden; background:rgba(255,255,255,1);box-shadow:0px 5px 10px 0px rgba(0,0,0,0.06);border-radius:8px; margin-top: -40px; position: relative; z-index: 1;}
+.idxCase ul li{float: left; width: 33.33%; text-align: center; height: 120px; padding-top: 30px; border-right: 1px solid #EBECED;}
+.idxCase ul li:last-child{border-right: 0;}
+.idxCase ul li .ico{display: inline-block; width: 60px; height: 60px; background: url() no-repeat center; background-size: contain;}
+.idxCase ul li .ico1{background-image: url(../images/icon_top01@2x.png);}
+.idxCase ul li .ico2{background-image: url(../images/icon_top02@2x.png);}
+.idxCase ul li .ico3{background-image: url(../images/icon_top03@2x.png);}
+.idxCase ul li .txt{display: inline-block; margin-left: 18px; text-align: left;}
+.idxCase ul li .num{font-size:14px;font-family:PingFangSCSemibold-,PingFangSCSemibold;font-weight:normal;color:rgba(15,111,222,1);}
+.idxCase ul li big{font-size:32px; margin-right: 4px; line-height: 32px;}
+.idxCase ul li p{font-size:14px;font-family:PingFangSC-Regular,PingFang SC;font-weight:400;color:rgba(102,102,102,1);line-height:18px; margin-top: 10px;}
 
+.idxPlat{padding: 80px 0 122px; background: url(../images/img_platform_bg@2x.png) no-repeat center bottom; background-size: auto 386px; text-align: center;}
+.idxPlat h2{font-size:24px;font-family:PingFangSCSemibold-,PingFangSCSemibold;font-weight:normal;color:rgba(4,32,64,1);line-height:28px;}
+.idxPlat ul{ overflow: hidden;display: block; padding: 60px 0 60px; text-align: center;}
+.idxPlat ul li{float: left; width: 16.66%;}
+.idxPlat ul li img{width: 80px; height: 80px;}
+.idxPlat ul li p{font-size:14px;font-family:PingFangSC-,PingFang SC;font-weight:normal;color:rgba(51,51,51,1);line-height:18px; margin-top: 12px;}
+.idxPlat ul li.two{margin-top: 20px;}
+.idxPlat ul li.three{margin-top: 40px;}
+.idxPlat .btn{width:140px;height:54px;background:rgba(15,111,222,1);border-radius:8px; font-size:18px;font-family:PingFangSC-,PingFang SC;font-weight:normal;color:rgba(255,255,255,1);line-height:54px; display: inline-block;}
 
-
-
-
+.idxRank{overflow: hidden;}
+.idxRank .title{font-size:32px;font-family:PingFangSCSemibold-,PingFangSCSemibold;font-weight:normal;color:rgba(4,32,64,1);line-height:36px; margin-bottom: 34px;}
+.idxRank .title .ico{display: inline-block; width: 50px; height: 50px; background: url() no-repeat center; background-size: contain; margin-right: 20px; vertical-align: middle;}
+.idxRank .title .ico1{background-image: url(../images/icon_paihang01@2x.png);}
+.idxRank .title .ico2{background-image: url(../images/icon_paihang02@2x.png);}
+.idxRank .pub_list{width: 560px; height: 100px;box-shadow:0px 4px 16px 0px rgba(247,247,247,1);border-radius:8px;border:1px solid rgba(0,0,0,0.06); padding: 0 30px 0 20px;}
+.idxRank .srl{width:18px;height:18px;border-radius:2px; display: inline-block; font-size:12px;font-family:PingFangSCSemibold-,PingFangSCSemibold;font-weight:normal;color:rgba(255,255,255,1);line-height:18px; text-align: center;}
+.idxRank .srl1{background:#F54545;}
+.idxRank .srl2{background:#FF8547;}
+.idxRank .srl3{background:#FFAC38;}
+.idxRank .srl4{background:#8EB9F5;}
+.idxRank .pic{width: 60px; height: 60px; background: url() no-repeat center; background-size: contain; box-shadow:0px 2px 10px 0px rgba(0,0,0,0.08);border:2px solid rgba(255,255,255,1); margin: 0 20px 0 20px; border-radius: 100%;}
 
