@@ -1,15 +1,17 @@
 @charset "utf-8";
 /*头部*/
 .pageTopBox{width: 100%; height: 100px; padding: 1px 0; position: fixed; z-index:10; left: 0; top: 0; box-sizing: border-box; transition:all 0.3s ease-in-out;-webkit-transition:all 0.3s ease-in-out;}
-.pageTopBox .logo{padding-top: 10px;}
+.pageTopBox .logo{margin-top: 10px; display: block; width: 136px; height: 80px; background: url(../images/logo@2x.png) no-repeat center; background-size: contain;}
 .pageTopBox .nav{padding-top: 39px;}
-.pageTopBox.white{background: #fff;}
-.pageTopBox.white .nav li a{color: #333;}
 .pageTopBox .nav li{float: left; margin-left: 60px;}
 .pageTopBox .nav li a{font-size: 16px; color: #fff; line-height: 22px; }
 .pageTopBox .nav li a:hover,.pageTopBox .nav li a.on{color: #00A9DA;}
 .pageTopBox .tel{background: #00A9DA; border-radius: 40px; line-height: 40px; width: 156px; text-align: center; display: block; color: #fff; font-size: 16px; margin-top: 30px; margin-left: 60px;}
 .pageTopBox .tel .iconfont{margin-right: 8px;}
+.pageTopBox.white{background: #fff; box-shadow:0px 2px 8px 0px rgba(0,0,0,0.06);}
+.pageTopBox.white .logo{background-image: url(../images/logo02@2x.png);}
+.pageTopBox.white .nav li a{color: #333;}
+.pageTopBox.white .nav li a:hover,.pageTopBox.white .nav li a.on{color: #00A9DA;}
 
 /*表单*/
 .formCont{background: #00A9DA url(../images/img_map.png) no-repeat center 167px; width: 100%; height: 768px;}
@@ -29,7 +31,7 @@
 .formCont .style-box .list span.on,.formCont .style-box .list span:hover{border-color: #00A9DA; color: #fff; background: #00A9DA;}
 
 /*底部*/
-.pageFooterBox{background: #fff; width: 100%; padding-top: 80px; padding-bottom: 80px; overflow: hidden;}
+.pageFooterBox{background: #fff; width: 100%; padding-top: 80px; padding-bottom: 80px; overflow: hidden; border-top: 1px solid #E6E6E6;}
 .pageFooterBox .logo{width: 400px;}
 .pageFooterBox .logo p{font-size:16px; line-height: 26px; margin-top: 30px; color: #00A9DA;}
 .pageFooterBox .list{position: relative; width: 226px; padding-left: 100px;}
@@ -58,6 +60,19 @@
 .floatRight ul li .code-box .pic{text-align: center; padding-top: 20px; padding-bottom: 20px;}
 .floatRight ul li .code-box .pic p{font-size:16px;font-weight:600;color:rgba(0,169,218,1);line-height:20px;}
 .floatRight ul li .ico-backtop{background: url(../images/ico-backtop.png) no-repeat center 8px; background-size: 30px; width: 70px; height: 68px; display: block;}
+
+/**
+ * 分页页码
+ */
+.pagingBox{height: 45px; padding-top: 15px; background: #fff; text-align: center;}
+.pagingBox .prev,.pagingBox .next{width: 30px; height: 30px; line-height: 30px; font-size: 12px; color: #ccc; cursor: pointer; margin: 0 4px;}
+.pagingBox .next{color: #333; margin-right: 14px;}
+.pagingBox a{font-size:14px;font-family:DINAlternate-Bold,DINAlternate;font-weight:bold;color:rgba(102,102,102,1);line-height:30px; width: 30px; height: 30px; display: inline-block; margin: 0 4px; border-radius:3px;}
+.pagingBox a:hover,.pagingBox a.on{color: #fff; background: #00AFCC;}
+.pagingBox .txt{font-size:12px;font-family:PingFang-SC-Regular,PingFang-SC;font-weight:400;color:rgba(153,153,153,1);line-height:30px; margin: 0 4px;}
+.pagingBox input{width:50px;height:30px;background:rgba(255,255,255,1);border-radius:3px;border:1px solid rgba(230,234,237,1); margin: 0 4px; text-align: center;}
+.pagingBox .sbmt{width:50px;height:30px;background:rgba(0,175,204,1);border-radius:3px; display: inline-block; margin: 0 4px; vertical-align: middle; font-size:12px;font-family:PingFangSCSemibold-,PingFangSCSemibold;font-weight:normal;color:rgba(255,255,255,1);
+line-height:30px; cursor: pointer;}
 
 /*首页*/
 .homeBanner{width: 100%; height: 900px; position: relative;}
@@ -131,3 +146,27 @@
 .aboutCont{width: 100%; height: 508px; text-align: center; background: url(../images/img_about.png) no-repeat center;}
 .aboutCont .pubTitleBox h1{color: #fff;}
 .aboutCont .txt{font-weight:400; font-size:14px; line-height:32px; color: #fff; width: 800px; margin: 60px auto;}
+
+/**
+ * 案例
+ */
+.caseBanner{height: 300px; width: 100%; padding-top: 100px; background: #212121 url(../images/banner_bg_case@2x.png) no-repeat center; background-size: auto 100%; text-align: center;}
+.caseBanner h2{font-size:48px;font-family:PingFangSCSemibold-,PingFangSCSemibold;font-weight:normal;color:rgba(255,255,255,1);line-height:52px;}
+.caseBanner p{font-size:24px;font-family:PingFang-SC-Regular,PingFang-SC;font-weight:400;color:rgba(255,255,255,1);line-height:28px; margin: 32px 0 54px;}
+.caseBanner span{width:280px;height:60px;background:rgba(248,182,43,1);border-radius:2px; display: inline-block; font-size:20px;
+font-family:PingFangSCSemibold-,PingFangSCSemibold;font-weight:normal;color:rgba(255,255,255,1);line-height:60px;}
+.caseTab{background: #00A9DA; overflow: hidden;}
+.caseTab ul li{float: left; width: 20%; text-align: center;}
+.caseTab ul li a{display: block; height: 80px; font-size:16px;font-family:PingFangSCSemibold-,PingFangSCSemibold;font-weight:normal;color:rgba(255,255,255,1);line-height:80px;}
+.caseTab ul li a{display: block; height: 80px; font-size:16px;font-family:PingFangSCSemibold-,PingFangSCSemibold;font-weight:normal;color:rgba(255,255,255,1);line-height:80px;}
+.caseTab ul li a .ico{width: 40px; height: 40px; margin-right: 10px; background: #FFFFFF; border-radius: 100%; line-height: 40px; color: #00AFCC; font-size: 20px;}
+.caseTab ul li a.on,.caseTab ul li a:hover{background: #fff; color: #3CB4E4;}
+.caseTab ul li a.on .ico,.caseTab ul li a:hover .ico{color: #fff; background: #00A9DA;}
+.caseLists{padding: 100px 0 80px; background: #F9F9F9;}
+
+.caseDelt{padding: 100px 0 80px;}
+
+
+
+
+

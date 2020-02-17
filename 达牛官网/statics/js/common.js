@@ -153,62 +153,6 @@ function bigScroll(objName){
 }
 
 
-/**********/
-$(document).ready(function () {
-	var idx_num_h = $(".caseNum").offset().top;
-	$(window).scroll(function () {
-		//数字增长
-		if ($(window).scrollTop() > (idx_num_h - 200)) {
-			$('.timer').each(count);
-		};
-		/**
-		 * 顶部导航
-		 */
-		if($(window).scrollTop() > 20) {
-			$("#pageTopBox").addClass("white");
-			$("#logo").attr("src","statics/images/logo02@2x.png");
-		}else{
-			$("#pageTopBox").removeClass("white");
-			$("#logo").attr("src","statics/images/logo@2x.png");
-		}
-		
-		/**
-		 * 返回顶部
-		 */
-		if ($(window).scrollTop() > 180) {
-			$("#gototop").show();
-		} else {
-			$("#gototop").hide();
-		};
-	});
-	
-	/**
-	 * 返回顶部
-	 */
-	$("#gototop").click(function () {
-		$("html,body").animate({scrollTop: 0}, 200);
-	});
-	
-	/**
-	 * 表单
-	 */
-	$("#form-style .inp").click(function () {
-		if($("#form-style .list").css("display") == "none"){
-			$("#form-style .ico").removeClass("down");
-		}else{
-			$("#form-style .ico").addClass("down");
-		}
-		$(this).parent().find(".list").slideToggle();
-	});
-	$("#form-style .list span").click(function () {
-		$(this).addClass("on").siblings().removeClass("on");
-		$(this).parents("#form-style").find(".inp").val($(this).text());
-		$(this).parent().slideUp();
-		$("#form-style .ico").addClass("down");
-	});
-	
-});
-
 /**
  * 动效
  */

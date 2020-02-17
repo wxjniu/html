@@ -10,7 +10,7 @@
 	<title>首页</title>
 	<link rel="stylesheet" href="statics/css/pubui.css">
 	<link rel="stylesheet" href="statics/css/style.css">
-	<link rel="stylesheet" href="statics/css/iconfont.css" />
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1626408_nluzwpxvkm.css" />
 	<link rel="stylesheet" href="statics/css/animate.css" />
 	<script type="text/javascript" src="statics/js/jquery.min.js"></script>
 </head>
@@ -18,7 +18,7 @@
 	<!--顶部-->
 	<div class="pageTopBox" id="pageTopBox">
 		<div class="pagewd">
-			<a class="fl logo"  href="#"><img id="logo" src="statics/images/logo@2x.png" height="80"/></a>
+			<a class="fl logo"  href="#"></a>
 			<div class="fr">
 				<ul class="nav fl">
 					<li><a href="#" class="on">首页</a></li>
@@ -310,6 +310,58 @@
 	<script type="text/javascript" src="statics/js/scrollReveal.min.js"></script>
 	<script type="text/javascript" src="statics/js/common.js"></script>
 	<script type="text/javascript">
+		$(document).ready(function () {
+			var idx_num_h = $(".caseNum").offset().top;
+			$(window).scroll(function () {
+				//数字增长
+				if ($(window).scrollTop() > (idx_num_h - 200)) {
+					$('.timer').each(count);
+				};
+				/**
+				 * 顶部导航
+				 */
+				if($(window).scrollTop() > 20) {
+					$("#pageTopBox").addClass("white");
+				}else{
+					$("#pageTopBox").removeClass("white");
+				}
+				
+				/**
+				 * 返回顶部
+				 */
+				if ($(window).scrollTop() > 180) {
+					$("#gototop").show();
+				} else {
+					$("#gototop").hide();
+				};
+			});
+			
+			/**
+			 * 返回顶部
+			 */
+			$("#gototop").click(function () {
+				$("html,body").animate({scrollTop: 0}, 200);
+			});
+			
+			/**
+			 * 表单
+			 */
+			$("#form-style .inp").click(function () {
+				if($("#form-style .list").css("display") == "none"){
+					$("#form-style .ico").removeClass("down");
+				}else{
+					$("#form-style .ico").addClass("down");
+				}
+				$(this).parent().find(".list").slideToggle();
+			});
+			$("#form-style .list span").click(function () {
+				$(this).addClass("on").siblings().removeClass("on");
+				$(this).parents("#form-style").find(".inp").val($(this).text());
+				$(this).parent().slideUp();
+				$("#form-style .ico").addClass("down");
+			});
+			
+		});
 		$(function(){
 		    bigScroll(".homeBanner #slideBox");
 		    bigScroll(".commentBanner #slideBox2");
