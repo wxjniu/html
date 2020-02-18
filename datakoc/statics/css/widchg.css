@@ -1,7 +1,32 @@
 @charset "utf-8";
 /* CSS Document */
-@media (max-width:1500px){
-
+@media (max-width:1200px){
+	.pagewd{width: calc(100% - 40px); min-width: auto; margin: 0 20px; box-sizing: border-box;}
+}
+@media (max-width:1140px){
+	#head{min-height: 100px; height: auto;}
+	/* #head .right{padding-bottom: 30px; clear: both; float: unset; overflow: hidden;}
+	#head .btnBox{float: right;}
+	#head .nav li{margin-right: 40px; margin-left: auto;} */
+	#head .searchBox{clear: both; float: unset; padding-top: 30px; margin-left: 0; margin-bottom: 30px; overflow: hidden;}
+	#head .searchBox .box{width: calc(100% - 286px);}
+	#head .searchBox.active .inp{width: calc(100% - 50px);}
+	.homeBanner,.homeBanner ul li a{height: 720px;}
+	.homeBanner .bnr1 .txt{left: 20px;}
+	.homeBanner .bnr1 .pic{right: -20px;}
+}
+@media (max-width:940px){
+	#head .ico-menu{display: inline-block; width: 30px; height: 30px; background: url(../images/menu-ico.png) no-repeat center; background-size: contain; cursor: pointer;}
+	#head.unBg .ico-menu{background-image: url(../images/menu-ico-white.png);}
+	#head .right{position: relative; z-index: 1; margin-top:35px;}
+	#head .menuBox{position: absolute; right: 0; top: 32px; width: 100px; background: #fff; box-shadow:0px 2px 8px 0px rgba(0,0,0,0.06); border-radius: 3px; border: 1px solid #f7f7f7; text-align: center;}
+	#head .nav{float: unset;}
+	#head .nav li{float: unset; padding: 8px 0; margin: 4px 0; border-bottom: 1px solid #f7f7f7;}
+	#head .nav li a,#head.unBg .nav li a{color: #333; line-height: 22px;}
+	#head .nav li a:after{display: none;}
+	#head .nav li a:hover,#head .nav li a.active{color: #4F80C2 !important;}
+	#head .btnBox{margin-left: 0;}
+	#head .btnBox a{float: unset;}
 }
 
 

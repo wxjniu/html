@@ -1,18 +1,50 @@
 // JavaScript Document
+function getScrollbarWidth() {
+    var odiv = document.createElement('div'),//创建一个div
+        styles = {
+            width: '100px',
+            height: '100px',
+            overflowY: 'scroll'//让他有滚动条
+        }, i, scrollbarWidth;
+    for (i in styles) odiv.style[i] = styles[i];
+    document.body.appendChild(odiv);//把div添加到body中
+    scrollbarWidth = odiv.offsetWidth - odiv.clientWidth;//相减
+    odiv.remove();//移除创建的div
+    return scrollbarWidth;//返回滚动条宽度
+}
+function wdsW(){
+	//定义变量获取屏幕视口宽度
+	var windowWidth = $(window).width();
+	if(windowWidth <= 1140 - getScrollbarWidth()){
+		if(!($("#searchBox").hasClass("active"))){
+			$("#searchBox").addClass("active");
+		};
+		$("#searchBox").unbind("click");
+		$(document).unbind("click");
+	}else{
+		if(($("#searchBox").hasClass("active"))){
+			$("#searchBox").removeClass("active");
+		};
+		$("#searchBox").click(function (e) {
+			e.stopPropagation();
+			$(this).addClass('active');
+			$("#nav").hide();
+		});
+		$(document).click(function(){
+			$("#searchBox").removeClass('active');
+			$("#nav").show(300);
+		});
+	}
+};
+
 $(document).ready(function () {
 	/**
 	 *头部导航搜索框 
-	 */
-	$("#searchBox").click(function (e) {
-		e.stopPropagation();
-		$(this).addClass('active');
-		$("#nav").hide();
+	 */	
+	wdsW();
+	$(window).resize(function(){
+		wdsW();
 	});
-	$(document).click(function(){
-		$("#searchBox").removeClass('active');
-		$("#nav").show(300);
-	});
-	
 	
 });
 
