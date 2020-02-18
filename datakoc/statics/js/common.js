@@ -19,8 +19,8 @@ function wdsW(){
 		if(!($("#searchBox").hasClass("active"))){
 			$("#searchBox").addClass("active");
 		};
-		$("#searchBox").unbind("click");
-		$(document).unbind("click");
+// 		$("#searchBox").unbind("click");
+// 		$(document).unbind("click");
 	}else{
 		if(($("#searchBox").hasClass("active"))){
 			$("#searchBox").removeClass("active");
@@ -34,7 +34,12 @@ function wdsW(){
 			$("#searchBox").removeClass('active');
 			$("#nav").show(300);
 		});
-	}
+	};
+	if(windowWidth <= 940 - getScrollbarWidth()){
+		$("#menu").click(function() {
+			$(".menuBox").slideToggle();
+		});
+	};
 };
 
 $(document).ready(function () {
@@ -42,9 +47,9 @@ $(document).ready(function () {
 	 *头部导航搜索框 
 	 */	
 	wdsW();
-	$(window).resize(function(){
-		wdsW();
-	});
+// 	$(window).resize(function(){
+// 		wdsW();
+// 	});
 	
 });
 
