@@ -253,6 +253,8 @@ i {
 
 .pub_list{ position: relative; display: -webkit-box; display: -webkit-flex; display: flex; -webkit-box-align: center; -webkit-align-items: center; align-items: center; }
 .pub_list .pub_list_bd{ -webkit-box-flex: 1; -webkit-flex: 1; flex: 1; }
+
+.mb40{margin-bottom: 40px;}
 /**
  * 以上为基础样式
  */

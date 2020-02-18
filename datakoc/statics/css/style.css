@@ -53,15 +53,15 @@
 /**
  * 分页页码
  */
-.pagingBox{height: 45px; padding-top: 15px; text-align: center; margin: 10px 0;}
-.pagingBox .prev,.pagingBox .next{width: 30px; height: 30px; cursor: pointer; margin: 0 4px; background: #F7F7F7 url() no-repeat center; background-size: 8px; border-radius:3px; display: inline-block; vertical-align: middle;}
+.pagingBox{height: 45px; padding-top: 15px; text-align: right; margin-bottom: 10px; margin-top: 10px;}
+.pagingBox .prev,.pagingBox .next{width: 30px; height: 30px; cursor: pointer; margin: 0 4px; background: #F7F7F7 url() no-repeat center; background-size: 8px; border-radius:3px; display: inline-block; vertical-align: middle; text-align: center;}
 .pagingBox .prev:hover,.pagingBox .next:hover{background-color: #fff; background-image: url();}
-.pagingBox a{font-size:14px;font-family:DINAlternate-Bold,DINAlternate;font-weight:bold;color:rgba(102,102,102,1);line-height:30px; width: 30px; height: 30px; display: inline-block; margin: 0 4px; border-radius:3px; background: #F7F7F7; vertical-align: middle;}
+.pagingBox a{font-size:14px;font-family:DINAlternate-Bold,DINAlternate;font-weight:bold;color:rgba(102,102,102,1);line-height:30px; width: 30px; height: 30px; display: inline-block; margin: 0 4px; border-radius:3px; background: #F7F7F7; vertical-align: middle; text-align: center;}
 .pagingBox a:hover,.pagingBox a.on{color: #fff; background: #4F80C2;}
 .pagingBox .txt{font-size:12px;font-family:PingFang-SC-Regular,PingFang-SC;font-weight:400;color:rgba(153,153,153,1);line-height:30px; margin: 0 4px;}
 .pagingBox input{width:50px;height:30px;background:rgba(255,255,255,1);border-radius:3px;border:1px solid rgba(230,234,237,1); margin: 0 4px; text-align: center;}
 .pagingBox .sbmt{width:50px;height:30px;background:#4F80C2;border-radius:3px; display: inline-block; margin: 0 4px; vertical-align: middle; font-size:12px;font-family:PingFangSCSemibold-,PingFangSCSemibold;font-weight:normal;color:rgba(255,255,255,1);
-line-height:30px; cursor: pointer;}
+line-height:30px; cursor: pointer; text-align: center;}
 
 /**
  * 首页
@@ -138,7 +138,30 @@ line-height:30px; cursor: pointer;}
  * 达人广场列表页
  */
 .darenScreen ul li{padding: 0 40px 0 30px; height: 140px; border-bottom: 1px solid #eee;}
-.darenScreen ul li:hover{background: #0F6FDE;}
+.darenScreen ul li:last-child{border-bottom: 0;}
+.darenScreen ul li:hover{background: rgba(246,249,254,1);}
+.darenScreen .pic{width:80px;height:80px;box-shadow:0px 2px 10px 0px rgba(0,0,0,0.08);border:2px solid rgba(255,255,255,1); border-radius: 100%; background: #eee url() no-repeat center; background-size: cover; margin-right: 20px;}
+.darenScreen .title{margin-bottom: 18px;}
+.darenScreen .title a{font-size:20px;font-family:PingFangSCSemibold-,PingFangSCSemibold;font-weight:normal;color:rgba(51,51,51,1);line-height:28px; margin-right: 4px; display: inline-block;}
+.darenScreen ul li:hover .title a{color: #4F80C2;}
+.darenScreen .title span{line-height:20px; padding: 0 8px; background:rgba(247,247,247,1);border-radius:4px; margin: 0 4px; display: inline-block; vertical-align: text-bottom; font-size: 12px; color: #666;}
+.darenScreen .sex{display: inline-block; font-size: 14px; line-height: 20px; margin-right: 16px;}
+.darenScreen .sex .ico{width: 8px; height: 16px; background: url() no-repeat center; background-size: contain; margin-right: 8px;}
+.darenScreen .sex.men{color: #147DEE;}
+.darenScreen .sex.men .ico{background-image: url();}
+.darenScreen .sex.women{color: #FF1C54;}
+.darenScreen .sex.women .ico{background-image: url();}
+.darenScreen .addr{display: inline-block; font-size: 14px; line-height: 20px; color: #919AA7; margin-right: 16px;}
+.darenScreen .addr .ico{width:11px; height: 14px; background: url() no-repeat center; background-size: contain; margin-right: 8px;}
+.darenScreen .num{text-align: center; min-width: 100px;}
+.darenScreen .num big{font-size:20px;font-family:DINAlternate-Bold,DINAlternate;font-weight:bold;color:rgba(0,0,0,1);line-height:24px;}
+.darenScreen .num small{font-size:14px;font-family:DINAlternate-Bold,DINAlternate;font-weight:bold;color:rgba(0,0,0,1);line-height:16px; margin-left: 4px;}
+.darenScreen .num p{font-size:14px;font-family:PingFang-SC-Regular,PingFang-SC;font-weight:400;color:rgba(153,153,153,1);line-height:20px; margin-top: 10px;}
+.darenScreen .price{font-size:30px;font-family:DINAlternate-Bold,DINAlternate;font-weight:bold;color:rgba(237,44,75,1);line-height:34px; margin-left: 20px; padding-left: 40px; padding-right: 40px; position: relative;}
+.darenScreen .price:before{content: ''; width: 1px; height: 80px; background: #EBF0F5; position: absolute; left: 0; top: 50%; transform: translate(0,-50%);}
+.darenScreen .price small{font-size:20px; margin-right: 4px;}
+.darenScreen .btn{width:80px;height:36px;background:rgba(79,128,194,1);border-radius:5px; font-size:16px;font-family:PingFangSC-,PingFang SC;font-weight:normal;color:rgba(255,255,255,1);line-height:36px; text-align: center;}
+.darenScreen .btn.grey{background:rgba(204,204,204,1);}
 
 
 
