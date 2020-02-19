@@ -84,7 +84,7 @@ line-height:30px; cursor: pointer; text-align: center;}
 .homeBanner .bnr1 .pic{width: 680px; height: 428px; position: absolute; bottom: 56px; right: -40px;}
 
 .idxCase{overflow: hidden; background:rgba(255,255,255,1);box-shadow:0px 5px 10px 0px rgba(0,0,0,0.06);border-radius:8px; margin-top: -40px; position: relative; z-index: 1;}
-.idxCase ul li{float: left; width: 33.33%; text-align: center; height: 120px; padding-top: 30px; border-right: 1px solid #EBECED;}
+.idxCase ul li{float: left; width: 33.33%; text-align: center; padding-top: 30px; padding-bottom: 30px; border-right: 1px solid #EBECED;}
 .idxCase ul li:last-child{border-right: 0;}
 .idxCase ul li .ico{display: inline-block; width: 60px; height: 60px; background: url() no-repeat center; background-size: contain;}
 .idxCase ul li .ico1{background-image: url(../images/icon_top01@2x.png);}
