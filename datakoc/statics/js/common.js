@@ -11,7 +11,8 @@ function getScrollbarWidth() {
     scrollbarWidth = odiv.offsetWidth - odiv.clientWidth;//相减
     odiv.remove();//移除创建的div
     return scrollbarWidth;//返回滚动条宽度
-}
+};
+
 function wdsW(){
 	//定义变量获取屏幕视口宽度
 	var windowWidth = $(window).width();
@@ -19,8 +20,8 @@ function wdsW(){
 		if(!($("#searchBox").hasClass("active"))){
 			$("#searchBox").addClass("active");
 		};
-// 		$("#searchBox").unbind("click");
-// 		$(document).unbind("click");
+		$("#searchBox").unbind("click");
+		$(document).unbind("click");
 	}else{
 		if(($("#searchBox").hasClass("active"))){
 			$("#searchBox").removeClass("active");
@@ -39,7 +40,22 @@ function wdsW(){
 		$("#menu").click(function() {
 			$(".menuBox").slideToggle();
 		});
+	}else{
+		$("#menu").unbind("click");
 	};
+};
+
+function windowResizeEvent(callback) {
+    var firstFire = null;
+
+    window.onresize = function () {
+        if(firstFire === null) {
+            firstFire = setTimeout(function() {
+                firstFire = null;
+                callback();
+            }, 100);
+        }
+    };
 };
 
 $(document).ready(function () {
@@ -47,9 +63,7 @@ $(document).ready(function () {
 	 *头部导航搜索框 
 	 */	
 	wdsW();
-// 	$(window).resize(function(){
-// 		wdsW();
-// 	});
+	// windowResizeEvent(wdsW);
 	
 });
 

@@ -12,8 +12,8 @@
 		<title>达人广场</title>
 		<link rel="stylesheet" href="statics/css/animate.css" />
 		<link rel="stylesheet" href="statics/css/base.css" />
-		<link rel="stylesheet" href="statics/css/widchg.css" />
 		<link rel="stylesheet" href="statics/css/style.css" />
+		<link rel="stylesheet" href="statics/css/widchg.css" />
 		<script type="text/javascript" src="statics/js/jquery.js"></script>
 		<script type="text/javascript" src="statics/js/common.js"></script>
 	</head>
@@ -23,6 +23,32 @@
 		<section id="head">
 			<div class="pagewd">
 				<a href="#" class="logo fl"></a>
+				<div class="fr right">
+					<i class="ico-menu" id="menu"></i>
+					<div class="menuBox">
+						<ul class="nav fl" id="nav">
+							<li>
+								<a href="#" class="active">首页</a>
+							</li>
+							<li>
+								<a href="#">达人榜单</a>
+							</li>
+							<li>
+								<a href="#">达人筛选</a>
+							</li>
+							<li>
+								<a href="#">严选平台</a>
+							</li>
+							<li>
+								<a href="#">带货工具</a>
+							</li>
+						</ul>
+						<div class="fl btnBox">
+							<a href="#">登录</a>
+							<a href="#" class="btn2">注册</a>
+						</div>
+					</div>
+				</div>
 				<div class="searchBox fl" id="searchBox">
 					<div class="box fl">
 						<input type="text" placeholder="请输入搜索内容" class="inp" />
@@ -30,108 +56,158 @@
 					</div>
 					<p class="fl">可以搜索微信文章，新闻热点，网盘资源等</p>
 				</div>
-				<div class="fr">
-					<ul class="nav fl" id="nav">
-						<li>
-							<a href="#" class="active">首页</a>
-						</li>
-						<li>
-							<a href="#">达人榜单</a>
-						</li>
-						<li>
-							<a href="#">达人筛选</a>
-						</li>
-						<li>
-							<a href="#">严选平台</a>
-						</li>
-						<li>
-							<a href="#">带货工具</a>
-						</li>
-					</ul>
-					<div class="fl btnBox">
-						<a href="#">登录</a>
-						<a href="#" class="btn2">注册</a>
-					</div>
-				</div>
 				<div class="clear"></div>
 			</div>
 		</section>
 		
 		<!--内容-->
-		<section id="main">			
-			<div class="pagewd">
-				<!--列表-->
-				<div class="darenScreen">
+		<section id="main">
+			<div class="darenScreen-tab">
+				<div class="pagewd">
 					<ul>
-						<li class="pub_list">
-							<a href="#" class="pic" style="background-image: url();"></a>
-							<div class="pub_list_bd">
-								<div class="title"><a href="#">花甜手作V</a><span>搞笑</span><span>剧情</span></div>
-								<span class="sex men"><i class="ico"></i>女</span>
-								<span class="addr"><i class="ico"></i>广东省</span>
-							</div>
-							<div class="num">
-								<big>208</big><small>W</small>
-								<p>粉丝量</p>
-							</div>
-							<div class="num">
-								<big>889</big>
-								<p>周均赞</p>
-							</div>
-							<div class="num">
-								<big>234</big>
-								<p>周均分享</p>
-							</div>
-							<div class="num">
-								<big>567</big>
-								<p>周均评论</p>
-							</div>
-							<div class="price"><small>¥</small>999</div>
-							<span class="btn">关注</span>
-						</li>
-						<li class="pub_list">
-							<a href="#" class="pic" style="background-image: url();"></a>
-							<div class="pub_list_bd">
-								<div class="title"><a href="#">花甜手作V</a><span>搞笑</span><span>剧情</span></div>
-								<span class="sex men"><i class="ico"></i>女</span>
-								<span class="addr"><i class="ico"></i>广东省</span>
-							</div>
-							<div class="num">
-								<big>208</big><small>W</small>
-								<p>粉丝量</p>
-							</div>
-							<div class="num">
-								<big>889</big>
-								<p>周均赞</p>
-							</div>
-							<div class="num">
-								<big>234</big>
-								<p>周均分享</p>
-							</div>
-							<div class="num">
-								<big>567</big>
-								<p>周均评论</p>
-							</div>
-							<div class="price"><small>¥</small>999</div>
-							<span class="btn grey">已关注</span>
-						</li>
+						<li><a href="javascript:;" class="active"><i class="ico ico1"></i>抖音</a></li>
+						<li><a href="javascript:;"><i class="ico ico2"></i>快手</a></li>
+						<li><a href="javascript:;"><i class="ico ico3"></i>bilibili</a></li>
+						<li><a href="javascript:;"><i class="ico ico4"></i>小红书</a></li>
+						<li><a href="javascript:;"><i class="ico ico5"></i>淘宝直播</a></li>
+						<li><a href="javascript:;"><i class="ico ico6"></i>美拍</a></li>
 					</ul>
-				</div>				
-				
-				<!--分页页码-->
-				<div class="pagingBox">
-					<span class="prev iconfont iconslider_last"></span>
-					<a href="#" class="on">1</a>
-					<a href="#">2</a>
-					<span class="next iconfont iconslider_next"></span>
-					<span class="txt">到第</span>
-					<input type="number" value="1" />
-					<span class="txt">页</span>
-					<span class="sbmt">确定</span>
-					<span class="txt">共 36 条</span>				
 				</div>
-				<div class="mb40"></div>
 			</div>
+			<div class="darenScreen1-area">
+				<div class="pagewd">
+					<div class="box">
+						<div class="title fl">内容类型</div>
+						<span class="fold fr">展开</span>
+						<div class="lis">
+							<a href="#" class="active">全部</a>
+							<a href="#" class="">颜值达人</a>
+						</div>
+					</div>
+					<div class="box">
+						<div class="title fl">粉丝人数</div>
+						<span class="fold fr">展开</span>
+						<div class="lis">
+							<a href="#" class="active">全部</a>
+							<a href="#" class="">1000w以上</a>
+							<a href="#" class="">500w-1000w</a>
+							<span class="btn customBtn">自定义</span>
+							<div class="inpBox">
+								<div class="fl"><input type="text" placeholder="请输入" /></div>
+								<span>—</span>
+								<div class="fl"><input type="text" placeholder="请输入" /></div>
+								<span class="btn">确定</span>
+							</div>
+						</div>
+					</div>
+					<div class="box">
+						<div class="title fl">所在省份</div>
+						<span class="fold fr">展开</span>
+						<div class="lis">
+							<a href="#" class="active">全部</a>
+							<a href="#" class="">北京市</a>
+						</div>
+					</div>
+					<div class="box">
+						<div class="title fl">达人报价</div>
+						<span class="fold fr">展开</span>
+						<div class="lis">
+							<a href="#" class="active">全部</a>
+							<a href="#" class="">10w以上</a>
+							<a href="#" class="">5w-10w</a>
+							<span class="btn customBtn">自定义</span>
+							<div class="inpBox">
+								<div class="fl"><input type="text" placeholder="请输入" /></div>
+								<span>—</span>
+								<div class="fl"><input type="text" placeholder="请输入" /></div>
+								<span class="btn">确定</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="greyBg">
+				<div class="pagewd">
+					<div class="darenScreen2-area">
+						<div class="fl title">推荐达人<span>18位</span></div>
+						<div class="fr right">
+							<a href="javascript:;" class="active">综合排序</a>
+							<a href="javascript:;" class="">粉丝数 <sup></sup><sub></sub></a>
+							<a href="javascript:;" class="">报价 <sup></sup><sub></sub></a>
+						</div>
+					</div>
+					<!--列表-->
+					<div class="darenScreen">
+						<ul>
+							<li class="pub_list">
+								<a href="#" class="pic" style="background-image: url();"></a>
+								<div class="pub_list_bd">
+									<div class="title"><a href="#">花甜手作V</a><span>搞笑</span><span>剧情</span></div>
+									<span class="sex men"><i class="ico"></i>女</span>
+									<span class="addr"><i class="ico"></i>广东省</span>
+								</div>
+								<div class="num">
+									<big>208</big><small>W</small>
+									<p>粉丝量</p>
+								</div>
+								<div class="num">
+									<big>889</big>
+									<p>周均赞</p>
+								</div>
+								<div class="num">
+									<big>234</big>
+									<p>周均分享</p>
+								</div>
+								<div class="num">
+									<big>567</big>
+									<p>周均评论</p>
+								</div>
+								<div class="price"><small>¥</small>999</div>
+								<span class="btn">关注</span>
+							</li>
+							<li class="pub_list">
+								<a href="#" class="pic" style="background-image: url();"></a>
+								<div class="pub_list_bd">
+									<div class="title"><a href="#">花甜手作V</a><span>搞笑</span><span>剧情</span></div>
+									<span class="sex men"><i class="ico"></i>女</span>
+									<span class="addr"><i class="ico"></i>广东省</span>
+								</div>
+								<div class="num">
+									<big>208</big><small>W</small>
+									<p>粉丝量</p>
+								</div>
+								<div class="num">
+									<big>889</big>
+									<p>周均赞</p>
+								</div>
+								<div class="num">
+									<big>234</big>
+									<p>周均分享</p>
+								</div>
+								<div class="num">
+									<big>567</big>
+									<p>周均评论</p>
+								</div>
+								<div class="price"><small>¥</small>999</div>
+								<span class="btn grey">已关注</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--分页页码-->
+			<div class="pagingBox pagewd">
+				<span class="prev iconfont iconslider_last"></span>
+				<a href="#" class="on">1</a>
+				<a href="#">2</a>
+				<span class="next iconfont iconslider_next"></span>
+				<span class="txt">到第</span>
+				<input type="number" value="1" />
+				<span class="txt">页</span>
+				<span class="sbmt">确定</span>
+				<span class="txt">共 36 条</span>				
+			</div>
+			<div class="mb40"></div>
 		</section>
 		
 		<!--底部-->
@@ -161,5 +237,41 @@
 				<p class="cer">©2019 地址：上海市嘉定博园路8200弄日月光伯爵湾1304    沪ICP备19041435号-4</p>
 			</div>
 		</section>
+		
+		<!--js-->
+		<script type="text/x-javascript">
+			$(document).ready(function () {
+				$(".darenScreen-tab ul li a").click(function () {
+					$(".darenScreen-tab ul li a").removeClass("active");
+					$(this).addClass("active");
+				});
+				
+				$(".darenScreen1-area .lis a").click(function () {
+					$(this).addClass("active").siblings("a").removeClass("active");
+				});
+				$(".darenScreen1-area .fold").click(function () {
+					if($(this).parent().find(".lis").hasClass("auto")){
+						$(this).text("展开");
+						$(this).parent().find(".lis").removeClass("auto");
+					}else{
+						$(this).text("收起");
+						$(this).parent().find(".lis").addClass("auto");
+					};
+				});
+				
+				$(".customBtn").click(function (e) {
+					e.stopPropagation();
+					$(this).hide();
+					$(this).parent().find(".inpBox").show();
+				});
+				$(".inpBox").click(function (e) {
+					e.stopPropagation();
+				});
+				$(document).click(function (e) {
+					$(".inpBox").hide();
+					$(".customBtn").show();
+				});
+			});
+		</script>
 	</body>
 </html>
