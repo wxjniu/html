@@ -19,12 +19,14 @@ function wdsW(){
 	if(windowWidth <= 1140 - getScrollbarWidth()){
 		if(!($("#searchBox").hasClass("active"))){
 			$("#searchBox").addClass("active");
+			$("#headH100").css("height",156 + 'px');
 		};
 		$("#searchBox").unbind("click");
 		$(document).unbind("click");
 	}else{
 		if(($("#searchBox").hasClass("active"))){
 			$("#searchBox").removeClass("active");
+			$("#headH100").css("height",100 + 'px');
 		};
 		$("#searchBox").click(function (e) {
 			e.stopPropagation();
