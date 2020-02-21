@@ -54,8 +54,12 @@
  * 分页页码
  */
 .pagingBox{height: 45px; padding-top: 15px; text-align: right; margin-bottom: 10px; margin-top: 10px;}
-.pagingBox .prev,.pagingBox .next{width: 30px; height: 30px; cursor: pointer; margin: 0 4px; background: #F7F7F7 url() no-repeat center; background-size: 8px; border-radius:3px; display: inline-block; vertical-align: middle; text-align: center;}
-.pagingBox .prev:hover,.pagingBox .next:hover{background-color: #fff; background-image: url();}
+.pagingBox .prev,.pagingBox .next{width: 30px; height: 30px; cursor: pointer; margin: 0 4px; background: #F7F7F7; border-radius:3px; display: inline-block; vertical-align: middle; text-align: center; position: relative;}
+.pagingBox .prev:after,.pagingBox .next:after{content: ''; width: 100%; height: 100%; background: url() no-repeat center; background-size: 12px; position: absolute; left: 0; top: 0; opacity: 0.4;}
+.pagingBox .prev:after{background-image: url(../images/slider_last.png);}
+.pagingBox .next:after{background-image: url(../images/slider_next.png);}
+.pagingBox .prev:hover,.pagingBox .next:hover{background-color: #fff;}
+.pagingBox .prev:hover:after,.pagingBox .next:hover:after{opacity: 1;}
 .pagingBox a{font-size:14px;font-family:DINAlternate-Bold,DINAlternate;font-weight:bold;color:rgba(102,102,102,1);line-height:30px; width: 30px; height: 30px; display: inline-block; margin: 0 4px; border-radius:3px; background: #F7F7F7; vertical-align: middle; text-align: center;}
 .pagingBox a:hover,.pagingBox a.on{color: #fff; background: #4F80C2;}
 .pagingBox .txt{font-size:12px;font-family:PingFang-SC-Regular,PingFang-SC;font-weight:400;color:rgba(153,153,153,1);line-height:30px; margin: 0 4px;}
@@ -266,3 +270,38 @@ line-height:30px; cursor: pointer; text-align: center;}
 .dataNum .box hr{width:24px;height:2px;background:rgba(79,128,194,1); border: 0; margin: 20px auto;}
 .dataNum .box big{font-size:32px;font-family:DINAlternate-Bold,DINAlternate;font-weight:bold;color:rgba(79,128,194,1);line-height:36px; vertical-align: bottom; height: 36px; overflow: hidden; display: block;}
 .dataNum .box small{font-size:14px; margin-left: 4px; vertical-align: middle;}
+
+.opusShow.swiper-container {width: 100%; padding: 0 34px;}
+.opusShow .lf,.opusShow .rt{width: 34px; height: 100%; position: absolute; z-index: 1; top: 0; background: #fff;}
+.opusShow .lf{left: 0;}
+.opusShow .rt{right: 0;}
+.opusShow .swiper-slide {text-align: center; font-size: 18px; background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	width: 188px;
+	padding: 15.49% 0;
+}
+.opusShow .swiper-button-prev,.opusShow .swiper-button-next{width: 24px; height: 60px; background: url() no-repeat center; background-size: contain;}
+.opusShow .swiper-button-prev{background-image: url(../images/btn_last@2x.png); left: 0;}
+.opusShow .swiper-button-prev:hover{background-image: url(../images/btn_last_hover@2x.png);}
+.opusShow .swiper-button-next{background-image: url(../images/btn_next@2x.png); right: 0;}
+.opusShow .swiper-button-next:hover{background-image: url(../images/btn_next_hover@2x.png);}
+.opusShow .swiper-slide a{display: block; width:100%;height:100%; border-radius:12px; background: #eee url() no-repeat center; background-size: cover; overflow: hidden; position: absolute; left: 0; top: 0;}
+.opusShow .swiper-slide .txt{position: absolute; left: 0; bottom: 0; width: 100%; background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 100%); padding: 12px 10px;}
+.opusShow .swiper-slide .txt h3{font-size:14px;font-family:PingFangSC-,PingFang SC;font-weight:normal;color:rgba(255,255,255,1);line-height:20px; display: none; text-align: left;}
+.opusShow .swiper-slide a:hover .txt h3{display: block;}
+.opusShow .swiper-slide .txt .box{overflow: hidden; margin-top: 10px; font-size:16px;font-family:DINAlternate-Bold,DINAlternate;font-weight:bold;color:rgba(255,255,255,1);line-height:16px;}
+.opusShow .swiper-slide .txt .box .ico{display: inline-block; background: url() no-repeat center; background-size: contain; vertical-align: bottom; width: 14px; height: 16px; margin-right: 4px;}
+.opusShow .swiper-slide .txt .box .zan-ico{background-image: url(../images/btn_zan@2x.png);}
+.opusShow .swiper-slide .txt .box .pin-ico{background-image: url(../images/btn_comment@2x.png);}

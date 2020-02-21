@@ -14,6 +14,7 @@
 		<link rel="stylesheet" href="statics/css/base.css" />
 		<link rel="stylesheet" href="statics/css/style.css" />
 		<link rel="stylesheet" href="statics/css/widchg.css" />
+		<link rel="stylesheet" href="statics/swiper/swiper.min.css" />
 		<script type="text/javascript" src="statics/js/jquery.js"></script>
 		<script type="text/javascript" src="statics/js/common.js"></script>
 	</head>
@@ -166,22 +167,110 @@
 					
 					<hr class="line" />
 					
-					<div class="row">
+					<div class="">
 						<div class="title1"><h3>粉丝分布</h3></div>
 						<div class="dataBox">数据内容</div>
 					</div>
 					
 					<hr class="line" />
 					
-					<div class="row">
+					<div class="">
 						<div class="title1"><h3>数据趋势</h3></div>
 						<div class="dataBox">数据内容</div>
 					</div>
 					
 					<hr class="line" />
-					<div class="row">
+					<div class="">
 						<div class="title1"><h3>代表作品</h3></div>
-						<div class="dataBox">数据内容</div>
+						<div class="dataBox">
+							<!-- Swiper -->
+							<div class="opusShow swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a href="#" style="background-image: url();">
+											<div class="txt">
+												<h3 class="ellipsis">你瞅啥呢～又被亲了？？</h3>
+												<div class="box">
+													<div class="fl">
+														<i class="ico zan-ico"></i>56
+													</div>
+													<div class="fr">
+														<i class="ico pin-ico"></i>23
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" style="background-image: url();">
+											<div class="txt">
+												<h3 class="ellipsis">你瞅啥呢～又被亲了？？</h3>
+												<div class="box">
+													<div class="fl">
+														<i class="ico zan-ico"></i>56
+													</div>
+													<div class="fr">
+														<i class="ico pin-ico"></i>23
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" style="background-image: url();">
+											<div class="txt">
+												<h3 class="ellipsis">你瞅啥呢～又被亲了？？</h3>
+												<div class="box">
+													<div class="fl">
+														<i class="ico zan-ico"></i>56
+													</div>
+													<div class="fr">
+														<i class="ico pin-ico"></i>23
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" style="background-image: url();">
+											<div class="txt">
+												<h3 class="ellipsis">你瞅啥呢～又被亲了？？</h3>
+												<div class="box">
+													<div class="fl">
+														<i class="ico zan-ico"></i>56
+													</div>
+													<div class="fr">
+														<i class="ico pin-ico"></i>23
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a href="#" style="background-image: url();">
+											<div class="txt">
+												<h3 class="ellipsis">你瞅啥呢～又被亲了？？</h3>
+												<div class="box">
+													<div class="fl">
+														<i class="ico zan-ico"></i>56
+													</div>
+													<div class="fr">
+														<i class="ico pin-ico"></i>23
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<!-- Add Pagination -->
+								<!-- <div class="swiper-pagination"></div> -->
+								<!-- Add Arrows -->
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+								<div class="lf"></div>
+								<div class="rt"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="clear"></div>
@@ -214,6 +303,27 @@
 				<hr />
 				<p class="cer">©2019 地址：上海市嘉定博园路8200弄日月光伯爵湾1304    沪ICP备19041435号-4</p>
 			</div>
-		</section>		
+		</section>
+		<!--js-->
+		<script type="text/javascript" src="statics/swiper/swiper.min.js"></script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				paginationClickable: true,
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				slidesPerView: 4,
+				spaceBetween: 20,
+				breakpoints: {
+					1000: {
+						slidesPerView: 3,
+						spaceBetween: 20
+					},
+					560: {
+						slidesPerView: 2,
+						spaceBetween: 10
+					}
+			});
+		</script>
 	</body>
 </html>

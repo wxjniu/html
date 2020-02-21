@@ -31,6 +31,12 @@
 	.homeBanner .bnr1 .txt h2{font-size: 30px;}
 	.homeBanner .bnr1 .txt .btn{margin-top: 30px; width: 110px; height: 38px; line-height: 38px; font-size: 16px;}
 }
+@media (max-width:1000px){
+	.dataBox{margin-bottom: 40px;}
+	.progressBarBox{margin-right: 0;}
+	.opusShow .swiper-slide{padding: 20.54% 0;}
+	.opusShow .swiper-slide .txt h3{display: block;}
+}
 @media (max-width:980px){
 	#foot .abt{display: none;}
 	#foot .con{padding-right: 80px;}
@@ -67,6 +73,9 @@
 	.homeBanner .bnr1 .pic{bottom: 40px;}
 	.homeBanner .bnr1 .txt h2{font-size: 26px; line-height: 48px;}
 	.homeBanner .bnr1 .txt .btn{width: 80px; height: 30px; line-height: 30px; font-size: 14px;}
+	
+	.darenDelt .left{width: 100%; float: unset; margin-bottom: 30px;}
+	.darenDelt .right{margin-left: 0;}
 }
 @media (max-width:750px){
 	.idxPlat ul li{width: 33.33%; margin-bottom: 25px;}
@@ -112,6 +121,10 @@
 	#foot .links{float: unset; text-align: center;}
 	#foot hr{margin-top: 12px;}
 	#foot .cer{padding-top: 8px;}
+	
+	.opusShow .swiper-slide{padding: 32.47% 0;}
+	.opusShow.swiper-container{padding: 0;}
+	.opusShow .swiper-button-prev,.opusShow .swiper-button-next,.opusShow .lf,.opusShow .rt{display: none;}
 }
 @media (max-width:530px){
 	.homeBanner,.homeBanner ul li a{height: 320px;}
