@@ -25,11 +25,16 @@
 	
 	#foot .abt{margin-right: 30px;}
 	#foot .con{width: auto;}
+	
+	.darenScreen ul li .pub_list{padding: 0 0px;}
 }
 @media (max-width:1040px){
 	.homeBanner,.homeBanner ul li a{height: 600px;}
 	.homeBanner .bnr1 .txt h2{font-size: 30px;}
 	.homeBanner .bnr1 .txt .btn{margin-top: 30px; width: 110px; height: 38px; line-height: 38px; font-size: 16px;}
+	
+	.darenScreen .num{min-width: auto; padding: 0 8px;}
+	.darenScreen .price{margin-left: 15px; padding-left: 15px; margin-right: 15px; padding-right: 15px;}
 }
 @media (max-width:1000px){
 	.dataBox{margin-bottom: 40px;}
@@ -72,6 +77,10 @@
 @media (max-width:900px){
 	.darenScreen-tab ul li a{width: auto; width: 100%;}
 	.darenScreen-tab ul li a .ico{display: none;}
+	
+	.darenScreen .pagewd{margin: 0; width: 100%;}
+	.darenScreen ul li .pub_list{display: none;}
+	.darenScreen ul li .box{display: block; background: #fff; margin: 12px; padding: 12px 12px 0; border-radius: 3px;}
 }
 @media (max-width:830px){
 	.homeBanner,.homeBanner ul li a{height: 480px;}
@@ -151,9 +160,7 @@
 	.darenScreen2-area .title{font-size: 15px;}
 	.darenScreen2-area .right a{margin-left: 12px; padding-right: 15px; font-size: 12px;}
 	.darenScreen2-area .right a:first-child{padding-right: 0px;}
-	
-	.darenScreen .pagewd{margin: 0;}
-	
+		
 	.pagingBox{margin: 0; padding: 0 10px; width: 100%; margin-top: 20px;}
 	.pagingBox a{display: none;}
 }
