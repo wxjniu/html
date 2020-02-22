@@ -57,7 +57,7 @@ a{
 	color: #333;
 	text-decoration: none;
 	/*消除ie10灰色背景*/
-	background-color: transparent;
+	/* background-color: transparent; */
 	/*消除火狐虚线*/
 	outline: none;
 	transition: all 0.2s ease-in-out;

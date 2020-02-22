@@ -62,36 +62,36 @@
 		
 		<!--轮播图-->
 		<div class="homeBanner">
-			<div id="slideBox" class="slideBox">
-				<ul>
-					<li class="bnr1"><a href="#">
-						<div class="pagewd">
-							<div class="txt animated fadeInLeft">
-								<h2>大数据透视网红达人<br/>赋能企业运营</h2>
-								<span class="btn">立即咨询</span>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide bnr1">
+						<a href="#">
+							<div class="pagewd">
+								<div class="txt"  data-swiper-parallax="-2000">
+									<h2>大数据透视网红达人<br/>赋能企业运营</h2>
+									<span class="btn">立即咨询</span>
+								</div>
+								<img src="statics/images/banner_r@2x.png" class="pic" data-swiper-parallax="-1000" />
 							</div>
-							<img src="statics/images/banner_r@2x.png" class="pic animated fadeInUp" />
-						</div>
-					</a></li>
-					<li class="bnr1"><a href="#"">
-						<div class="pagewd">
-							<div class="txt animated fadeInLeft">
-								<h2>大数据透视网红达人<br/>赋能企业运营</h2>
-								<span class="btn">立即咨询</span>
+						</a>
+					</div>
+					<div class="swiper-slide bnr1">
+						<a href="#">
+							<div class="pagewd">
+								<div class="txt" data-swiper-parallax="-1000">
+									<h2>大数据透视网红达人<br/>赋能企业运营</h2>
+									<span class="btn">立即咨询</span>
+								</div>
+								<img src="statics/images/banner_r@2x.png" class="pic" data-swiper-parallax="-1000" />
 							</div>
-							<img src="statics/images/banner_r@2x.png" class="pic animated fadeInUp" />
-						</div>
-					</a></li>
-				</ul>
-				<!-- <ol>
-					<li>1</li>
-					<li>2</li>
-				</ol> -->
-				<!-- 下面是前/后按钮代码，如果不需要删除即可 -->
-				<!-- <div class="bannerBtn">
-				    <a class="prev iconfont iconslider_last" href="javascript:void(0)"></a>
-				    <a class="next iconfont iconslider_next" href="javascript:void(0)"></a>
-				</div> -->
+						</a>
+					</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination swiper-pagination-white"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next swiper-button-white"></div>
+				<div class="swiper-button-prev swiper-button-white"></div>
 			</div>
 		</div>
 		
@@ -321,22 +321,30 @@
 					}
 				});
 			});
-			
-			/**
-			 * 轮播图
-			 */
-			$(function(){
-			    bigScroll(".homeBanner #slideBox");
-			});
-			
+					
 			/**
 			 * 动效
 			 */
-			window.sr = new scrollReveal({
-				//reset: true,
-				// move: '200px',
-				// mobile: true
-			});
+			window.sr = new scrollReveal({});
+		</script>
+		<!--swiper-->
+		<!--swiper-->
+		<link rel="stylesheet" href="statics/swiper/swiper.min.css" />
+		<script type="text/javascript" src="statics/swiper/swiper.min.js"></script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				paginationClickable: '.swiper-pagination',
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				spaceBetween: 0,
+				effect: 'fade',
+				parallax: true,
+				speed: 600,
+				loop : true,
+				autoplay : 3000,
+				autoplayDisableOnInteraction : false,
+			});	
 		</script>
 	</body>
 </html>

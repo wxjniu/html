@@ -18,6 +18,7 @@
 	.homeBanner .bnr1 .pic{right: -20px; width: 60%; height: auto;}
 	.homeBanner .bnr1 .txt h2{font-size: 38px;}
 	.homeBanner .bnr1 .txt .btn{margin-top: 40px;}
+	.swiper-button-next, .swiper-button-prev{top: calc(50% + 62px) !important;}
 }
 @media (max-width:1100px){
 	.idxFunct .box img{width: 50%; height: auto;}
@@ -29,7 +30,7 @@
 	.darenScreen ul li .pub_list{padding: 0 0px;}
 }
 @media (max-width:1040px){
-	.homeBanner,.homeBanner ul li a{height: 600px;}
+	.homeBanner{height: 600px;}
 	.homeBanner .bnr1 .txt h2{font-size: 30px;}
 	.homeBanner .bnr1 .txt .btn{margin-top: 30px; width: 110px; height: 38px; line-height: 38px; font-size: 16px;}
 	
@@ -62,7 +63,7 @@
 	#head .btnBox{margin-left: 0;float: unset; margin-top: 12px;}
 	#head .btnBox a{float: unset; color: #fff !important; background: #4F80C2 !important; border-radius: 4px; width: 72px; height: 32px; line-height: 32px; margin: 0 auto 12px; font-size: 14px;}
 	
-	.homeBanner,.homeBanner ul li a{height: 540px;}
+	.homeBanner{height: 540px;}
 	.homeBanner .bnr1 .txt{bottom: 100px;}
 	.homeBanner .bnr1 .pic{bottom: 30px;}
 	
@@ -83,7 +84,7 @@
 	.darenScreen ul li .box{display: block; background: #fff; margin: 12px; padding: 12px 12px 0; border-radius: 3px;}
 }
 @media (max-width:830px){
-	.homeBanner,.homeBanner ul li a{height: 480px;}
+	.homeBanner{height: 480px;}
 	.homeBanner .bnr1 .txt{bottom: 90px;}
 	.homeBanner .bnr1 .pic{bottom: 40px;}
 	.homeBanner .bnr1 .txt h2{font-size: 26px; line-height: 48px;}
@@ -98,7 +99,7 @@
 	.idxPlat ul li img{opacity: 1;}
 }
 @media (max-width:680px){
-	.homeBanner,.homeBanner ul li a{height: 420px;}
+	.homeBanner{height: 420px;}
 	.homeBanner .bnr1 .txt{bottom: 16%;}
 	.homeBanner .bnr1 .pic{bottom: 20px;}
 	.homeBanner .bnr1 .txt h2{font-size: 20px; line-height: 38px;}
@@ -124,7 +125,7 @@
 	#head .searchBox p{display: none !important;}
 }
 @media (max-width:600px){
-	.homeBanner,.homeBanner ul li a{height: 390px;}
+	.homeBanner{height: 390px;}
 	.homeBanner .bnr1 .txt .btn{margin-top: 20px;}
 	
 	.idxRank .title{font-size: 24px; margin-bottom: 20px;}
@@ -145,7 +146,7 @@
 	.opusShow .swiper-button-prev,.opusShow .swiper-button-next,.opusShow .lf,.opusShow .rt{display: none;}
 }
 @media (max-width:530px){
-	.homeBanner,.homeBanner ul li a{height: 320px;}
+	.homeBanner{height: 320px;}
 	.homeBanner .bnr1 .pic{display: none;}
 	.homeBanner .bnr1 .txt{text-align: center; left: calc(50% - 90px); bottom: 30px;}
 	
@@ -185,6 +186,9 @@
 	.idxPlat .btn{width: 100px; height: 34px; line-height: 34px; font-size: 14px;}
 	
 	.darenScreen1-area .inpBox input{margin-bottom: 12px;}
+	
+	.darenDelt .right .title1 .ico span{left: -70px;}
+	.darenDelt .right .title1 .ico span:before{right: 73px;}
 }
 
 
