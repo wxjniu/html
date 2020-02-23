@@ -208,17 +208,16 @@ line-height:30px; cursor: pointer; text-align: center;}
 
 .darenScreen ul li .box{display: none; padding: 15px 0 0; margin-bottom: 10px;}
 .darenScreen ul li .infor{overflow: hidden;}
-.darenScreen ul li .infor .pic{float: left;}
-.darenScreen ul li .infor .txtBox{margin-left: 95px;}
+.darenScreen ul li .infor .pic{float: left; margin-right: 15px;}
+.darenScreen ul li .infor .txtBox{margin-left: 95px; margin-right: 80px;}
 .darenScreen ul li .infor .title{margin-bottom: 5px;}
-.darenScreen ul li .infor .title a{font-size:17px; line-height: 20px;}
-.darenScreen ul li .infor .txt p{font-size:12px; line-height: 20px; color: #999;}
-.darenScreen ul li .infor .txt p span{margin-left: 20px;}
-.darenScreen ul li .btnBox{overflow: hidden; border-top: 1px solid #eee; margin-top: 12px; padding: 12px 0;}
-.darenScreen ul li .btnBox .price{overflow: hidden; font-size:16px; line-height: 20px; margin: 0; padding: 0;}
-.darenScreen ul li .btnBox .price:before{display: none;}
-.darenScreen ul li .btnBox .price small{font-size: 12px;}
-.darenScreen ul li .btnBox .btn{padding: 0 15px; line-height: 34px; height: auto;}
+.darenScreen ul li .infor .title a{font-size:17px; line-height: 20px; max-width: 100%;}
+.darenScreen ul li .tag{margin-bottom: 4px;}
+.darenScreen ul li .tag span{line-height:20px; padding: 0 8px; background:rgba(247,247,247,1);border-radius:4px; margin: 0 8px 0 0; display: inline-block; vertical-align: text-bottom; font-size: 12px; color: #666;}
+.darenScreen ul li .infor .txt{font-size:12px; line-height: 20px; color: #999;}
+.darenScreen ul li .infor .txt span{margin-left: 20px;}
+.darenScreen ul li .btnBox{padding:0px 0 0 0;}
+.darenScreen ul li .btnBox .btn{padding: 0 15px; line-height: 30px; font-size: 13px; width: auto; height: auto; margin-top: 20px;}
 
 /**
  * 达人广场-详情
