@@ -19,11 +19,15 @@ function wdsW(){
 	if(windowWidth <= 1140 - getScrollbarWidth()){
 		if(!($("#searchBox").hasClass("active"))){
 			$("#searchBox").addClass("active");
-			$("#headH100").css("height",156 + 'px');
+			if(windowWidth <= 620 - getScrollbarWidth()){
+				$("#headH100").css("height",103 + 'px');
+			}else{
+				$("#headH100").css("height",156 + 'px');
+			}
 		};
 		$("#searchBox").unbind("click");
 		$(document).unbind("click");
-	}else{
+	} else{
 		if(($("#searchBox").hasClass("active"))){
 			$("#searchBox").removeClass("active");
 			$("#headH100").css("height",100 + 'px');
@@ -39,11 +43,16 @@ function wdsW(){
 		});
 	};
 	if(windowWidth <= 940 - getScrollbarWidth()){
-		$("#menu").click(function() {
+		$("#menu").click(function(e) {
+			e.stopPropagation();
 			$(".menuBox").slideToggle();
+		});
+		$(document).click(function(){
+			$(".menuBox").slideUp();
 		});
 	}else{
 		$("#menu").unbind("click");
+		$(document).unbind("click");
 	};
 };
 
@@ -67,6 +76,13 @@ $(document).ready(function () {
 	wdsW();
 	// windowResizeEvent(wdsW);
 	
+	/**
+	 *qq浏览器 
+	 */
+	var u = navigator.appVersion;
+	var qq = u.split('MQQBrowser/').length > 1 ? 2 : 0;
+	var wx = ((u.match(/MicroMessenger/i)) && (u.match(/MicroMessenger/i).toString().toLowerCase() == 'micromessenger'));
+	if(qq && !wx){
+		$("#head .btnBox a.btn2").hide();
+	};
 });
-
-;

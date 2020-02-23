@@ -9,7 +9,7 @@
 }
 @media (max-width:1140px){
 	#head{min-height: 100px; height: auto;}
-	#head .searchBox{clear: both; float: unset; padding-top: 30px; margin-left: 0; margin-bottom: 15px; overflow: hidden; position: relative;}
+	#head .searchBox{clear: both; float: unset; padding-top: 30px; margin-top: 0; margin-left: 0; margin-bottom: 15px; overflow: hidden; position: relative;}
 	#head .searchBox:before{content: ''; left: -20px; right: -20px; height: 1px; background: #f7f7f7; position: absolute; top: 15px;}
 	#head .searchBox .box{width: calc(100% - 286px);}
 	#head .searchBox.active .inp{width: calc(100% - 50px);}
@@ -62,6 +62,7 @@
 	#head .nav li a:hover,#head .nav li a.active{color: #4F80C2 !important;}
 	#head .btnBox{margin-left: 0;float: unset; margin-top: 12px;}
 	#head .btnBox a{float: unset; color: #fff !important; background: #4F80C2 !important; border-radius: 4px; width: 72px; height: 32px; line-height: 32px; margin: 0 auto 12px; font-size: 14px;}
+	#head .btnBox a.btn2{display: none;}
 	
 	.homeBanner{height: 540px;}
 	.homeBanner .bnr1 .txt{bottom: 100px;}
@@ -99,11 +100,16 @@
 	.idxPlat ul li img{opacity: 1;}
 }
 @media (max-width:680px){
-	.homeBanner{height: 420px;}
-	.homeBanner .bnr1 .txt{bottom: 16%;}
-	.homeBanner .bnr1 .pic{bottom: 20px;}
+	.homeBanner{height: auto; padding-top: 156px; padding-bottom: 15px;}
+	.homeBanner .swiper-slide a .pagewd{margin: 0; width: 100%;}
+	.homeBanner .bnr1 .txt{display: none;}
+	.homeBanner .bnr1 .pic{bottom: 20px; width: 100%; height: auto; position: relative; right: auto; bottom: auto;}
 	.homeBanner .bnr1 .txt h2{font-size: 20px; line-height: 38px;}
 	.homeBanner .bnr1 .txt .btn{width: 80px; height: 30px; line-height: 30px; font-size: 14px;}
+	.homeBanner .swiper-button-next,.homeBanner .swiper-button-prev{display: none;}
+	.homeBanner .swiper-pagination{display: block; bottom: 12% !important;}
+	.homeBanner .swiper-pagination-bullet{width: 6px; height: 6px;}
+	.homeBanner .swiper-pagination-bullet-active{width: 20px; border-radius: 6px;}
 	
 	.idxCase{margin-top: -20px;}
 	.idxCase ul li{padding-top: 20px; padding-bottom: 20px;}
@@ -121,13 +127,17 @@
 	.darenScreen-tab ul li a{height: auto; line-height: 34px; font-size: 12px; background: none !important;}
 }
 @media (max-width:620px){
+	#head .logo{width: 130px; height: 32px; margin-top: 12px;}
+	#head .right{margin-top: 12px;}
+	#head .ico-menu{width: 28px; height: 28px;}
+	#head .searchBox{padding-top: 12px;}
+	#head .searchBox:before{display: none;}
 	#head .searchBox .box{width: 100%;}
 	#head .searchBox p{display: none !important;}
-}
-@media (max-width:600px){
-	.homeBanner{height: 390px;}
-	.homeBanner .bnr1 .txt .btn{margin-top: 20px;}
 	
+	.homeBanner{padding-top: 103px;}
+}
+@media (max-width:600px){	
 	.idxRank .title{font-size: 24px; margin-bottom: 20px;}
 	.idxRank .title .ico{width: 30px; height: 30px; margin-right: 14px;}
 	.idxRank .pub_list{height: auto; padding: 15px;}
@@ -145,11 +155,7 @@
 	.opusShow.swiper-container{padding: 0;}
 	.opusShow .swiper-button-prev,.opusShow .swiper-button-next,.opusShow .lf,.opusShow .rt{display: none;}
 }
-@media (max-width:530px){
-	.homeBanner{height: 320px;}
-	.homeBanner .bnr1 .pic{display: none;}
-	.homeBanner .bnr1 .txt{text-align: center; left: calc(50% - 90px); bottom: 30px;}
-	
+@media (max-width:530px){	
 	.idxCase ul li{padding-left: 20px; padding-right: 20px;}
 	.idxCase ul li big{font-size: 22px;}
 	.idxCase ul li p{height: 40px; line-height: 20px; margin-top: 3px;}
