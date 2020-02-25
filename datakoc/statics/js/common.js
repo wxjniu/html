@@ -47,6 +47,9 @@ function wdsW(){
 			e.stopPropagation();
 			$(".menuBox").slideToggle();
 		});
+		$("#head .nav>li a").click(function(e) {
+			e.stopPropagation();
+		});
 		$(document).click(function(){
 			$(".menuBox").slideUp();
 		});
