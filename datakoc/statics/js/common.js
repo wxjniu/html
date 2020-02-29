@@ -26,7 +26,7 @@ function wdsW(){
 			}
 		};
 		$("#searchBox").unbind("click");
-		$(document).unbind("click");
+		// $(document).unbind("click");
 	} else{
 		if(($("#searchBox").hasClass("active"))){
 			$("#searchBox").removeClass("active");
@@ -55,7 +55,6 @@ function wdsW(){
 		});
 	}else{
 		$("#menu").unbind("click");
-		$(document).unbind("click");
 	};
 };
 
@@ -79,13 +78,5 @@ $(document).ready(function () {
 	wdsW();
 	// windowResizeEvent(wdsW);
 	
-	/**
-	 *qq浏览器 
-	 */
-	var u = navigator.appVersion;
-	var qq = u.split('MQQBrowser/').length > 1 ? 2 : 0;
-	var wx = ((u.match(/MicroMessenger/i)) && (u.match(/MicroMessenger/i).toString().toLowerCase() == 'micromessenger'));
-	if(qq && !wx){
-		$("#head .btnBox a.btn2").hide();
-	};
+	
 });

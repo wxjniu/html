@@ -66,7 +66,6 @@
 	#head .nav>li a:hover,#head .nav>li a.active{color: #4F80C2 !important;}
 	#head .btnBox{margin-left: 0;float: unset; margin-top: 12px;}
 	#head .btnBox a{float: unset; color: #fff !important; background: #4F80C2 !important; border-radius: 4px; width: 72px; height: 32px; line-height: 32px; margin: 0 auto 12px; font-size: 14px;}
-	#head .btnBox a.btn2{display: none;}
 	
 	#head .nav .childLis{position: relative; left: unset; top: unset; transform: translate(0,0); padding-top: 0;}
 	#head .nav .childLis ul{width: 100%; background: #f7f7f7; box-shadow:0; border-radius: 0; border: 0; margin-bottom: -8px; margin-top: 8px;}
