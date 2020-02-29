@@ -78,5 +78,24 @@ $(document).ready(function () {
 	wdsW();
 	// windowResizeEvent(wdsW);
 	
-	
+	/**
+	 * 登录
+	 */
+	$("#logoFn").click(function() {
+		$(".loginBox").addClass("show");
+	});
+	$(".loginBox").click(function() {
+		$(".loginBox").removeClass("show");
+	});
+	$(".loginNr").click(function(e) {
+		e.stopPropagation();
+	});
+	$(".loginNr .phone .ico-rightTop").click(function() {
+		$(this).parents(".phone").addClass("hide");
+		$(".loginNr .code").removeClass("hide");
+	});
+	$(".loginNr .code .ico-rightTop").click(function() {
+		$(this).parents(".code").addClass("hide");
+		$(".loginNr .phone").removeClass("hide");
+	});
 });

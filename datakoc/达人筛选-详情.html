@@ -44,8 +44,7 @@
 							</li>
 						</ul>
 						<div class="fl btnBox">
-							<a href="#" class="btn2">登录</a>
-							<!-- <a href="#" >注册</a> -->
+							<a href="#" class="btn2" id="logoFn">登录</a>
 						</div>
 					</div>
 				</div>
@@ -59,6 +58,40 @@
 				<div class="clear"></div>
 			</div>
 		</section>
+		
+		<!--弹窗-->
+		<div class="loginBox">
+			<div class="loginNr">
+				<img class="logo" src="statics/images/logo_color@2x.png" />
+				<div class="phone hide">
+					<i class="ico-rightTop"></i>
+					<h3><i class="ico"></i>手机登录</h3>
+					<form>
+						<input class="inp" type="text" placeholder="请输入您的手机号" />
+						<div id="slide_box">
+							<span>请将滑块拖至最右端</span>
+							<div id="slide_xbox">
+								<!-- <i class="ico"></i> -->
+								<div id="btn">
+								</div>
+							</div>
+						</div>
+						<div class="inpBox">
+							<input class="inp" type="text" placeholder="验证码" />
+							<!-- <span class="getYzm grey">60s后重新获取</span> -->
+							<span class="getYzm">发送验证码</span>
+						</div>
+						<input class="submit" type="submit" value="登录" />
+					</form>
+				</div>
+				
+				<div class="code">
+					<i class="ico-rightTop"></i>
+					<h3><i class="ico"></i>请使用微信“扫一扫”登录</h3>
+					<img src="statics/images/img_ma01@2x.png" />
+				</div>
+			</div>			
+		</div>
 		
 		<!--内容-->
 		<section id="main">
@@ -304,6 +337,8 @@
 			</div>
 		</section>
 		
+		
+		<script type="text/javascript" src="statics/js/script.js"></script>
 		<!--swiper-->
 		<link rel="stylesheet" href="statics/swiper/swiper.min.css" />
 		<script type="text/javascript" src="statics/swiper/swiper.min.js"></script>

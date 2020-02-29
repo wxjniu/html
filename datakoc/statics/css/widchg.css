@@ -44,8 +44,8 @@
 	.opusShow .swiper-slide .txt h3{display: block;}
 	
 	.darenScreen1-area .pagewd{width: 100%; margin: 0; padding: 0 12px;}
-	.darenScreen1-area .box:after{left: 0;}
-	.darenScreen1-area .lis{margin-right: 0; margin-left: 0; clear:both; padding-top: 12px; box-sizing: content-box;}
+	.darenScreen1-area .box:after{left: 0;display: none;}
+	.darenScreen1-area .lis{margin-right: 0; margin-left: 0; clear:both; padding-top: 12px; box-sizing: content-box; background:rgba(245,246,247,1);border-radius:3px;}
 	.darenScreen1-area .lis a{font-size: 12px; padding: 0 0; width: calc(25% - 10px); margin: 0 5px 12px; text-align: center; background:rgba(245,246,247,1);border-radius:2px; overflow: hidden; height: 28px;}
 	.darenScreen1-area .lis a.active{background:rgba(79,128,194,1); color: #fff;}
 }
@@ -146,6 +146,15 @@
 	#head .searchBox p{display: none !important;}
 	
 	.homeBanner{padding-top: 103px;}
+	
+	.loginNr{padding: 30px 0;}
+	.loginNr .ico-rightTop{width: 80px !important; height: 80px !important;}
+	.loginNr .phone h3{padding-top: 15px; font-size: 18px;}
+	.loginNr .phone form{width: auto; margin: 0 20px;}
+	.loginNr .phone .inp,#slide_box{margin-bottom: 15px; font-size: 14px;}
+	.loginNr .phone .inpBox .getYzm{font-size: 14px;}
+	.loginNr .phone .submit{height: 40px; font-size: 15px;}
+	.loginNr .code h3{padding: 30px 0 0; margin-bottom: 15px;}
 }
 @media (max-width:600px){	
 	.idxRank .title{font-size: 24px; margin-bottom: 20px;}
