@@ -72,6 +72,11 @@
 	#head .nav .childLis ul:before{display: none;}
 	#head .nav .childLis li a{font-size: 14px;}
 	
+	#head .userBox{margin-left: 0; margin-top: 0; float: unset;}
+	#head .userBtn{display: block; text-align: center; padding: 8px 0; font-size: 16px;}
+	#head .userBtn .pic{display: none;}
+	#head .userBox .box:before{right: 44px;}
+	
 	.homeBanner{height: 540px;}
 	.homeBanner .bnr1 .txt{bottom: 100px;}
 	.homeBanner .bnr1 .pic{bottom: 30px;}

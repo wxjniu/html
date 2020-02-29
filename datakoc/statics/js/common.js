@@ -50,6 +50,9 @@ function wdsW(){
 		$("#head .nav>li a").click(function(e) {
 			e.stopPropagation();
 		});
+		$("#head .userBtn").click(function(e) {
+			e.stopPropagation();
+		});
 		$(document).click(function(){
 			$(".menuBox").slideUp();
 		});
