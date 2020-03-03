@@ -55,9 +55,9 @@
 #head .userBox .name{font-size: 16px; line-height: 24px;}
 #head .userBox .id{font-size: 14px; line-height: 24px; margin: 8px 0;}
 #head .userBox .btn{border-bottom: 1px solid #ededed; padding-bottom: 10px;}
-#head .userBox .btn a{color: #f8c05e; font-size: 12px; line-height: 26px; border-radius: 30px; padding: 0 10px; display: inline-block;}
-#head .userBox .btn a.bg1{color: #fff; background: #f8c05e;}
-#head .userBox .link{color: #999; font-size: 14px; line-height: 24px; display: block; margin-top: 8px;}
+#head .userBox .btn a{color: #7BBB5E; font-size: 12px; line-height: 26px; border-radius: 2px; padding: 0 10px; display: inline-block;}
+#head .userBox .btn a.bg1{color: #fff; background: #7BBB5E;}
+#head .userBox .link{color: #666; font-size: 14px; line-height: 24px; display: block; margin-top: 8px;}
 
 
 /**
@@ -400,3 +400,62 @@ line-height:30px; cursor: pointer; text-align: center;}
 .opusShow .swiper-slide .txt .box .ico{display: inline-block; background: url() no-repeat center; background-size: contain; vertical-align: bottom; width: 14px; height: 16px; margin-right: 4px;}
 .opusShow .swiper-slide .txt .box .zan-ico{background-image: url(../images/btn_zan@2x.png);}
 .opusShow .swiper-slide .txt .box .pin-ico{background-image: url(../images/btn_comment@2x.png);}
+
+
+/**
+ * 会员中心
+ */
+.memberPage{padding: 20px 0;}
+.memberPageLeft{width:180px;min-height:760px; padding: 30px 20px; background:rgba(248,248,248,1);border-radius:4px; float: left;}
+.memberPageLeft .box{border-bottom: 1px solid #E6E6E6; margin-bottom: 20px; padding-bottom: 10px;}
+.memberPageLeft .box:last-child{border-bottom: 0;}
+.memberPageLeft .box a{display: block; padding: 10px 0 10px 20px; line-height: 20px; color: #666; font-size:16px; margin-bottom: 10px;}
+.memberPageLeft .box a.active{color: #4F80C2; background:rgba(79,128,194,0.04);border-radius:2px;}
+.memberPageLeft .box a:hover{color: #4F80C2;}
+.memberPageLeft .box ul{display: block; padding-left: 20px;}
+.memberPageLeft .box ul li a{font-size: 14px; line-height: 18px;}
+.memberPageRight{margin-left: 220px;}
+
+/**
+ * 会员中心-我的账户
+ */
+.memberPageTitle h3{border-radius:4px; font-size:16px; line-height:20px; color: #757575; padding: 5px 8px; background: #F4F4F4; display: inline-block;}
+.memberPageTitle{margin-bottom: 20px;}
+.membInfor{overflow: hidden;}
+.membInfor .box{float: left; width: 50%; font-size: 14px; margin-bottom: 16px; min-height: 30px; line-height: 30px;}
+.membInfor .box .lev{font-size:14px;  margin-right: 16px;}
+.membInfor .box .lev.orange{color: #FF6B00;}
+.membInfor .box .title{font-size:14px; color: #999; margin-right: 15px;}
+.membInfor .box a{font-size:14px; color: #7BBB5E;display: inline-block; margin-left: 8px;}
+.membInfor .box .btn{font-size:14px; color: #fff;display: inline-block; margin-left: 0; line-height: 28px; border-radius:2px; background: #7BBB5E; padding: 0 12px; text-align: center; min-width: 60px;}
+.membInfor .box .btn .ico-update{display: inline-block; width: 14px; height: 14px; background: url(../images/icon_my_update@2x.png) no-repeat center; background-size: contain; margin-left: 6px; vertical-align: text-bottom;}
+.membInfor .box .headImg{display: inline-block; font-size:14px;}
+.membInfor .box .headImg span{display: inline-block; width: 30px; height: 30px; border-radius: 100%; background: #eee url() no-repeat center; background-size: cover; margin-right: 10px; vertical-align: middle;}
+.membPlan{border-left: 1px solid #EBF0F5;}
+.membPlan .pub_list_bd{padding-left:75px;}
+.membPlan .pub_list_bd small{font-size:14px; color: #999; line-height: 20px;}
+.membPlan .pub_list_bd p{font-size:24px; color: #ED2C4B; line-height: 28px; margin-top: 22px;}
+.membPoster{padding-top: 18px;}
+.membPoster .btn{border-radius:2px; background: #F45778; line-height: 28px; padding: 0 16px; font-size:14px; color: #fff;}
+.membPoster .pub_list_bd{margin: 0 16px 0 20px; position: relative; width: 395px; flex: unset;}
+.membPoster .pub_list_bd input{border:1px solid #EDEDED; border-radius:2px; background: #F7F7F7; padding: 0 60px 0 16px; font-size: 14px; color: #999; height: 28px; width: 100%;}
+.membPoster .pub_list_bd span{font-size: 14px; color: #4F80C2; line-height: 28px; width: 60px; text-align: center; position: absolute; right: 0; top: 0; cursor: pointer;}
+.membPoster .wxBtn{position: relative; cursor: pointer;}
+.membPoster .wxBtn .ico-wx{display: inline-block; width: 28px; height: 28px; background: url(../images/btn_my_weixin@2x.png) no-repeat center; background-size: contain;}
+.membPoster .wxBtn .box{padding: 10px 10px 10px; background:rgba(255,255,255,1);box-shadow:0px 2px 8px 0px rgba(0,0,0,0.1); text-align: center; position: absolute; bottom:36px; left: 0; white-space: nowrap; border-radius: 3px; display: none;}
+.membPoster .wxBtn:hover .box{display: block;}
+.membPoster .wxBtn .box:before{position: absolute; left: 7px; bottom: -7px; content: ''; border-top: 9px solid #fff; border-left: 7px solid transparent; border-right: 7px solid transparent;}
+.membPoster .wxBtn .box img{width:100px;height:100px;}
+.membPoster .wxBtn .box p{font-size:12px; line-height:16px; color: #666;}
+.membTui{border-left: 1px solid #EBF0F5; padding-left:75px;}
+.membTui p{font-size:14px; color: #999; line-height: 20px; margin-bottom: 22px;}
+.membTui span{font-size:30px; color: #ED2C4B; padding-right: 40px;}
+.membTui small{font-size:20px; margin-right: 4px;}
+.membTui .btn{font-size:14px; color: #fff;display: inline-block; margin-left: 0; line-height: 28px; border-radius:2px; background: #7BBB5E; padding: 0 12px; text-align: center; min-width: 60px; vertical-align: text-bottom;}
+
+
+
+
+
+
+
