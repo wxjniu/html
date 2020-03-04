@@ -481,8 +481,20 @@ line-height:30px; cursor: pointer; text-align: center;}
 /**
  * 会员中心-提现记录
  */
+.alipayAccountBox{margin-bottom: 40px; padding: 10px 0;}
+.alipayAccountBox .tit{font-size: 14px; line-height: 20px; margin-right: 16px;}
+.alipayAccountBox .box{display: inline-block; font-size: 14px; line-height: 20px;}
+.alipayAccountBox .box a{color: #7BBB5E; display: inline-block; margin-left: 8px;}
+.alipayAccountBox .btn{display: inline-block; width:80px;height:40px; padding: 10px 0; background:rgba(123,187,94,1);border-radius:2px; font-size: 14px; color: #fff; line-height: 20px; text-align: center; vertical-align: middle;}
+.alipayAccountBox .inpBox{display: inline-block;}
+.alipayAccountBox .inp{width:344px;height:40px;background:rgba(247,247,247,1);border-radius:2px;border:1px solid rgba(237,237,237,1); padding-left: 8px; font-size: 14px; vertical-align: middle; margin-right: 8px;}
 
-
+.tableBox tr th{background: #FAFBFC; padding: 10px 12px; font-size: 14px; line-height: 20px; text-align: left;}
+.tableBox tr td{background: #fff; padding: 15px 12px; line-height: 20px; font-size: 14px; color: #666666;}
+.tableBox tbody tr{border-bottom: 1px solid #E6EAED;}
+.tableBox tr td .red{color: #ED2C4B;}
+.tableBox tr td .blue{color: #4F80C2;}
+.tableBox tr td .green{color: #7BBB5E;}
 
 
 

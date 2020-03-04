@@ -120,7 +120,10 @@ input {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+	width: 100%;
+	empty-cells: show;
 }
+table td, table th{padding: 0;}
 
 h1,
 h2,
