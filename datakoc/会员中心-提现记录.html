@@ -106,10 +106,10 @@
 					<div class="alipayAccountBox">
 						<span class="tit">支付宝账户</span>
 						<!-- <div class="box">13515608638 <a>修改</a></div> -->
-						<!-- <div class="inpBox">
+						<div class="inpBox" style="display: none;">
 							<input class="inp" type="text" placeholder="请输入你的支付宝账户" />
 							<a class="btn confirm">确定</a>
-						</div> -->
+						</div>
 						<a class="btn add">添加</a>
 					</div>
 					
@@ -216,6 +216,21 @@
 		</section>
 		
 		<!--js-->
-		
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$(".alipayAccountBox .add").click(function (e) {
+					e.stopPropagation();
+					$(this).hide();
+					$(this).parents(".alipayAccountBox").find(".inpBox").show();
+				});
+				$(document).click(function() {
+					$(".alipayAccountBox .add").show();
+					$(".alipayAccountBox .inpBox").hide();
+				});
+				$(".alipayAccountBox .inpBox").click(function(e) {
+					e.stopPropagation();
+				});
+			});
+		</script>
 	</body>
 </html>
