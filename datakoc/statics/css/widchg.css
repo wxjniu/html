@@ -19,6 +19,8 @@
 	.homeBanner .bnr1 .txt h2{font-size: 38px;}
 	.homeBanner .bnr1 .txt .btn{margin-top: 40px;}
 	.swiper-button-next, .swiper-button-prev{top: calc(50% + 62px) !important;}
+	
+	.memberPageRight .darenScreen ul li .pub_list{padding: 0 0px;}
 }
 @media (max-width:1100px){
 	.idxFunct .box img{width: 50%; height: auto;}
@@ -33,7 +35,7 @@
 	.memberPageLeft .box{float: left; border-bottom:0; margin-bottom: 0; padding-bottom: 0;}
 	.memberPageLeft .link{float: left; position: relative;}
 	.memberPageLeft .link a{margin-bottom: 0; padding: 8px 8px;}
-	.memberPageLeft .box ul{padding-left: 0; position: absolute; left:0; top: 36px; white-space: nowrap; background: #fff; box-shadow:0px 2px 8px 0px rgba(0,0,0,0.06); border-radius: 3px; border: 1px solid #f7f7f7; padding: 8px 6px; display: none;}
+	.memberPageLeft .box ul{padding-left: 0; position: absolute; z-index: 1; left:0; top: 36px; white-space: nowrap; background: #fff; box-shadow:0px 2px 8px 0px rgba(0,0,0,0.06); border-radius: 3px; border: 1px solid #f7f7f7; padding: 8px 6px; display: none;}
 	.memberPageLeft .link:hover ul{display: block;}
 	.memberPageLeft .box ul:before{position: absolute; left: 50%; top: -6px; content: ''; border-bottom: 6px solid #fff; border-left: 7px solid transparent; border-right: 7px solid transparent; transform: translate(-50%,0);}
 	.memberPageRight{margin-left: 0;}
@@ -114,6 +116,9 @@
 	.darenScreen .pagewd{margin: 0; width: 100%;}
 	.darenScreen ul li .pub_list{display: none;}
 	.darenScreen ul li .box{display: block; background: #fff; margin: 12px; padding: 12px 12px 12px; border-radius: 3px;}
+	
+	.memberPageRight .darenScreen ul li .box{padding-left: 0; padding-right: 0; margin-left: 0; margin-right: 0;}
+	.memberPageRight .darenScreen ul li .infor .title{padding: 10px 0 10px;}
 }
 @media (max-width:830px){
 	.homeBanner{height: 480px;}
@@ -157,7 +162,20 @@
 	.darenScreen-tab .pagewd{margin-left: 0; margin-right: 0; width: 100%;}
 	.darenScreen-tab ul li a{height: auto; line-height: 34px; font-size: 12px; background: none !important;}
 	
-	
+	.memberPage{margin: 0 12px; width: calc(100% - 24px);}
+	.memberPageLeft{padding: 0px 0;}
+	.memberPageLeft .link a{font-size: 13px;}
+	.memberPageLeft .box ul li a{font-size: 12px;}
+	.memberPageTitle{margin-bottom: 12px;}
+	.memberPageTitle h3{font-size: 12px;}
+	.membInfor .box{float: unset; width: 100%; font-size: 13px; margin-bottom: 12px; min-height: auto; line-height: 26px;}
+	.membInfor .box .title{font-size: 13px;}
+	.membPoster .btn{font-size: 12px; padding: 4px 8px; line-height: 20px;}
+	.membPoster .pub_list_bd{margin: 0 12px;}
+	.membCoupon .tab li a{font-size: 13px;}
+	.membCoupon .lists{overflow: visible;}
+	.membCoupon .lists ul{width: 100%; padding: 0;}
+	.membCoupon .lists li{width: 100%; margin-right: 0; float: unset;}
 }
 @media (max-width:620px){
 	#head .logo{width: 130px; height: 32px; margin-top: 12px;}
