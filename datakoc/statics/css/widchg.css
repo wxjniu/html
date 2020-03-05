@@ -29,7 +29,7 @@
 	
 	.darenScreen ul li .pub_list{padding: 0 0px;}
 	
-	.memberPageLeft{width: 100%; min-height: auto; float: unset; padding: 4px 4px; border-radius: 0; margin-bottom: 20px;}
+	.memberPageLeft{width: 100%; min-height: auto !important; float: unset; padding: 4px 4px; border-radius: 0; margin-bottom: 20px;}
 	.memberPageLeft .box{float: left; border-bottom:0; margin-bottom: 0; padding-bottom: 0;}
 	.memberPageLeft .link{float: left; position: relative;}
 	.memberPageLeft .link a{margin-bottom: 0; padding: 8px 8px;}

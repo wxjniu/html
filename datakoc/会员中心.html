@@ -16,6 +16,14 @@
 		<link rel="stylesheet" href="statics/css/widchg.css" />
 		<script type="text/javascript" src="statics/js/jquery.js"></script>
 		<script type="text/javascript" src="statics/js/common.js"></script>
+		<!-- <style>
+			html,body{height: 100%; width: 100%; overflow: hidden;}
+			body{display: flex; flex-direction: column;}
+			#main{flex: 1;}
+			.memberPage{height: 100%; overflow: hidden;}
+			.memberPageLeft{min-height: 100%;}
+			.memberPageRight{height: 100%; overflow: hidden;}
+		</style> -->
 	</head>
 	<body>
 		<!--头部导航-->
@@ -77,8 +85,7 @@
 				<div class="clear"></div>
 			</div>
 		</section>
-		
-		
+
 		<!--内容-->
 		<section id="main">
 			<div class="memberPage pagewd">
@@ -138,7 +145,7 @@
 		</section>
 		
 		<!--js-->
-		<script type="text/javascript">
+		<script type="text/javascript">			
 			function reinitIframe(){
 				var iframe = document.getElementById("J_iframe");
 				try{
