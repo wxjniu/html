@@ -401,6 +401,71 @@ line-height:30px; cursor: pointer; text-align: center;}
 .opusShow .swiper-slide .txt .box .pin-ico{background-image: url(../images/btn_comment@2x.png);}
 
 /**
+ * 价格
+ */
+.pricePage{padding: 40px 0;}
+.priceTable{position: relative;}
+.priceTable .cols{content: ''; width: 22%; height: 100%; position: absolute; z-index: -1; background: #fff; top: 0; background:rgba(255,255,255,1);box-shadow:0px 2px 40px 0px rgba(0,0,0,0.1);border-radius:8px; display: none;}
+.priceTable .cols1{left: 0; width: 28%;}
+.priceTable .cols2{left: 28%;}
+.priceTable .cols3{left: 52%;}
+.priceTable .cols4{left: 76%;}
+.priceTable table tr td{text-align: center; font-size: 14px; line-height: 18px; font-weight:400; width: 24%; vertical-align: top;}
+.priceTable table tr td:first-child{text-align: left; padding-left: 40px; width: 28%;}
+.priceTable table tr td .greenColor{color: #4FBE00;}
+.priceTable table tr.nr td{padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #EDEDED;}
+.priceTable table tr.title td{font-size: 16px; color: #999; line-height: 20px; padding-top: 32px; padding-bottom: 4px;}
+.priceTable table tr.row1 td{padding-top: 25px; padding-bottom: 26px;}
+.priceTable table tr.row1 h3{font-size:18px; line-height: 24px; margin-bottom: 20px; font-weight: 600;}
+.priceTable table tr.row1 h3 small{font-size:14px; font-weight:400;}
+.priceTable table tr.row1 .num{font-size:60px; line-height: 60px; position: relative; display: inline-block; margin-bottom: 16px;}
+.priceTable table tr.row1 .num sup{font-size:18px;position: absolute; left: -18px; top: 10px; line-height: 18px;}
+.priceTable table tr.row1 .num sub{font-size:18px; color: #666; position: absolute; right: -30px; bottom: 10px; line-height: 18px;}
+.priceTable table tr.row1 .btn{width:120px;height:40px;border-radius:4px; font-size:16px;color:rgba(255,255,255,1);line-height:40px; display: inline-block;}
+.priceTable table tr.row1 .btn.blue{background:rgba(15,111,222,1);}
+.priceTable table tr.row1 .btn.red{background:rgba(244,87,120,1);}
+.priceTable table tr.row1 .btn.green{background:rgba(123,187,94,1);}
+.priceTable table tr.row1 .checkboxBox{font-size: 16px; color: #666666; padding: 20px 0;}
+.priceTable table tr.row1 .checkboxBox .inpBox{display: inline-block; margin-left: 40px;}
+.priceTable table tr.row1 .checkboxBox span{font-size: 14px; color: #999; margin: 0 4px;}
+.priceTable table tr.row1 .checkboxBox .switch{position: relative;width: 44px;height: 24px;border: 0; outline: 0; border-radius: 16px;background-color: #F45778;-webkit-transition: background-color .1s,border .1s;transition: background-color .1s,border .1s;  -webkit-appearance: none; appearance: none; cursor: pointer; vertical-align: middle;}
+.priceTable table tr.row1 .checkboxBox .switch:after{content: " ";position: absolute;top: 4px;left: 4px;width: 16px;height: 16px;border-radius: 100%;background-color: #fff;}
+.priceTable table tr.row1 .checkboxBox .switch:checked:after{right: 4px; left: auto;}
+
+.mask_bg{background:rgba(0,0,0,0.5); position: fixed; z-index: 99; left: 0; top: 0; width: 100%; height: 100%; display: none;}
+.buyWayMask{position: fixed; z-index: 100; left: 0; top: 0; width: 100%; height: 100%; display: none;}
+.buyWay{width:640px;height:640px; background: #fff; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); display: flex; flex-direction: column;}
+.buyWay .top{height:50px;background:rgba(247,247,250,1); padding: 16px 20px 0 0; text-align: right;}
+.buyWay .top .close{display: inline-block; width: 16px; height: 16px; background: url(../images/btn_close@3x.png) no-repeat center; background-size: contain;}
+.buyWay .bottom{height:50px;background:rgba(247,247,250,1); font-size:16px;color:rgba(102,102,102,1);line-height:50px; padding: 0 24px;}
+.buyWay .cont{flex: 1; padding: 32px 60px 0;}
+.buyWay .cont h3{font-size: 18px; line-height: 22px; margin-bottom: 20px;}
+.buyWay .sets{overflow: hidden;}
+.buyWay .sets ul{width: calc(100% + 60px);}
+.buyWay .sets li{float: left; width: 230px; margin-right: 60px; margin-bottom: 32px; height:142px;border-radius:4px;border:1px solid rgba(123,187,94,1); text-align: center; padding-top: 24px; cursor: pointer;}
+.buyWay .sets li.active{background:rgba(123,187,94,1);}
+.buyWay .sets li h4{font-size:20px;font-weight:normal;color:rgba(123,187,94,1);line-height:24px;}
+.buyWay .sets li .price{font-size:40px;color:rgba(123,187,94,1);line-height:44px; margin: 8px 0 2px;}
+.buyWay .sets li .price small{font-size:18px;line-height:28px; margin-right: 8px;}
+.buyWay .sets li p{font-size:14px;color:rgba(102,102,102,1);line-height:18px;}
+.buyWay .sets li.active h4,.buyWay .sets li.active .price,.buyWay .sets li.active p{color: #fff;}
+.buyWay .ways{overflow: hidden;}
+.buyWay .ways ul{width: calc(100% + 24px);}
+.buyWay .ways li{float: left; margin-right: 24px; margin-bottom: 24px; width:138px;height:42px;border-radius:4px;border:1px solid rgba(204,204,204,1); text-align: center; cursor: pointer; font-size:16px;color:rgba(153,153,153,1);line-height:40px;}
+.buyWay .ways li .ico{display: inline-block; width: 22px; height: 22px; background: url() no-repeat center; background-size: contain; margin-right: 8px; vertical-align: text-bottom;}
+.buyWay .ways li .ico-wx{background-image: url(../images/icon_weixin@3x.png);}
+.buyWay .ways li .ico-zfb{background-image: url(../images/icon_zhifubao@3x.png);}
+.buyWay .ways li.active{border-color: #7BBB5E; position: relative; color: #7BBB5E;}
+.buyWay .ways li.active:after{content: ''; width: 15px; height: 15px; background: url(../images/icon_selected@3x.png) no-repeat center; background-size: contain; position: absolute; right: 0; bottom: 0;}
+.buyWay .ways li.active .ico-wx{background-image: url(../images/icon_weixin_pre@3x.png);}
+.buyWay .ways li.active .ico-zfb{background-image: url(../images/icon_zhifubao_pre@3x.png);}
+.buyWay .code{text-align: center;}
+.buyWay .code img{width: 120px; height: 120px;}
+
+
+
+
+/**
  * 会员中心
  */
 .memberPage{padding: 20px 0;}

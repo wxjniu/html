@@ -96,7 +96,7 @@
 	.idxRank .box{float: unset; width: 100%; margin-bottom: 60px;}
 	
 	.idxFunct .box .txt.fl{padding-top: 50px;} 
-	.idxFunct .box .txt.fr{padding-top: 28px;} 
+	.idxFunct .box .txt.fr{padding-top: 28px;}
 }
 @media (max-width:900px){
 	.darenScreen-tab ul li a{width: auto; width: 100%;}
@@ -116,6 +116,8 @@
 	.membCoupon .lists li{width: calc(50% - 10px);}
 	.memberPageRightCont .darenScreen ul li .box{padding-left: 0; padding-right: 0; margin-left: 0; margin-right: 0;}
 	.memberPageRightCont .darenScreen ul li .infor .title{padding: 10px 0 10px;}
+	
+	.priceTable table tr.row1 .checkboxBox .inpBox{margin-left: 0; display: block; margin-top: 8px;}
 }
 @media (max-width:830px){
 	.homeBanner{height: 480px;}
@@ -131,6 +133,21 @@
 	.idxPlat ul li{width: 33.33%; margin-bottom: 25px;}
 	.idxPlat ul li.two,.idxPlat ul li.three{margin-top: 0;}
 	.idxPlat ul li img{opacity: 1;}
+	
+	.priceTable{width: 700px;}
+	.priceTable table tr td{padding-left: 5px; padding-right: 5px; font-size: 12px;}
+	.priceTable table tr td:first-child{padding-left: 10px;}
+	.priceTable table tr.title td{font-size: 14px; padding-top: 22px;}
+	.priceTable table tr.row1 td{padding-bottom: 15px;}
+	.priceTable table tr.row1 h3{font-size: 16px;}
+	.priceTable table tr.row1 h3 small{font-size: 12px;}
+	.priceTable table tr.row1 .num{font-size: 30px; line-height: 30px;}
+	.priceTable table tr.row1 .num sup{font-size: 12px; line-height: 12px; left: -12px; top: 4px;}
+	.priceTable table tr.row1 .num sub{font-size: 12px; line-height: 12px; right: -20px; bottom: 4px;}
+	.priceTable table tr.row1 .btn{width: auto; padding: 0 10px; height:auto; line-height: 30px; font-size: 13px;}
+	.priceTable table tr.row1 .checkboxBox{font-size: 14px; padding-top: 8px;}
+	.priceTable table tr.nr td{padding-top: 12px; padding-bottom: 12px;}
+	.buyWayMask{transform: scale(0.7);}
 }
 @media (max-width:680px){
 	.homeBanner{height: auto; padding-top: 156px; padding-bottom: 15px;}
@@ -200,6 +217,8 @@
 	.loginNr .phone .inpBox .getYzm{font-size: 14px;}
 	.loginNr .phone .submit{height: 40px; font-size: 15px;}
 	.loginNr .code h3{padding: 30px 0 0; margin-bottom: 15px;}
+	
+	.buyWayMask{transform: scale(0.6);}
 }
 @media (max-width:600px){	
 	.idxRank .title{font-size: 24px; margin-bottom: 20px;}
@@ -220,6 +239,8 @@
 	.opusShow .swiper-slide{padding: 32.47% 0;}
 	.opusShow.swiper-container{padding: 0;}
 	.opusShow .swiper-button-prev,.opusShow .swiper-button-next,.opusShow .lf,.opusShow .rt{display: none;}
+	
+	.buyWayMask{transform: scale(0.5);}
 }
 @media (max-width:530px){	
 	.idxCase ul li{padding-left: 20px; padding-right: 20px;}
@@ -266,6 +287,10 @@
 	
 	.darenDelt .right .title1 .ico span{left: -70px;}
 	.darenDelt .right .title1 .ico span:before{right: 73px;}
+}
+
+@media (max-width:340px){	
+	.buyWayMask{transform: scale(0.45);}
 }
 
 

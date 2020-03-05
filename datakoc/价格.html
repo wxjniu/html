@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta http-equiv="Cache-Control" content="no-siteapp">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<title>价格</title>
+		<link rel="stylesheet" href="statics/css/animate.css" />
+		<link rel="stylesheet" href="statics/css/base.css" />
+		<link rel="stylesheet" href="statics/css/style.css" />
+		<link rel="stylesheet" href="statics/css/widchg.css" />
+		<script type="text/javascript" src="statics/js/jquery.js"></script>
+		<script type="text/javascript" src="statics/js/common.js"></script>
+	</head>
+	<body>
+		<!--头部导航-->
+		<div id="headH100"></div><!--占据导航高度-勿删！ -->
+		<section id="head">
+			<div class="pagewd">
+				<a href="#" class="logo fl"></a>
+				<div class="fr right">
+					<i class="ico-menu" id="menu"></i>
+					<div class="menuBox">
+						<ul class="nav fl" id="nav">
+							<li>
+								<a href="#" class="active">首页</a>
+							</li>
+							<li>
+								<a href="#">达人榜单</a>
+							</li>
+							<li>
+								<a href="#">达人筛选</a>
+							</li>
+							<li>
+								<a href="#">严选平台</a>
+							</li>
+							<li>
+								<a href="javascript:;">带货工具</a>
+								<div class="childLis">
+									<ul>
+										<li><a href="#">子菜单</a></li>
+										<li><a href="#">子菜单</a></li>
+										<li><a href="#">子菜单</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<!-- <div class="fl btnBox">
+							<a href="#" class="btn2" id="logoFn">登录</a>						
+						</div> -->
+						<div class="userBox fl">
+							<div class="userBtn">
+								<span class="pic" style="background-image: url();"></span>个人中心
+							</div>
+							<div class="box">
+								<div class="name">麦扣</div>
+								<div class="id">ID:123456</div>
+								<div class="btn"><a href="#" class="bg1">开通VIP</a><a href="#">享更多特权</a></div>
+								<a class="link">我的收藏夹</a>
+								<a class="link">退出</a>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="searchBox fl" id="searchBox">
+					<div class="box fl">
+						<input type="text" placeholder="请输入搜索内容" class="inp" />
+						<span class="subBtn"></span>
+					</div>
+					<p class="fl">可以搜索微信文章，新闻热点，网盘资源等</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</section>
+		
+		
+		<!--内容-->
+		<section id="main">
+			<div class="pricePage pagewd">
+				<div class="priceTable">
+					<div class="cols cols1"></div>
+					<div class="cols cols2"></div>
+					<div class="cols cols3"></div>
+					<div class="cols cols4"></div>
+					<table>
+						<tr class="row1">
+							<td>
+								<h3>功能说明</h3>
+								<div class="checkboxBox">价格 
+									<div class="inpBox">
+										<span>按年</span>
+										<input class="switch" id="switch" type="checkbox" />
+										<span>按月</span>
+									</div>
+								</div>
+							</td>
+							<td>
+								<h3>普通会员</h3>
+								<div class="num"><sup>¥</sup>0</div>
+								<div><a class="btn green">免费试用</a></div>
+							</td>
+							<td>
+								<h3>VIP会员<small>(活动期间)</small></h3>
+								<div class="num"><sup>¥</sup><span id="vip">69</span><sub>/月</sub></div>
+								<div><a class="btn red buy-btn">立即购买</a></div>
+							</td>
+							<td>
+								<h3>企业会员</h3>
+								<div class="num"><sup>¥</sup><span id="qiye">399</span><sub>/月</sub></div>
+								<div><a class="btn blue buy-btn">立即购买</a></div>
+							</td>
+						</tr>
+						<tr class="title">
+							<td>排行榜</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr class="nr">
+							<td>达人榜</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>新锐榜</td>
+							<td></td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>带货达人</td>
+							<td></td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="title">
+							<td>达人智选</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr class="nr">
+							<td>达人属性筛选</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>粉丝属性筛选</td>
+							<td></td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>商业化属性筛选</td>
+							<td></td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="title">
+							<td>粉丝重合度对比</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr class="nr">
+							<td>达人数据导出</td>
+							<td></td>
+							<td><span class="greenColor">100</span> 次/月</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>达人对比次数</td>
+							<td></td>
+							<td><span class="greenColor">100</span> 次/月</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>达人对比报告</td>
+							<td></td>
+							<td><span class="greenColor">100</span> 次/月</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>达人智能匹配（撮合交易）</td>
+							<td></td>
+							<td><span class="greenColor">100</span> 次/月</td>
+							<td></td>
+						</tr>
+						<tr class="title">
+							<td>达人详情</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr class="nr">
+							<td>账号基础数据</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>视频互动类数据</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>粉丝画像分析</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>店铺分析</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>MNC机构数据</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>达人报价信息</td>
+							<td></td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>达人联系方式</td>
+							<td></td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="title">
+							<td>电商分析</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr class="nr">
+							<td>商品搜索</td>
+							<td>
+								显示 <span class="greenColor">TOP 100</span> 条数据
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>带货达人榜</td>
+							<td>
+								显示 <span class="greenColor">TOP 100</span> 条数据
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>全网热卖商品</td>
+							<td>
+								显示 <span class="greenColor">TOP 100</span> 条数据
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>严选好物榜</td>
+							<td>
+								显示 <span class="greenColor">TOP 100</span> 条数据
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>带货视频榜</td>
+							<td>
+								显示 <span class="greenColor">TOP 100</span> 条数据
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="title">
+							<td>电商-商品详情</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr class="nr">
+							<td>商品基础数据</td>
+							<td></td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>商品流量趋势</td>
+							<td></td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>关联视频分析</td>
+							<td></td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>售卖达人分析</td>
+							<td></td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="title">
+							<td>品牌广告优选</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr class="nr">
+							<td>明星头部达人方案优选</td>
+							<td></td>
+							<td></td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>纯佣合作达人智选池</td>
+							<td></td>
+							<td></td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>每周一份竞品投放分析报告</td>
+							<td></td>
+							<td></td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="title">
+							<td>增值服务</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr class="nr">
+							<td>专属客户经理咨询服务</td>
+							<td></td>
+							<td></td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>专属品牌带货群</td>
+							<td></td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>线上视频教学</td>
+							<td></td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="nr">
+							<td>线下交流论坛</td>
+							<td></td>
+							<td></td>
+							<td>
+								<img src="statics/images/icon_right@2x.png" width="16" height="" />
+							</td>
+						</tr>
+						<tr class="row1">
+							<td>
+								<h3>选择一个方案</h3>
+							</td>
+							<td>
+								<h3>普通会员</h3>
+								<div><a class="btn green">免费试用</a></div>
+							</td>
+							<td>
+								<h3>VIP会员<small>(活动期间)</small></h3>
+								<div><a class="btn red buy-btn">立即购买</a></div>
+							</td>
+							<td>
+								<h3>企业会员</h3>
+								<div><a class="btn blue buy-btn">立即购买</a></div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+		
+		<!--底部-->
+		<section id="foot">
+			<div class="pagewd">
+				<div class="abt fl">
+					<p>为品牌商或代理提供网红达人智选平台<br/>通过算法为品牌商提供所需的KOL以及数据跟踪和社交<br/>媒体动态,为公关公司或MCN机构提供达人运营数据</p>
+				</div>
+				<div class="con fl">
+					<p>商务邮箱：nfo@lebao.tech</p>
+					<p>咨询电话：400-687-8087</p>
+					<p>企业网址：www.datakoc.com</p>
+				</div>
+				<div class="links fl">
+					<ul>
+						<li><a href="#">关于我们</a></li>
+						<li><a href="#">数据合作</a></li>
+						<li><a href="#">商务合作</a></li>
+					</ul>
+				</div>
+				<div class="codes fr">
+					<img src="statics/images/img_ma01@2x.png" />
+					<img src="statics/images/img_ma01@2x.png" />
+				</div>
+				<div class="clear"></div>
+				<hr />
+				<p class="cer">©2019 地址：上海市嘉定博园路8200弄日月光伯爵湾1304    沪ICP备19041435号-4</p>
+			</div>
+		</section>
+		
+		<!--弹窗-->
+		<div class="buyWayMask">
+			<div class="buyWay">
+				<div class="top"><a href="javascript:;" class="close"></a></div>
+				<div class="cont">
+					<h3>选择开通套餐</h3>
+					<div class="sets">
+						<ul>
+							<li class="active">
+								<h4>月度会员</h4>
+								<div class="price"><small>¥</small>69</div>
+								<p>2.3 元/天</p>
+							</li>
+							<li>
+								<h4>年度会员</h4>
+								<div class="price"><small>¥</small>699</div>
+								<p>1.9 元/天</p>
+							</li>
+						</ul>
+					</div>
+					<h3>选择支付方式</h3>
+					<div class="ways">
+						<ul>
+							<li class="active"><i class="ico ico-wx"></i>微信支付</li>
+							<li><i class="ico ico-zfb"></i>支付宝支付</li>
+						</ul>
+					</div>
+					<div class="code">
+						<img src="statics/images/img_ma01@2x.png" />
+					</div>
+				</div>
+				<div class="bottom">如需发票，请联系客服，微信号：ffy1203605498</div>
+			</div>
+		</div>
+		<div class="mask_bg"></div>
+		
+		<!--js-->
+		<script type="text/javascript">			
+			$(document).ready(function(){
+				$(".priceTable table tr td:first-child").hover(function () {
+					$(".priceTable .cols1").show();
+				}, function () {
+					$(".priceTable .cols1").hide();
+				});
+				$(".priceTable table tr td:nth-child(2)").hover(function () {
+					$(".priceTable .cols2").show();
+				}, function () {
+					$(".priceTable .cols2").hide();
+				});
+				$(".priceTable table tr td:nth-child(3)").hover(function () {
+					$(".priceTable .cols3").show();
+				}, function () {
+					$(".priceTable .cols3").hide();
+				});
+				$(".priceTable table tr td:nth-child(4)").hover(function () {
+					$(".priceTable .cols4").show();
+				}, function () {
+					$(".priceTable .cols4").hide();
+				});
+				
+				$("#switch").click(function () {
+					if($(this).is(":checked")){
+						$("#vip").text(99);
+						$("#qiye").text(99);
+					}else{
+						$("#vip").text(69);
+						$("#qiye").text(399);
+					}
+				});
+				
+				/**
+				 * 购买方式
+				 */
+				$(".buy-btn").click(function () {
+					$(".buyWayMask").show();
+					$(".mask_bg").show();
+				});
+				$(".buyWayMask .close").click(function () {
+					$(".buyWayMask").hide();
+					$(".mask_bg").hide();
+				});
+				$(".buyWay .sets li").click(function () {
+					$(".buyWay .sets li").removeClass("active");
+					$(this).addClass("active");
+				});
+				$(".buyWay .ways li").click(function () {
+					$(".buyWay .ways li").removeClass("active");
+					$(this).addClass("active");
+				});
+			});
+		</script>
+	</body>
+</html>
