@@ -404,7 +404,8 @@ line-height:30px; cursor: pointer; text-align: center;}
  * 会员中心
  */
 .memberPage{padding: 20px 0;}
-.memberPageLeft{width:180px;min-height:760px; padding: 30px 20px; background:rgba(248,248,248,1);border-radius:4px; float: left;}
+/* .memberPageLeft{width:180px;min-height:760px; padding: 30px 20px; background:rgba(248,248,248,1);border-radius:4px; float: left;} */
+.memberPageLeft{width:180px;min-height:600px; padding: 30px 20px; background:rgba(248,248,248,1);border-radius:4px; float: left;}
 .memberPageLeft .box{border-bottom: 1px solid #E6E6E6; margin-bottom: 20px; padding-bottom: 10px;}
 .memberPageLeft .box:last-child{border-bottom: 0;}
 .memberPageLeft .box a{display: block; padding: 10px 0 10px 20px; line-height: 20px; color: #666; font-size:16px; margin-bottom: 10px;}
@@ -471,11 +472,11 @@ line-height:30px; cursor: pointer; text-align: center;}
 /**
  * 会员中心-我的关注
  */
-.memberPageRight .darenScreen ul li .pub_list{padding-right: 10px;}
-.memberPageRight .darenScreen ul li:last-child .pub_list{border-bottom: 1px solid #eee;}
-.memberPageRight .darenScreen .title a{color: #4F80C2;}
-.memberPageRight .darenScreen .price{padding-left: 20px;}
-.memberPageRight .darenScreen ul li .box{border-bottom: 1px solid #eee;}
+.memberPageRightCont .darenScreen ul li .pub_list{padding-right: 10px;}
+.memberPageRightCont .darenScreen ul li:last-child .pub_list{border-bottom: 1px solid #eee;}
+.memberPageRightCont .darenScreen .title a{color: #4F80C2;}
+.memberPageRightCont .darenScreen .price{padding-left: 20px;}
+.memberPageRightCont .darenScreen ul li .box{border-bottom: 1px solid #eee;}
 
 /**
  * 会员中心-提现记录

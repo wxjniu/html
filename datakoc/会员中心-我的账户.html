@@ -17,240 +17,126 @@
 		<script type="text/javascript" src="statics/js/jquery.js"></script>
 		<script type="text/javascript" src="statics/js/common.js"></script>
 	</head>
-	<body>
-		<!--头部导航-->
-		<div id="headH100"></div><!--占据导航高度-勿删！ -->
-		<section id="head">
-			<div class="pagewd">
-				<a href="#" class="logo fl"></a>
-				<div class="fr right">
-					<i class="ico-menu" id="menu"></i>
-					<div class="menuBox">
-						<ul class="nav fl" id="nav">
-							<li>
-								<a href="#" class="active">首页</a>
-							</li>
-							<li>
-								<a href="#">达人榜单</a>
-							</li>
-							<li>
-								<a href="#">达人筛选</a>
-							</li>
-							<li>
-								<a href="#">严选平台</a>
-							</li>
-							<li>
-								<a href="javascript:;">带货工具</a>
-								<div class="childLis">
-									<ul>
-										<li><a href="#">子菜单</a></li>
-										<li><a href="#">子菜单</a></li>
-										<li><a href="#">子菜单</a></li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-						<!-- <div class="fl btnBox">
-							<a href="#" class="btn2" id="logoFn">登录</a>						
-						</div> -->
-						<div class="userBox fl">
-							<div class="userBtn">
-								<span class="pic" style="background-image: url();"></span>个人中心
-							</div>
-							<div class="box">
-								<div class="name">麦扣</div>
-								<div class="id">ID:123456</div>
-								<div class="btn"><a href="#" class="bg1">开通VIP</a><a href="#">享更多特权</a></div>
-								<a class="link">我的收藏夹</a>
-								<a class="link">退出</a>
-							</div>
-						</div>	
-					</div>
-				</div>
-				<div class="searchBox fl" id="searchBox">
-					<div class="box fl">
-						<input type="text" placeholder="请输入搜索内容" class="inp" />
-						<span class="subBtn"></span>
-					</div>
-					<p class="fl">可以搜索微信文章，新闻热点，网盘资源等</p>
-				</div>
-				<div class="clear"></div>
-			</div>
-		</section>
-		
-		
+	<body>		
 		<!--内容-->
-		<section id="main">
-			<div class="memberPage pagewd">
-				<div class="memberPageLeft">
-					<div class="box">
-						<div class="link">
-							<a href="#" class="active">我的账户</a>
-							<ul>
-								<li><a href="#">专属海报</a></li>
-								<li><a href="#">优惠券</a></li>
-							</ul>
+		<div class="memberPageRightCont" style="width: 100%; overflow: hidden;">
+			<div class="memberPageTitle"><h3>账户信息</h3></div>
+			<div class="row mb40">
+				<div class="col-xs-7 col-sm-12">
+					<div class="membInfor">
+						<div class="box">
+							<span class="title">当前等级</span><span class="lev orange">VIP会员</span><a class="btn">升级会员<i class="ico-update"></i></a>
 						</div>
-					</div>
-					<div class="box">
-						<div class="link"><a href="#">分销管理</a></div>
-						<div class="link"><a href="#">提现记录</a></div>
-					</div>
-					<div class="box">
-						<div class="link"><a href="#">我的关注</a></div>
-						<div class="link"><a href="#">合作达人</a></div>
-					</div>
-					<div class="clear"></div>
-				</div>
-				<div class="memberPageRight">
-					<div class="memberPageTitle"><h3>账户信息</h3></div>
-					<div class="row mb40">
-						<div class="col-xs-7 col-md-12">
-							<div class="membInfor">
-								<div class="box">
-									<span class="title">当前等级</span><span class="lev orange">VIP会员</span><a class="btn">升级会员<i class="ico-update"></i></a>
-								</div>
-								<div class="box">
-									<span class="title">绑定手机</span>13515608638<a>修改</a>
-								</div>
-								<div class="box">
-									<span class="title">绑定微信</span><div class="headImg"><span style="background-image: url();"></span>本白设计</div>
-								</div>
-								<div class="box">
-									<span class="title">绑定邮箱</span><a class="btn">绑定</a>
-								</div>
-							</div>
+						<div class="box">
+							<span class="title">绑定手机</span>13515608638<a>修改</a>
 						</div>
-						<div class="col-xs-5 col-md-12">
-							<div class="membPlan pub_list">
-								<div class="pub_list_bd">
-									<small>方案类型</small>
-									<p>会员版</p>
-								</div>
-								<div class="pub_list_bd">
-									<small>到期日期</small>
-									<p>2020-03-12</p>
-								</div>
-							</div>
+						<div class="box">
+							<span class="title">绑定微信</span><div class="headImg"><span style="background-image: url();"></span>本白设计</div>
 						</div>
-					</div>
-					<div class="memberPageTitle"><h3>专属海报</h3></div>
-					<div class="row mb40">
-						<div class="col-xs-8 col-md-12">
-							<div class="membPoster pub_list">
-								<a href="#" class="btn">下载推广海报</a>
-								<div class="pub_list_bd">
-									<input type="text" value="https://shimo.im/docs/crkDGcD6kyRdhtkC/read" readonly="readonly" />
-									<span>复制</span>
-								</div>
-								<div class="wxBtn">
-									<i class="ico-wx"></i>
-									<div class="box">
-										<img src="statics/images/img_ma01@2x.png" />
-										<p>我的推广邀请码</p>
-									</div>
-								</div>
-							</div>
+						<div class="box">
+							<span class="title">绑定邮箱</span><a class="btn">绑定</a>
 						</div>
-						<div class="col-xs-4 col-md-12">
-							<div class="membTui">
-								<p>推广奖励</p>
-								<span><small>¥</small>999</span>
-								<a class="btn">提现</a>
-							</div>
-						</div>
-					</div>
-					<div class="memberPageTitle"><h3>优惠券</h3></div>
-					<div class="membCoupon">
-						<ul class="tab">
-							<li>
-								<a class="active">未使用</a>
-							</li>
-							<li>
-								<a>已使用</a>
-							</li>
-							<li>
-								<a>已过期</a>
-							</li>
-						</ul>
-						<div class="lists">
-							<ul>
-								<li class="pub_list">
-									<div class="price">
-										<small>￥</small>100
-									</div>
-									<div class="pub_list_bd">
-										<h3>新用户专享优惠券</h3>
-										<p>使用范围：无限制使用</p>
-										<p>使用期限：2020.3.12-2020.4.15</p>
-									</div>
-								</li>
-								<li class="pub_list used">
-									<img class="ico" src="statics/images/label_used@2x.png" />
-									<div class="price">
-										<small>￥</small>100
-									</div>
-									<div class="pub_list_bd">
-										<h3>新用户专享优惠券</h3>
-										<p>使用范围：无限制使用</p>
-										<p>使用期限：2020.3.12-2020.4.15</p>
-									</div>
-								</li>
-								<li class="pub_list over">
-									<img class="ico" src="statics/images/label_lated@2x.png" />
-									<div class="price">
-										<small>￥</small>100
-									</div>
-									<div class="pub_list_bd">
-										<h3>新用户专享优惠券</h3>
-										<p>使用范围：无限制使用</p>
-										<p>使用期限：2020.3.12-2020.4.15</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-						
-						<!--分页页码-->
-						<div class="pagingBox">
-							<span class="prev iconfont iconslider_last"></span>
-							<a href="#" class="on">1</a>
-							<a href="#">2</a>
-							<span class="next iconfont iconslider_next"></span>			
-						</div>
-						<div class="mb40"></div>
 					</div>
 				</div>
-				<div class="clear"></div>
+				<div class="col-xs-5 col-sm-12">
+					<div class="membPlan pub_list">
+						<div class="pub_list_bd">
+							<small>方案类型</small>
+							<p>会员版</p>
+						</div>
+						<div class="pub_list_bd">
+							<small>到期日期</small>
+							<p>2020-03-12</p>
+						</div>
+					</div>
+				</div>
 			</div>
-		</section>
-		
-		<!--底部-->
-		<section id="foot">
-			<div class="pagewd">
-				<div class="abt fl">
-					<p>为品牌商或代理提供网红达人智选平台<br/>通过算法为品牌商提供所需的KOL以及数据跟踪和社交<br/>媒体动态,为公关公司或MCN机构提供达人运营数据</p>
+			<div class="memberPageTitle"><h3>专属海报</h3></div>
+			<div class="row mb40">
+				<div class="col-xs-8 col-sm-12">
+					<div class="membPoster pub_list">
+						<a href="#" class="btn">下载推广海报</a>
+						<div class="pub_list_bd">
+							<input type="text" value="https://shimo.im/docs/crkDGcD6kyRdhtkC/read" readonly="readonly" />
+							<span>复制</span>
+						</div>
+						<div class="wxBtn">
+							<i class="ico-wx"></i>
+							<div class="box">
+								<img src="statics/images/img_ma01@2x.png" />
+								<p>我的推广邀请码</p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="con fl">
-					<p>商务邮箱：nfo@lebao.tech</p>
-					<p>咨询电话：400-687-8087</p>
-					<p>企业网址：www.datakoc.com</p>
+				<div class="col-xs-4 col-sm-12">
+					<div class="membTui">
+						<p>推广奖励</p>
+						<span><small>¥</small>999</span>
+						<a class="btn">提现</a>
+					</div>
 				</div>
-				<div class="links fl">
+			</div>
+			<div class="memberPageTitle"><h3>优惠券</h3></div>
+			<div class="membCoupon">
+				<ul class="tab">
+					<li>
+						<a class="active">未使用</a>
+					</li>
+					<li>
+						<a>已使用</a>
+					</li>
+					<li>
+						<a>已过期</a>
+					</li>
+				</ul>
+				<div class="lists">
 					<ul>
-						<li><a href="#">关于我们</a></li>
-						<li><a href="#">数据合作</a></li>
-						<li><a href="#">商务合作</a></li>
+						<li class="pub_list">
+							<div class="price">
+								<small>￥</small>100
+							</div>
+							<div class="pub_list_bd">
+								<h3>新用户专享优惠券</h3>
+								<p>使用范围：无限制使用</p>
+								<p>使用期限：2020.3.12-2020.4.15</p>
+							</div>
+						</li>
+						<li class="pub_list used">
+							<img class="ico" src="statics/images/label_used@2x.png" />
+							<div class="price">
+								<small>￥</small>100
+							</div>
+							<div class="pub_list_bd">
+								<h3>新用户专享优惠券</h3>
+								<p>使用范围：无限制使用</p>
+								<p>使用期限：2020.3.12-2020.4.15</p>
+							</div>
+						</li>
+						<li class="pub_list over">
+							<img class="ico" src="statics/images/label_lated@2x.png" />
+							<div class="price">
+								<small>￥</small>100
+							</div>
+							<div class="pub_list_bd">
+								<h3>新用户专享优惠券</h3>
+								<p>使用范围：无限制使用</p>
+								<p>使用期限：2020.3.12-2020.4.15</p>
+							</div>
+						</li>
 					</ul>
 				</div>
-				<div class="codes fr">
-					<img src="statics/images/img_ma01@2x.png" />
-					<img src="statics/images/img_ma01@2x.png" />
+				
+				<!--分页页码-->
+				<div class="pagingBox">
+					<span class="prev iconfont iconslider_last"></span>
+					<a href="#" class="on">1</a>
+					<a href="#">2</a>
+					<span class="next iconfont iconslider_next"></span>			
 				</div>
-				<div class="clear"></div>
-				<hr />
-				<p class="cer">©2019 地址：上海市嘉定博园路8200弄日月光伯爵湾1304    沪ICP备19041435号-4</p>
+				<div class="mb40"></div>
 			</div>
-		</section>
+		</div>
 		
 		<!--js-->
 		

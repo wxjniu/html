@@ -19,8 +19,6 @@
 	.homeBanner .bnr1 .txt h2{font-size: 38px;}
 	.homeBanner .bnr1 .txt .btn{margin-top: 40px;}
 	.swiper-button-next, .swiper-button-prev{top: calc(50% + 62px) !important;}
-	
-	.memberPageRight .darenScreen ul li .pub_list{padding: 0 0px;}
 }
 @media (max-width:1100px){
 	.idxFunct .box img{width: 50%; height: auto;}
@@ -59,19 +57,10 @@
 	.darenScreen1-area .lis{margin-right: 0; margin-left: 0; clear:both; padding-top: 12px; box-sizing: content-box; background:rgba(245,246,247,1);border-radius:3px;}
 	.darenScreen1-area .lis a{font-size: 12px; padding: 0 0; width: calc(25% - 10px); margin: 0 5px 12px; text-align: center; background:rgba(245,246,247,1);border-radius:2px; overflow: hidden; height: 28px;}
 	.darenScreen1-area .lis a.active{background:rgba(79,128,194,1); color: #fff;}
-	
-	.membPlan{border: 1px solid #EBF0F5; padding: 15px; margin-top: 12px;}
-	.membPlan .pub_list_bd{padding-left: 0; text-align: center;}
-	.membPlan .pub_list_bd p{margin-top: 12px;}
-	.membPoster{padding-top: 0;}
-	.membTui{border-left: 0; padding-left: 0; margin-top: 15px;}
-	.membTui p{margin-bottom: 0; display: inline-block; margin-right: 10px;}
 }
 @media (max-width:980px){
 	#foot .abt{display: none;}
 	#foot .con{padding-right: 80px;}
-	
-	.membCoupon .lists li{width: calc(50% - 10px);}
 }
 @media (max-width:940px){
 	#head .ico-menu{display: inline-block; width: 30px; height: 30px; background: url(../images/menu-ico.png) no-repeat center; background-size: contain; cursor: pointer;}
@@ -117,8 +106,16 @@
 	.darenScreen ul li .pub_list{display: none;}
 	.darenScreen ul li .box{display: block; background: #fff; margin: 12px; padding: 12px 12px 12px; border-radius: 3px;}
 	
-	.memberPageRight .darenScreen ul li .box{padding-left: 0; padding-right: 0; margin-left: 0; margin-right: 0;}
-	.memberPageRight .darenScreen ul li .infor .title{padding: 10px 0 10px;}
+	.memberPageRightCont .darenScreen ul li .pub_list{padding: 0 0px;}
+	.membPlan{border: 1px solid #EBF0F5; padding: 15px; margin-top: 12px;}
+	.membPlan .pub_list_bd{padding-left: 0; text-align: center;}
+	.membPlan .pub_list_bd p{margin-top: 12px;}
+	.membPoster{padding-top: 0;}
+	.membTui{border-left: 0; padding-left: 0; margin-top: 15px;}
+	.membTui p{margin-bottom: 0; display: inline-block; margin-right: 10px;}
+	.membCoupon .lists li{width: calc(50% - 10px);}
+	.memberPageRightCont .darenScreen ul li .box{padding-left: 0; padding-right: 0; margin-left: 0; margin-right: 0;}
+	.memberPageRightCont .darenScreen ul li .infor .title{padding: 10px 0 10px;}
 }
 @media (max-width:830px){
 	.homeBanner{height: 480px;}

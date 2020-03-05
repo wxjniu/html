@@ -18,182 +18,68 @@
 		<script type="text/javascript" src="statics/js/common.js"></script>
 	</head>
 	<body>
-		<!--头部导航-->
-		<div id="headH100"></div><!--占据导航高度-勿删！ -->
-		<section id="head">
-			<div class="pagewd">
-				<a href="#" class="logo fl"></a>
-				<div class="fr right">
-					<i class="ico-menu" id="menu"></i>
-					<div class="menuBox">
-						<ul class="nav fl" id="nav">
-							<li>
-								<a href="#" class="active">首页</a>
-							</li>
-							<li>
-								<a href="#">达人榜单</a>
-							</li>
-							<li>
-								<a href="#">达人筛选</a>
-							</li>
-							<li>
-								<a href="#">严选平台</a>
-							</li>
-							<li>
-								<a href="javascript:;">带货工具</a>
-								<div class="childLis">
-									<ul>
-										<li><a href="#">子菜单</a></li>
-										<li><a href="#">子菜单</a></li>
-										<li><a href="#">子菜单</a></li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-						<!-- <div class="fl btnBox">
-							<a href="#" class="btn2" id="logoFn">登录</a>						
-						</div> -->
-						<div class="userBox fl">
-							<div class="userBtn">
-								<span class="pic" style="background-image: url();"></span>个人中心
-							</div>
-							<div class="box">
-								<div class="name">麦扣</div>
-								<div class="id">ID:123456</div>
-								<div class="btn"><a href="#" class="bg1">开通VIP</a><a href="#">享更多特权</a></div>
-								<a class="link">我的收藏夹</a>
-								<a class="link">退出</a>
-							</div>
-						</div>	
-					</div>
-				</div>
-				<div class="searchBox fl" id="searchBox">
-					<div class="box fl">
-						<input type="text" placeholder="请输入搜索内容" class="inp" />
-						<span class="subBtn"></span>
-					</div>
-					<p class="fl">可以搜索微信文章，新闻热点，网盘资源等</p>
-				</div>
-				<div class="clear"></div>
-			</div>
-		</section>
-		
-		
 		<!--内容-->
-		<section id="main">
-			<div class="memberPage pagewd">
-				<div class="memberPageLeft">
-					<div class="box">
-						<div class="link">
-							<a href="#" class="active">我的账户</a>
-							<ul>
-								<li><a href="#">专属海报</a></li>
-								<li><a href="#">优惠券</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="box">
-						<div class="link"><a href="#">分销管理</a></div>
-						<div class="link"><a href="#">提现记录</a></div>
-					</div>
-					<div class="box">
-						<div class="link"><a href="#">我的关注</a></div>
-						<div class="link"><a href="#">合作达人</a></div>
-					</div>
-					<div class="clear"></div>
+		<div class="memberPageRightCont" style="width: 100%; overflow: hidden;">				
+			<div class="memberPageTitle"><h3>分销管理</h3></div>
+			
+			<div class="tableBox">
+				<div class="tableScroll">
+					<table style="table-layout: fixed;">
+						<thead>
+							<tr>
+								<th>时间</th>
+								<th>分销会员</th>
+								<th>联系方式</th>
+								<th>佣金类型</th>
+								<th>返佣比例</th>
+								<th>返佣金额</th>
+								<th>转化状态</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2019-12-31 12:20</td>
+								<td>张三</td>
+								<td>135****8638</td>
+								<td>
+									<p class="green">会员</p>
+								</td>
+								<td>10%</td>
+								<td>
+									<p class="red">100.00</p>
+								</td>
+								<td>状态一</td>
+							</tr>
+							<tr>
+								<td>2019-12-31 12:20</td>
+								<td>张三</td>
+								<td>135****8638</td>
+								<td>
+									<p class="blue">带货</p>
+								</td>
+								<td>10%</td>
+								<td>
+									<p class="red">100.00</p>
+								</td>
+								<td>状态一</td>
+							</tr>
+							
+							
+						</tbody>
+					</table>
 				</div>
-				<div class="memberPageRight">					
-					<div class="memberPageTitle"><h3>分销管理</h3></div>
-					
-					<div class="tableBox">
-						<div class="tableScroll">
-							<table style="table-layout: fixed;">
-								<thead>
-									<tr>
-										<th>时间</th>
-										<th>分销会员</th>
-										<th>联系方式</th>
-										<th>佣金类型</th>
-										<th>返佣比例</th>
-										<th>返佣金额</th>
-										<th>转化状态</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>2019-12-31 12:20</td>
-										<td>张三</td>
-										<td>135****8638</td>
-										<td>
-											<p class="green">会员</p>
-										</td>
-										<td>10%</td>
-										<td>
-											<p class="red">100.00</p>
-										</td>
-										<td>状态一</td>
-									</tr>
-									<tr>
-										<td>2019-12-31 12:20</td>
-										<td>张三</td>
-										<td>135****8638</td>
-										<td>
-											<p class="blue">带货</p>
-										</td>
-										<td>10%</td>
-										<td>
-											<p class="red">100.00</p>
-										</td>
-										<td>状态一</td>
-									</tr>
-									
-									
-								</tbody>
-							</table>
-						</div>
-					</div>
-					
-					<!--分页页码-->
-					<div class="pagingBox">
-						<span class="prev iconfont iconslider_last"></span>
-						<a href="#" class="on">1</a>
-						<a href="#">2</a>
-						<span class="next iconfont iconslider_next"></span>			
-					</div>
-					<div class="mb40"></div>
-				</div>
-				<div class="clear"></div>
 			</div>
-		</section>
-		
-		<!--底部-->
-		<section id="foot">
-			<div class="pagewd">
-				<div class="abt fl">
-					<p>为品牌商或代理提供网红达人智选平台<br/>通过算法为品牌商提供所需的KOL以及数据跟踪和社交<br/>媒体动态,为公关公司或MCN机构提供达人运营数据</p>
-				</div>
-				<div class="con fl">
-					<p>商务邮箱：nfo@lebao.tech</p>
-					<p>咨询电话：400-687-8087</p>
-					<p>企业网址：www.datakoc.com</p>
-				</div>
-				<div class="links fl">
-					<ul>
-						<li><a href="#">关于我们</a></li>
-						<li><a href="#">数据合作</a></li>
-						<li><a href="#">商务合作</a></li>
-					</ul>
-				</div>
-				<div class="codes fr">
-					<img src="statics/images/img_ma01@2x.png" />
-					<img src="statics/images/img_ma01@2x.png" />
-				</div>
-				<div class="clear"></div>
-				<hr />
-				<p class="cer">©2019 地址：上海市嘉定博园路8200弄日月光伯爵湾1304    沪ICP备19041435号-4</p>
+			
+			<!--分页页码-->
+			<div class="pagingBox">
+				<span class="prev iconfont iconslider_last"></span>
+				<a href="#" class="on">1</a>
+				<a href="#">2</a>
+				<span class="next iconfont iconslider_next"></span>			
 			</div>
-		</section>
-		
+			<div class="mb40"></div>
+		</div>
+
 		<!--js-->
 		
 	</body>
