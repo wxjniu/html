@@ -499,7 +499,7 @@ line-height:30px; cursor: pointer; text-align: center;}
 .membPlan .pub_list_bd small{font-size:14px; color: #999; line-height: 20px;}
 .membPlan .pub_list_bd p{font-size:24px; color: #ED2C4B; line-height: 28px; margin-top: 22px;}
 .membPoster{padding-top: 18px;}
-.membPoster .btn{border-radius:2px; background: #F45778; line-height: 28px; padding: 0 16px; font-size:14px; color: #fff;}
+.membPoster .btn{border-radius:2px; background: #F45778; line-height: 28px; padding: 0 16px; font-size:14px; color: #fff; text-align: center;}
 .membPoster .pub_list_bd{margin: 0 16px 0 20px; position: relative; width: 395px; flex: unset;}
 .membPoster .pub_list_bd input{border:1px solid #EDEDED; border-radius:2px; background: #F7F7F7; padding: 0 60px 0 16px; font-size: 14px; color: #999; height: 28px; width: 100%;}
 .membPoster .pub_list_bd span{font-size: 14px; color: #4F80C2; line-height: 28px; width: 60px; text-align: center; position: absolute; right: 0; top: 0; cursor: pointer;}
