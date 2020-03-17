@@ -24,12 +24,44 @@
 				// slidesColor: ['#0075D1', '#C2E5FF', '#FDF6E1', '#E9E9E9', '#F3F3F3', '#F9F3DC'],
 				anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
 				navigation: true,
+				afterLoad: function(anchorLink, index){
+					if(index == 1 || index == 2 || index == 3){
+						$("#head .nav li a").removeClass("active");
+						$("#head .nav li:first-child a").addClass("active");
+					}
+					if(index == 4 || index == 5 || index == 6){
+						$("#head .nav li a").removeClass("active");
+						$("#head .nav li:last-child a").addClass("active");
+					}
+				},
+				onLeave: function(index, direction){
+					if(index == 1 || index == 2 || index == 3){
+						$("#head .nav li a").removeClass("active");
+						$("#head .nav li:first-child a").addClass("active");
+					}
+					if(index == 4 || index == 5 || index == 6){
+						$("#head .nav li a").removeClass("active");
+						$("#head .nav li:last-child a").addClass("active");
+					}
+				}
 			});
 			
 			$("#head .nav li a").click(function() {
 				$("#head .nav li a").removeClass("active");
 				$(this).addClass("active");
 			});
+			
+			/**
+			 * 微信浏览器打开
+			 */
+			var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
+			if (ua.match(/MicroMessenger/i) == "micromessenger") {
+				//在微信中打开
+				$(".download-btn").click(function(e) {
+					e.stopPropagation();
+					
+				});
+			}
 		});
 		</script>
 	</head>
@@ -48,7 +80,7 @@
 						</li>
 					</ul>
 					<div class="fl btnBox">
-						<a href="#" class="btn">立即下载</a>
+						<a href="#" class="btn download-btn">立即下载</a>
 					</div>
 				</div>
 				<div class="clear"></div>
@@ -111,11 +143,13 @@
 					<h6>给TA或未来的你写封信<br />尺书提供信件的保管和寄送服务<br />时光信分为在线信和亲笔信</h6>
 					<ul class="lis">
 						<li>
+							<img src="" class="ico" />
 							<h3>在线信</h3>
 							<p>通过APP在线填写内容</p>
 						</li>
 						<li>
-							<h3>亲笔信</h3>
+							<img src="" class="ico" />
+							<h3 class="bg2">亲笔信</h3>
 							<p>亲笔书写信件</p>
 						</li>
 					</ul>
@@ -126,7 +160,7 @@
 			<div class="section section4">
 				<div class="pagewd">
 					<h2>在线信</h2>
-					<p>通过app线上写信，选择email或纸质信件寄送，设定收<br />信时间和地址。<br />email信件尺书系统会自动按时寄出。纸质信件由尺书打<br />印成纸质，并以快递方式寄出。</p>
+					<p>通过app线上写信，选择email或纸质信件寄送，设定收 信时间和地址。<br />email信件尺书系统会自动按时寄出。纸质信件由尺书打 印成纸质，并以快递方式寄出。</p>
 					<ul class="lis">
 						<li>
 							<span>email</span>
@@ -156,7 +190,8 @@
 							</li>
 							<li>
 								<img src="" />
-								<p>到达未来收信时<br />间，尺书快递寄出</p>
+								<p class="pc">到达未来收信时<br />间，尺书快递寄出</p>
+								<p class="app">到期快递寄出</p>
 							</li>
 						</ul>
 					</div>
@@ -168,22 +203,36 @@
 				<div class="pagewd">
 					<img src="" class="logo" />
 					<h3>给生活一点情怀</h3>
-					<div class="ta-c">
+					<div class="ta-c pc">
 						<a href="" class="btn"><i class="ico ico1"></i>App Store</a>
 					</div>
-					<div class="ta-c">
+					<div class="ta-c pc">
 						<a href="" class="btn btn2"><i class="ico ico2"></i>Android</a>
 					</div>
-					<div class="codeBox">
+					<div class="ta-c app">
+						<a href="#" class="btn download-btn">下载APP</a>
+					</div>
+					<div class="codeBox pc">
 						<i class="ico"></i>
 						<img src="" class="code" />
 					</div>
-					<p class="foot">Copyright 2008-2019  Benbaidesign Corporation, All Rights Reserved. <br />备案号：苏ICP备10234565</p>
+					<div class="foot">
+						<p>Copyright 2008-2019  Benbaidesign Corporation, All Rights Reserved. </p>
+						<p>备案号：苏ICP备10234565</p>
+					</div>
 				</div>
 			</div>
 		</div>
 		
-
+		<!--微信浏览器下提示框-->
+		<div class="tipsMask">
+			<div class="cont" style="color: #525655;">
+				<big>链接打不开？</big>
+				<p>由于微信限制，请点击右上角<br />选择<span style="color: #329a5f;">“在浏览器中打开”</span></p>
+				
+			</div>
+		</div>
+		
 		<!--swiper-->
 		<link rel="stylesheet" href="statics/swiper/swiper.min.css" />
 		<script type="text/javascript" src="statics/swiper/swiper.min.js"></script>

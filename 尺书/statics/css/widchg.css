@@ -20,4 +20,44 @@
 	.section1 .lis li img{width: 64px; height: 64px;}
 	.section1 .lis li p{font-size:18px; line-height:22px; margin-top: 12px;}
 	.section1 .pic{width: 70%; height: 60%; right: 50%; top: auto; bottom: 0; transform: translate(50%,0);}
+	
+	.section2 .swiper-pagination{bottom: 30px !important;}
+	.section2 .swiper-pagination-bullet{width:24px; margin: 0 10px !important;}
+	.section2 .swiper-button-next,.section2 .swiper-button-prev{display: none;}
+	
+	.section3 h2{font-size:32px; line-height:36px; left: 30px; top: 90px; margin-top: 0;}
+	.section3 h6{font-size:16px; line-height:24px; left: 30px; top: 142px; margin-top: 0;}
+	.section3 .lis{left: 0; top: 244px; margin-top: 0; overflow: hidden; width: 100%;}
+	.section3 .lis li{float: left; width: 50%; text-align: center;}
+	.section3 .lis li .ico{position: relative; left: auto; top: auto;}
+	.section3 .lis li h3{font-size:18px; line-height:22px; padding-left: 0; margin-top: 12px; margin-bottom: 8px; padding-right: 0; background:none; display: block;}
+	.section3 .lis li h3.bg2{background:none;}
+	.section3 .lis li p{font-size:14px; line-height:18px; padding-left: 0;}
+	.section3 .pic{width: 100%; height: 25%; right: 0; top: auto; bottom: 0; transform: translate(0,0);}
+	
+	.section4 h2{font-size:32px; line-height:36px; left: 30px; top: 90px; margin-top: 0;}
+	.section4 p{font-size:16px; line-height:24px; left: 0; top: 142px; margin-top: 0; width: 100%; padding: 0 30px;}
+	.section4 .lis{left: 0; top: 268px; margin-top: 0; width: 100%;}
+	.section4 .lis li{float: left; width: 50%; text-align: center;}
+	.section4 .lis li span{font-size:16px; line-height:30px; width:80px;height:30px; position: relative; left: auto; top: auto;}
+	.section4 .lis li div{height:auto;background:none; padding-left: 0; font-size:14px; line-height:18px; padding-right: 0; display: block; font-weight:400; margin-top: 12px;}
+	.section4 .lis li.bg2 div{background:none;}
+	.section4 .pic{width: 100%; height: 50%; left: 0; top: auto; bottom: 0; transform: translate(0,0);}
+	
+	.section5 h2{font-size:32px; line-height:36px; left: 30px; top: 90px; margin-top: 0;}
+	.section5 .lis{top: 166px; margin-top: 0; width: 100%;}
+	.section5 .lis li{margin-right: 0; width: 33.33%;}
+	.section5 .lis li img{width: 64px; height: 64px;}
+	.section5 .lis li p{font-size:14px; line-height:18px; margin-top: 12px;}
+	.section5 .lis li p.pc{display: none;}
+	.section5 .lis li p.app{display: block;}
+	.section5 .pic{width: 80%; height: 60%; position: absolute; right: 50%; top: auto; bottom: 0; transform: translate(-50%,0);}
+	
+	.section6 .logo{width: 80px; height: 80px; left: 50%; transform: translate(-50%,0); top: 159px; margin-top: 0;}
+	.section6 h3{font-size:24px; line-height:28px; top: 269px; margin-top: 0;}
+	.section6 .btn{width:160px; height:50px; font-size:20px; line-height:50px; top: 50%; margin-top: 0;}
+	.section6 .pc{display: none;}
+	.section6 .app{display: block;}
+	.section6 .foot{font-size:12px; line-height:16px; top: auto; margin-top: 0; bottom: 20px; width: 260px;}
+	.section6 .foot p{margin-top: 12px;}
 }

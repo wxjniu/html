@@ -10,6 +10,7 @@
 #head .nav li a:hover,#head .nav li a.active{color: #FF775B;}
 #head .nav li a:hover:after,#head .nav li a.active:after{width: 100%;}
 
+
 #head .btnBox{overflow: hidden; margin-top: 20px; text-align: center;} 
 #head .btnBox a{display: block; float: left; width: 120px; height: 48px; font-size:18px; line-height:48px; color: #fff; background: #FF775B; border-radius: 30px;}
 
@@ -46,10 +47,12 @@
  * 屏3
  */
 .section3 h2{font-size:50px; font-weight:600; color:rgba(71,46,40,1); line-height:54px; position: absolute; left: 0; top: 50%; margin-top: -264px; transition: all 1s;}
-.section3 h6{font-size:20px; font-weight:400; color:rgba(255,119,91,1); line-height:36px; position: absolute; left: 0; top: 50%; margin-top: -128px; transition: all 1s;}
-.section3 .lis{overflow: hidden; position: absolute; left: 0; top: 50%; margin-top: 10px; transition: all 1s;}
-.section3 .lis li{margin-bottom: 40px;}
-.section3 .lis li h3{font-size:28px;color:rgba(51,51,51,1);line-height:80px; padding-left: 100px; margin-bottom: 2px;}
+.section3 h6{font-size:20px; font-weight:400; color:rgba(255,119,91,1); line-height:36px; position: absolute; left: 0; top: 50%; margin-top: -168px; transition: all 1s;}
+.section3 .lis{position: absolute; left: 0; top: 50%; margin-top: 10px; transition: all 1s; padding-top: 10px;}
+.section3 .lis li{margin-bottom: 40px; position: relative;}
+.section3 .lis li .ico{width: 80px; height: 80px; position: absolute; left: 0; top: -10px;}
+.section3 .lis li h3{font-size:28px;color:rgba(51,51,51,1);line-height:60px; padding-left: 100px; margin-bottom: 12px; display: inline-block; padding-right: 36px; background:rgba(255,241,238,0.5); border-radius:0px 30px 30px 0px;}
+.section3 .lis li h3.bg2{background:rgba(251,243,233,0.5);}
 .section3 .lis li p{font-size:20px; font-weight:400;color:rgba(102,102,102,1);line-height:24px; padding-left: 100px;}
 .section3 .pic{width: 810px; height: 500px; position: absolute; right: 50px; top: 50%; transform: translate(0,-45%); transition: all 1s;}
 /**
@@ -72,6 +75,7 @@
 .section5 .lis li{margin-right: 80px; text-align: center; float: left;}
 .section5 .lis li img{width: 100px; height: 100px;}
 .section5 .lis li p{font-size:20px;font-weight:400;color:rgba(51,51,51,1);line-height:24px; margin-top: 20px;}
+.section5 .lis li p.app{display: none;}
 .section5 .pic{width: 320px; height: 664px; position: absolute; right: 100px; top: 50%; transform: translate(0,-45%); transition: all 1s;}
 /**
  * 屏6
@@ -86,4 +90,5 @@
 .section6 .codeBox .ico{display: inline-block; width: 60px; height: 60px; background:#eee url() no-repeat center; background-size: contain;}
 .section6 .codeBox .code{width: 140px; height: 140px; position: absolute; left: 0; top: 0; background: #fff; display: none;}
 .section6 .codeBox:hover .code{display: block;}
+.section6 .app{display: none;}
 .section6 .foot{font-size:14px;font-weight:400;color:rgba(51,51,51,1);line-height:22px; position: absolute; left: 50%; transform: translate(-50%,0); top: 50%; margin-top: 330px;}
