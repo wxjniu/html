@@ -21,19 +21,34 @@
 	.section1 .pic{width: auto; height: auto; max-height: calc(100% - 270px); right: 50%; top: auto; bottom: -500px; transform: translate(50%,0);}
 	.section1.active .pic{transform: translate(50%,13%); bottom: 0;}
 	
+	.big-bg1:before{top: 60px; width: 120px; height: 98px; background-position: left -26px;}
+	.big-bg1:after{right: 0; bottom: -120px; width: 120px; height: 256px;}
+	.section2 .swiper-slide{background: url() no-repeat center calc(50% + 70px); background-size: 100%;}
 	.section2 .swiper-pagination{bottom: 30px !important;}
 	.section2 .swiper-pagination-bullet{width:24px; margin: 0 10px !important;}
 	.section2 .swiper-button-next,.section2 .swiper-button-prev{display: none;}
+	.section2 .tu1{background-image: url(../images/app/img_02@3x.png);}
+	.section2 .tu2{background-image: url(../images/app/img_03@3x.png);}
+	.section2 .tu3{background-image: url(../images/app/img_04@3x.png);}
+	.section2 .tit{display: none;}
+	.section2 .txt{font-size:16px; line-height:24px;}
+	.section2 .tu1 .txt{width: 349px; height: 138px; background-image: url(../images/app/pop_01@3x.png);padding: 35px 42px 0 42px; left: calc(50% - 300px); top:17%; transform: translate(-50%,0); opacity: 0;}
+	.section2.active .tu1.swiper-slide-active .txt{left:50%; opacity: 1;}
+	.section2 .tu2 .txt{width: 339px; height: 114px; background-image: url(../images/app/pop_02@3x.png);padding: 35px 30px 0 42px; left: calc(50% + 500px); top:22%; transform: translate(-50%,0); opacity: 0;}
+	.section2.active .tu2.swiper-slide-active .txt{left:50%; opacity: 1;}
+	.section2 .tu3 .txt{width: 349px; height: 138px; background-image: url(../images/app/pop_03@3x.png);padding: 35px 42px 0 42px; left: calc(50% - 300px); top:18%; transform: translate(-50%,0); opacity: 0;}
+	.section2.active .tu3.swiper-slide-active .txt{left:50%; opacity: 1;}
 	
 	.section3 h2{font-size:32px; line-height:36px; left: 30px; top: 90px; margin-top: 0;}
 	.section3 h6{font-size:16px; line-height:24px; left: 30px; top: 142px; margin-top: 0;}
-	.section3 .lis{left: 0; top: 244px; margin-top: 0; overflow: hidden; width: 100%;}
+	.section3 .lis{left: -500px; top: 244px; margin-top: 0; overflow: hidden; width: 100%; z-index: 1;}
 	.section3 .lis li{float: left; width: 50%; text-align: center;}
 	.section3 .lis li .ico{position: relative; left: auto; top: auto;}
 	.section3 .lis li h3{font-size:18px; line-height:22px; padding-left: 0; margin-top: 12px; margin-bottom: 8px; padding-right: 0; background:none; display: block;}
 	.section3 .lis li h3.bg2{background:none;}
 	.section3 .lis li p{font-size:14px; line-height:18px; padding-left: 0;}
-	.section3 .pic{width: 100%; height: 25%; right: 0; top: auto; bottom: 0; transform: translate(0,0);}
+	.section3 .pic{width: auto; height: auto; max-height: calc(100% - 400px); right: 0; top: auto; bottom: 5%; transform: translate(0,35%); z-index: 0;}
+	.section3.active .pic{transform: translate(0,0);}
 	
 	.section4 h2{font-size:32px; line-height:36px; left: 30px; top: 90px; margin-top: 0;}
 	.section4 p{font-size:16px; line-height:24px; left: 0; top: 142px; margin-top: 0; width: 100%; padding: 0 30px;}
@@ -42,16 +57,19 @@
 	.section4 .lis li span{font-size:16px; line-height:30px; width:80px;height:30px; position: relative; left: auto; top: auto;}
 	.section4 .lis li div{height:auto;background:none; padding-left: 0; font-size:14px; line-height:18px; padding-right: 0; display: block; font-weight:400; margin-top: 12px;}
 	.section4 .lis li.bg2 div{background:none;}
-	.section4 .pic{width: 100%; height: 50%; left: 0; top: auto; bottom: 0; transform: translate(0,0);}
+	.section4 .pic{max-width: 94%; width: auto; height: auto; max-height: calc(100% - 370px); left: 50%; top: auto; bottom: 0; transform: translate(-48%,100%);}
+	.section4.active .pic{transform: translate(-48%,0);}
 	
 	.section5 h2{font-size:32px; line-height:36px; left: 30px; top: 90px; margin-top: 0;}
-	.section5 .lis{top: 166px; margin-top: 0; width: 100%;}
+	.section5 .lis{top: 166px; margin-top: 0; width: 100%; transform: translate(-500px,0);}
+	.section5.active .lis{transform: translate(0,0);}
 	.section5 .lis li{margin-right: 0; width: 33.33%;}
 	.section5 .lis li img{width: 64px; height: 64px;}
 	.section5 .lis li p{font-size:14px; line-height:18px; margin-top: 12px;}
 	.section5 .lis li p.pc{display: none;}
 	.section5 .lis li p.app{display: block;}
-	.section5 .pic{width: 80%; height: 60%; position: absolute; right: 50%; top: auto; bottom: 0; transform: translate(-50%,0);}
+	.section5 .pic{max-width: 84%;  width: auto; height: auto; max-height: calc(100% - 280px); position: absolute; right: 50%; top: auto; bottom: -500px; transform: translate(50%,11%);}
+	.section5.active .pic{bottom: 0; transform: translate(50%,11%);}
 	
 	.section6 .logo{width: 80px; height: 80px; left: 50%; transform: translate(-50%,0); top: 159px; margin-top: 0;}
 	.section6 h3{font-size:24px; line-height:28px; top: 269px; margin-top: 0;}

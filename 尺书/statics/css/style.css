@@ -41,11 +41,11 @@
 /**
  * 屏2
  */
-.section2{position: relative;}
-.section2:before{content: ''; position: absolute; z-index: 0; left: 0px; top: 0; width: 335px; height: 271px; background: url(../images/topleft@2x.png) no-repeat center; background-size: contain;}
-.section2:after{content: ''; position: absolute; z-index: 0; right: 0; bottom: -60px; width: 244px; height: 256px; background: url(../images/topright@2x.png) no-repeat center; background-size: contain;}
+.big-bg1{position: relative;}
+.big-bg1:before{content: ''; position: absolute; z-index: 0; left: 0px; top: 0; width: 335px; height: 271px; background: url(../images/topleft@2x.png) no-repeat center; background-size: contain;}
+.big-bg1:after{content: ''; position: absolute; z-index: 0; right: 0; bottom: -60px; width: 244px; height: 256px; background: url(../images/topright@2x.png) no-repeat center; background-size: contain;}
 .section2 .swiper-container {width: 100%; height: 100%;}
-.section2 .swiper-slide{background-position: center; background-size: cover; overflow: hidden; background: url() no-repeat center 70px; background-size: 760px;}
+.section2 .swiper-slide{background-position: center; overflow: hidden; background: url() no-repeat center 70px; background-size: 760px; position: relative;}
 .section2 .swiper-pagination{bottom: 40px !important;}
 .section2 .swiper-pagination-bullet{width:48px;height:10px;background:rgba(0,0,0,1);border-radius:5px;opacity:0.3; margin: 0 20px !important;}
 .section2 .swiper-pagination-bullet-active{background:rgba(255,119,91,1); opacity: 1;}
@@ -54,42 +54,67 @@
 .section2 .swiper-button-prev:hover{background-image: url(../images/btn_last_hover@2x.png);}
 .section2 .swiper-button-next{background-image: url(../images/btn_next@2x.png);}
 .section2 .swiper-button-next:hover{background-image: url(../images/btn_next_hover@2x.png);}
-
+.section2 .tu1{background-image: url(../images/img_02@2x.png);}
+.section2 .tu2{background-image: url(../images/img_03@2x.png);}
+.section2 .tu3{background-image: url(../images/img_04@2x.png);}
+.section2 .tit{font-size:60px; font-weight:500; color:rgba(255,119,91,1); line-height:64px; position: absolute; transition: all 1s;}
+.section2 .txt{font-size:24px; font-weight:500; color:rgba(0,0,0,1); line-height:44px; position: absolute; transition: all 1s;}
+.section2 .tu1 .tit{left: 50%; top:50%; transform: translate(-50px,-238px) scale(0.3); opacity: 0;}
+.section2.active .tu1.swiper-slide-active .tit{transform: translate(-50px,-238px) scale(1); opacity: 1;}
+.section2 .tu1 .txt{width: 544px; height: 162px; background: url(../images/img_pop01@2x.png) no-repeat center; background-size: contain; padding: 36px 60px 0 70px; left: calc(50% + 500px); top:50%; transform: translate(12px,-258px); opacity: 0;}
+.section2.active .tu1.swiper-slide-active .txt{left:50%; opacity: 1;}
+.section2 .tu2 .tit{left: 50%; top:50%; transform: translate(-24px,-238px) scale(0.3); opacity: 0;}
+.section2.active .tu2.swiper-slide-active .tit{transform: translate(-24px,-238px) scale(1); opacity: 1;}
+.section2 .tu2 .txt{width: 519px; height: 132px; background: url(../images/img_pop02@2x.png) no-repeat center; background-size: contain; padding: 42px 60px 0 66px; left: calc(50% - 700px); top:50%; transform: translate(-560px,-260px); opacity: 0;}
+.section2.active .tu2.swiper-slide-active .txt{left: 50%; opacity: 1;}
+.section2 .tu3 .tit{left: 50%; top:50%; transform: translate(-50px,-238px) scale(0.3); opacity: 0;}
+.section2.active .tu3.swiper-slide-active .tit{transform: translate(-50px,-238px) scale(1); opacity: 1;}
+.section2 .tu3 .txt{width: 565px; height: 132px; background: url(../images/img_pop03@2x.png) no-repeat center; background-size: contain; padding: 42px 60px 0 70px; left: calc(50% + 500px); top:50%; transform: translate(12px,-260px); opacity: 0;}
+.section2.active .tu3.swiper-slide-active .txt{left: 50%; opacity: 1;}
 
 /**
  * 屏3
  */
-.section3 h2{font-size:50px; font-weight:600; color:rgba(71,46,40,1); line-height:54px; position: absolute; left: 0; top: 50%; margin-top: -264px; transition: all 1s;}
-.section3 h6{font-size:20px; font-weight:400; color:rgba(255,119,91,1); line-height:36px; position: absolute; left: 0; top: 50%; margin-top: -168px; transition: all 1s;}
-.section3 .lis{position: absolute; left: 0; top: 50%; margin-top: 10px; transition: all 1s; padding-top: 10px;}
+.section3 h2{font-size:50px; font-weight:600; color:rgba(71,46,40,1); line-height:54px; position: absolute; left: 0; top: 50%; margin-top: -264px; transition: all 1s; opacity: 0; -webkit-transform:translate(0,-500px); transform:translate(0,-500px); transition-delay: 0.3s;}
+.section3 h6{font-size:20px; font-weight:400; color:rgba(255,119,91,1); line-height:36px; position: absolute; left: 0; top: 50%; margin-top: -168px; transition: all 1s; opacity: 0; -webkit-transform:translate(0,-500px); transform:translate(0,-500px); transition-delay: 0.3s;}
+.section3.active h2,.section3.active h6{opacity: 1; -webkit-transform:translate(0,0); transform:translate(0,0);}
+.section3 .lis{position: absolute; left: -500px; top: 50%; margin-top: 10px; transition: all 1s; padding-top: 10px; transition: all 1s; opacity: 0; transition-delay: 0.5s;}
+.section3.active .lis{left: 0px; opacity: 1;}
 .section3 .lis li{margin-bottom: 40px; position: relative;}
-.section3 .lis li .ico{width: 80px; height: 80px; position: absolute; left: 0; top: -10px;}
-.section3 .lis li h3{font-size:28px;color:rgba(51,51,51,1);line-height:60px; padding-left: 100px; margin-bottom: 12px; display: inline-block; padding-right: 36px; background:rgba(255,241,238,0.5); border-radius:0px 30px 30px 0px;}
+.section3 .lis li .ico{width: 80px; height: 80px; position: absolute; left: 0; top: -10px; border-radius: 100%; box-shadow:0px 2px 8px 0px rgba(0,0,0,0.1);}
+.section3 .lis li h3{font-size:28px;color:rgba(51,51,51,1);line-height:60px; padding-left: 100px; margin-bottom: 12px; display: inline-block; padding-right: 36px; background:rgba(255,241,238,0.5); border-radius:30px;}
 .section3 .lis li h3.bg2{background:rgba(251,243,233,0.5);}
 .section3 .lis li p{font-size:20px; font-weight:400;color:rgba(102,102,102,1);line-height:24px; padding-left: 100px;}
-.section3 .pic{width: 810px; height: 500px; position: absolute; right: 50px; top: 50%; transform: translate(0,-45%); transition: all 1s;}
+.section3 .pic{width: 857px; position: absolute; right: 20px; top: 50%; opacity: 0; transform: translate(0,-35%) scale(0.3); transition: all 1s; transition-delay: 0.7s;}
+.section3.active .pic{transform: translate(0,-35%) scale(1); opacity: 1;}
 /**
  * 屏4
  */
-.section4 h2{font-size:48px;font-weight:600;color:rgba(255,119,91,1);line-height:52px; position: absolute; left: 694px; top: 50%; margin-top: -216px; transition: all 1s;}
-.section4 p{font-size:20px;font-weight:400;color:rgba(51,51,51,1);line-height:36px; position: absolute; left: 694px; top: 50%; margin-top: -124px; transition: all 1s;}
-.section4 .lis{overflow: hidden; position: absolute; left: 694px; top: 50%; margin-top: 100px; transition: all 1s;}
+.section4 h2{font-size:48px;font-weight:600;color:rgba(255,119,91,1);line-height:52px; position: absolute; left: 694px; top: 50%; margin-top: -216px; transition: all 1s; opacity: 0; -webkit-transform:translate(0,-500px); transform:translate(0,-500px); transition-delay: 0.3s;}
+.section4 p{font-size:20px;font-weight:400;color:rgba(51,51,51,1);line-height:36px; position: absolute; left: 694px; top: 50%; margin-top: -124px; transition: all 1s; opacity: 0; -webkit-transform:translate(0,-500px); transform:translate(0,-500px); transition-delay: 0.3s;}
+.section4.active h2,.section4.active p{opacity: 1; -webkit-transform:translate(0,0); transform:translate(0,0);}
+.section4 .lis{overflow: hidden; position: absolute; left: 694px; top: 50%; margin-top: 100px; transition: all 1s; opacity: 0; -webkit-transform:translate(500px,0); transform:translate(500px,0); transition-delay: 0.5s;}
+.section4.active .lis{opacity: 1; -webkit-transform:translate(0,0); transform:translate(0,0);}
 .section4 .lis li{margin-bottom: 30px; position: relative;}
 .section4 .lis li span{font-size:20px;font-weight:600;color:rgba(255,255,255,1);line-height:50px; display: inline-block;width:100px;height:50px;background:rgba(255,119,91,1);border-radius:33px; position: absolute; left: 0; top: 0; text-align: center;}
 .section4 .lis li.bg2 span{background:rgba(0,139,247,1);}
 .section4 .lis li div{height:50px;background:rgba(255,119,91,0.1);border-radius:33px; padding-left: 120px; font-size:20px;font-weight:600;color:rgba(51,51,51,1);line-height:50px; padding-right: 20px; display: inline-block;}
 .section4 .lis li.bg2 div{background:rgba(0,139,247,0.1);}
-.section4 .pic{width: 560px; height: 646px; position: absolute; left: 0; top: 50%; transform: translate(0,-45%); transition: all 1s;}
+.section4 .pic{width: 560px; position: absolute; left: 0; top: 50%; transform: translate(0,-45%) scale(0.3); transition: all 1s; opacity: 0; transition-delay: 0.7s;}
+.section4.active .pic{transform: translate(0,-45%) scale(1); opacity: 1;}
 /**
  * 屏5
  */
-.section5 h2{font-size:48px;font-weight:600;color:rgba(255,119,91,1);line-height:52px; position: absolute; left: 0; top: 50%; margin-top: -102px; transition: all 1s;}
-.section5 .lis{overflow: hidden; position: absolute; left: 0; top: 50%; margin-top: 50px; transition: all 1s;}
+.section5 h2{font-size:48px;font-weight:600;color:rgba(255,119,91,1);line-height:52px; position: absolute; left: 0; top: 50%; margin-top: -102px; transition: all 1s; transform: scale(0.3); opacity: 0;}
+.section5.active h2{transform: scale(1); opacity: 1; transition-delay: 0.3s;}
+.section5 .lis{overflow: hidden; position: absolute; left: 0; top: 50%; margin-top: 50px; transition: all 1s; opacity: 0; transform: translate(0,800px); transition-delay: 0.5s;}
+.section5.active .lis{opacity: 1; transform: translate(0,0);}
 .section5 .lis li{margin-right: 80px; text-align: center; float: left;}
 .section5 .lis li img{width: 100px; height: 100px;}
 .section5 .lis li p{font-size:20px;font-weight:400;color:rgba(51,51,51,1);line-height:24px; margin-top: 20px;}
 .section5 .lis li p.app{display: none;}
-.section5 .pic{width: 320px; height: 664px; position: absolute; right: 100px; top: 50%; transform: translate(0,-45%); transition: all 1s;}
+.section5 .pic{width: 320px; position: absolute; right: 100px; top: 50%; transform: translate(0,-45%) scale(0.3); transition: all 1s; opacity: 0; transition-delay: 0.7s;}
+.section5.active .pic{transform: translate(0,-45%) scale(1); opacity: 1;}
 /**
  * 屏6
  */
