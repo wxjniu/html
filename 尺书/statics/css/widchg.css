@@ -71,11 +71,20 @@
 	.section5 .pic{max-width: 84%;  width: auto; height: auto; max-height: calc(100% - 280px); position: absolute; right: 50%; top: auto; bottom: -500px; transform: translate(50%,11%);}
 	.section5.active .pic{bottom: 0; transform: translate(50%,11%);}
 	
-	.section6 .logo{width: 80px; height: 80px; left: 50%; transform: translate(-50%,0); top: 159px; margin-top: 0;}
-	.section6 h3{font-size:24px; line-height:28px; top: 269px; margin-top: 0;}
-	.section6 .btn{width:160px; height:50px; font-size:20px; line-height:50px; top: 50%; margin-top: 0;}
+	.section6{background-image: url(../images/app/bg02@3x.png);}
+	.section6 .logo{width: 96px; height: 96px; left: 50%; top: 18%; transform: translate(-50%,0);}
+	.section6 h3{font-size:24px; line-height:28px; top: 33%;}
+	.section6 .btn{width:160px; height:50px; font-size:20px; line-height:50px; left: 50%; top: 48%; margin-top: 0; z-index: 1;}
+	.section6.active .btn{top: 50%;}
 	.section6 .pc{display: none;}
 	.section6 .app{display: block;}
 	.section6 .foot{font-size:12px; line-height:16px; top: auto; margin-top: 0; bottom: 20px; width: 260px;}
 	.section6 .foot p{margin-top: 12px;}
+	.section6 .pic1{width: 145px; left: -6px; bottom: 15%; transform: translate(0,0); z-index: 0;}
+	.section6 .pic2{width: 160px; left: auto; right:-15px; bottom: 15%; transform: translate(0,0); z-index: 0;}
+	.section6.active .pic1{bottom: 19%;}
+	.section6.active .pic2{bottom: 25%;}
 }
+
+.tipsMask{position: fixed; z-index: 100; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4);}
+.tipsMask .cont{width: 100%; padding: ;}
