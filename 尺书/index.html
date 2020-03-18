@@ -18,51 +18,51 @@
 		<script type="text/javascript" src="statics/js/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="statics/js/jquery.fullPage.min.js"></script>
 		<script>
-		$(document).ready(function() {
-			$.fn.fullpage({
-				verticalCentered: false,
-				// slidesColor: ['#0075D1', '#C2E5FF', '#FDF6E1', '#E9E9E9', '#F3F3F3', '#F9F3DC'],
-				anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
-				navigation: true,
-				afterLoad: function(anchorLink, index){
-					if(index == 1 || index == 2 || index == 3){
-						$("#head .nav li a").removeClass("active");
-						$("#head .nav li:first-child a").addClass("active");
+			$(document).ready(function() {
+				$.fn.fullpage({
+					verticalCentered: false,
+					// slidesColor: ['#0075D1', '#C2E5FF', '#FDF6E1', '#E9E9E9', '#F3F3F3', '#F9F3DC'],
+					anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+					navigation: true,
+					afterLoad: function(anchorLink, index){
+						if(index == 1 || index == 2 || index == 3){
+							$("#head .nav li a").removeClass("active");
+							$("#head .nav li:first-child a").addClass("active");
+						}
+						if(index == 4 || index == 5 || index == 6){
+							$("#head .nav li a").removeClass("active");
+							$("#head .nav li:last-child a").addClass("active");
+						}
+					},
+					onLeave: function(index, direction){
+						if(index == 1 || index == 2 || index == 3){
+							$("#head .nav li a").removeClass("active");
+							$("#head .nav li:first-child a").addClass("active");
+						}
+						if(index == 4 || index == 5 || index == 6){
+							$("#head .nav li a").removeClass("active");
+							$("#head .nav li:last-child a").addClass("active");
+						}
 					}
-					if(index == 4 || index == 5 || index == 6){
-						$("#head .nav li a").removeClass("active");
-						$("#head .nav li:last-child a").addClass("active");
-					}
-				},
-				onLeave: function(index, direction){
-					if(index == 1 || index == 2 || index == 3){
-						$("#head .nav li a").removeClass("active");
-						$("#head .nav li:first-child a").addClass("active");
-					}
-					if(index == 4 || index == 5 || index == 6){
-						$("#head .nav li a").removeClass("active");
-						$("#head .nav li:last-child a").addClass("active");
-					}
+				});
+				
+				$("#head .nav li a").click(function() {
+					$("#head .nav li a").removeClass("active");
+					$(this).addClass("active");
+				});
+				
+				/**
+				 * 微信浏览器打开
+				 */
+				var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
+				if (ua.match(/MicroMessenger/i) == "micromessenger") {
+					//在微信中打开
+					$(".download-btn").click(function(e) {
+						e.stopPropagation();
+						
+					});
 				}
 			});
-			
-			$("#head .nav li a").click(function() {
-				$("#head .nav li a").removeClass("active");
-				$(this).addClass("active");
-			});
-			
-			/**
-			 * 微信浏览器打开
-			 */
-			var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
-			if (ua.match(/MicroMessenger/i) == "micromessenger") {
-				//在微信中打开
-				$(".download-btn").click(function(e) {
-					e.stopPropagation();
-					
-				});
-			}
-		});
 		</script>
 	</head>
 	<body>
@@ -94,23 +94,23 @@
 				<div class="pagewd">
 					<h2>广场</h2>
 					<h5>明信片交友、集福、分享的社区</h5>
-					<div class="lis">
+					<div class="lis enter-left500">
 						<ul>
 							<li>
-								<img src="" />
+								<img src="statics/images/icon_ji@2x.png" />
 								<p>集</p>
 							</li>
 							<li>
-								<img src="" />
+								<img src="statics/images/icon_san@2x.png" />
 								<p>散</p>
 							</li>
 							<li>
-								<img src="" />
+								<img src="statics/images/icon_huan@2x.png" />
 								<p>换</p>
 							</li>
 						</ul>
 					</div>
-					<img src="" class="pic" />
+					<img src="statics/images/img_01@2x.png" class="pic enter-bottom500" />
 				</div>
 			</div>
 			<!--第二屏-->
@@ -118,13 +118,13 @@
 				<div class="pagewd">
 					<div class="swiper-container">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								99999
+							<div class="swiper-slide" style="background-image: url(statics/images/img_02@2x.png);">
+								
 							</div>
-							<div class="swiper-slide">
+							<div class="swiper-slide" style="background-image: url(statics/images/img_03@2x.png);">
 								8888
 							</div>
-							<div class="swiper-slide">
+							<div class="swiper-slide" style="background-image: url(statics/images/img_04@2x.png);">
 								6666
 							</div>
 						</div>
