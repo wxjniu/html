@@ -90,12 +90,12 @@
 /**
  * 屏4
  */
-.section4 h2{font-size:48px;font-weight:600;color:rgba(255,119,91,1);line-height:52px; position: absolute; left: 694px; top: 50%; margin-top: -216px; transition: all 1s; opacity: 0; -webkit-transform:translate(0,-500px); transform:translate(0,-500px); transition-delay: 0.3s;}
-.section4 p{font-size:20px;font-weight:400;color:rgba(51,51,51,1);line-height:36px; position: absolute; left: 694px; top: 50%; margin-top: -124px; transition: all 1s; opacity: 0; -webkit-transform:translate(0,-500px); transform:translate(0,-500px); transition-delay: 0.3s;}
+.section4 h2{font-size:48px;font-weight:600;color:rgba(255,119,91,1);line-height:52px; position: absolute; left: 694px; top: 50%; margin-top: -206px; transition: all 1s; opacity: 0; -webkit-transform:translate(0,-500px); transform:translate(0,-500px); transition-delay: 0.3s;}
+.section4 p{font-size:20px;font-weight:400;color:rgba(51,51,51,1);line-height:36px; position: absolute; left: 694px; top: 50%; margin-top: -114px; transition: all 1s; opacity: 0; -webkit-transform:translate(0,-500px); transform:translate(0,-500px); transition-delay: 0.3s;}
 .section4.active h2,.section4.active p{opacity: 1; -webkit-transform:translate(0,0); transform:translate(0,0);}
-.section4 .lis{overflow: hidden; position: absolute; left: 694px; top: 50%; margin-top: 100px; transition: all 1s; opacity: 0; -webkit-transform:translate(500px,0); transform:translate(500px,0); transition-delay: 0.5s;}
+.section4 .lis{overflow: hidden; position: absolute; left: 694px; top: 50%; margin-top: 90px; transition: all 1s; opacity: 0; -webkit-transform:translate(500px,0); transform:translate(500px,0); transition-delay: 0.5s;}
 .section4.active .lis{opacity: 1; -webkit-transform:translate(0,0); transform:translate(0,0);}
-.section4 .lis li{margin-bottom: 30px; position: relative;}
+.section4 .lis li{margin-bottom: 40px; position: relative;}
 .section4 .lis li span{font-size:20px;font-weight:600;color:rgba(255,255,255,1);line-height:50px; display: inline-block;width:100px;height:50px;background:rgba(255,119,91,1);border-radius:33px; position: absolute; left: 0; top: 0; text-align: center;}
 .section4 .lis li.bg2 span{background:rgba(0,139,247,1);}
 .section4 .lis li div{height:50px;background:rgba(255,119,91,0.1);border-radius:33px; padding-left: 120px; font-size:20px;font-weight:600;color:rgba(51,51,51,1);line-height:50px; padding-right: 20px; display: inline-block;}
@@ -135,7 +135,7 @@
 .section6 .codeBox .code{width: 140px; height: 140px; position: absolute; left: 0; top: 0; background: #fff; display: none;}
 .section6 .codeBox:hover .code{display: block;}
 .section6 .app{display: none;}
-.section6 .foot{font-size:14px;font-weight:400;color:rgba(51,51,51,1);line-height:22px; position: absolute; left: 50%; transform: translate(-50%,500px); top: 50%; margin-top: 330px; transition: all 1s; opacity: 0; transition-delay: 0.4s;}
+.section6 .foot{font-size:14px;font-weight:400;color:rgba(51,51,51,1);line-height:22px; position: absolute; left: 50%; transform: translate(-50%,500px); top: 50%; margin-top: 370px; transition: all 1s; opacity: 0; transition-delay: 0.4s;}
 .section6.active .foot{transform: translate(-50%,0); opacity: 1;}
 .section6 .pic1{width: 290px; position: absolute; left: 50%; bottom: calc(2% - 500px); transform: translate(-590px,0); transition: all 1s; opacity: 0; transition-delay: 0.7s;}
 .section6 .pic2{width: 320px; position: absolute; left: 50%; bottom: calc(2% - 500px); transform: translate(250px,0); transition: all 1s; opacity: 0; transition-delay: 0.7s;}

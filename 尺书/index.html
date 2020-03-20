@@ -25,23 +25,25 @@
 					anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
 					navigation: true,
 					afterLoad: function(anchorLink, index){
-						if(index == 1 || index == 2 || index == 3){
+						if(index == 2){
 							$("#head .nav li a").removeClass("active");
 							$("#head .nav li:first-child a").addClass("active");
-						}
-						if(index == 4 || index == 5 || index == 6){
+						}else if(index == 4){
 							$("#head .nav li a").removeClass("active");
 							$("#head .nav li:last-child a").addClass("active");
+						}else{
+							$("#head .nav li a").removeClass("active");
 						}
 					},
 					onLeave: function(index, direction){
-						if(index == 1 || index == 2 || index == 3){
+						if(index == 2){
 							$("#head .nav li a").removeClass("active");
 							$("#head .nav li:first-child a").addClass("active");
-						}
-						if(index == 4 || index == 5 || index == 6){
+						}else if(index == 4){
 							$("#head .nav li a").removeClass("active");
 							$("#head .nav li:last-child a").addClass("active");
+						}else{
+							$("#head .nav li a").removeClass("active");
 						}
 					}
 				});
@@ -52,16 +54,62 @@
 				});
 				
 				/**
-				 * 微信浏览器打开
+				 * 下载
 				 */
-				var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
-				if (ua.match(/MicroMessenger/i) == "micromessenger") {
-					//在微信中打开
-					$(".download-btn").click(function(e) {
-						e.stopPropagation();
-						
-					});
-				}
+				//如果返回的是false说明当前操作系统是手机端，如果返回的是true则说明当前的操作系统是电脑端
+				function IsPC() {
+					var userAgentInfo = navigator.userAgent;
+					var Agents = ["Android", "iPhone",
+						"SymbianOS", "Windows Phone",
+						"iPad", "iPod"];
+					var flag = true;
+					for (var v = 0; v < Agents.length; v++) {
+						if (userAgentInfo.indexOf(Agents[v]) > 0) {
+							flag = false;
+							break;
+						}
+					}
+					return flag;
+				};
+				
+				//判断系统类型
+				if(IsPC()){
+					// var agent = navigator.userAgent.toLowerCase();
+					var isMac = /macintosh|mac os x/i.test(navigator.userAgent);
+					$(".download-btn").attr("href","https://postotime.oss-cn-shenzhen.aliyuncs.com/com.chishu.postotime.app.1.0.2.apk");
+					if(isMac){
+						$(".download-btn").attr("href","https://www.baidu.com/");
+					}
+				}else{
+					$(".download-btn").attr("href","javascript:;");
+					var u = navigator.userAgent;
+					var ua = u.toLowerCase();//获取判断用的对象
+					if (ua.match(/MicroMessenger/i) == "micromessenger") {
+						//在微信中打开
+						$(".download-btn").click(function(e) {
+							e.stopPropagation();
+							$(".tipsMask").show();
+						});
+						$(".tipsMask").click(function(e) {
+							e.stopPropagation();
+							$(".tipsMask").hide();
+						});
+						$(".tipsMask .cont").click(function(e) {
+							e.stopPropagation();
+						});
+					}else{
+						var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
+						var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+						if (isAndroid) {
+						   //这个是安卓操作系统
+						   $(".download-btn").attr("href","https://postotime.oss-cn-shenzhen.aliyuncs.com/com.chishu.postotime.app.1.0.2.apk");
+						}
+						if (isIOS) {
+					　　　　 //这个是ios操作系统
+							$(".download-btn").attr("href","https://www.baidu.com/");
+						}
+					}
+				};
 			});
 		</script>
 	</head>
@@ -69,18 +117,18 @@
 		<!--头部导航-->
 		<section id="head">
 			<div class="pagewd">
-				<a href="#" class="logo fl"></a>
+				<a href="https://www.postotime.com/" target="_blank" class="logo fl"></a>
 				<div class="fr right">
 					<ul class="nav fl">
 						<li>
-							<a href="#page1" class="active">明信片</a>
+							<a href="#page2">明信片</a>
 						</li>
 						<li>
 							<a href="#page4">时光信</a>
 						</li>
 					</ul>
 					<div class="fl btnBox">
-						<a href="#" class="btn download-btn">立即下载</a>
+						<a href="#" target="_blank" class="btn download-btn">立即下载</a>
 					</div>
 				</div>
 				<div class="clear"></div>
@@ -90,30 +138,55 @@
 		<!--内容-->
 		<div id="dowebok">
 			<!--第一屏-->
+			<div class="section section6">
+				<div class="pagewd">
+					<img src="statics/images/icon_logo@2x.png" class="logo" />
+					<h3>给生活一点情怀</h3>
+					<div class="ta-c pc">
+						<a href="https://www.baidu.com/" target="_blank" class="btn"><i class="ico ico1"></i>App Store</a>
+					</div>
+					<div class="ta-c pc">
+						<a href="https://postotime.oss-cn-shenzhen.aliyuncs.com/com.chishu.postotime.app.1.0.2.apk" target="_blank" class="btn btn2"><i class="ico ico2"></i>Android</a>
+					</div>
+					<div class="ta-c app">
+						<a href="#" target="_blank" class="btn download-btn">下载APP</a>
+					</div>
+					<div class="codeBox pc">
+						<i class="ico"></i>
+						<img src="statics/images/img_ma@2x.png" class="code" />
+					</div>
+					<div class="foot">
+						<p>粤ICP备19034859号</p>
+					</div>
+					<img src="statics/images/img_personl@2x.png" class="pic1" />
+					<img src="statics/images/img_personr@2x.png" class="pic2" />
+				</div>
+			</div>
+			<!--第二屏-->
 			<div class="section section1">
 				<div class="pagewd">
 					<h2>广场</h2>
 					<h5>明信片交友、集福、分享的社区</h5>
 					<div class="lis enter-left500">
 						<ul>
-							<li>
+							<li><a href="#page3">
 								<img src="statics/images/icon_ji@2x.png" />
 								<p>集</p>
-							</li>
-							<li>
+							</a></li>
+							<li><a href="#page3">
 								<img src="statics/images/icon_san@2x.png" />
 								<p>散</p>
-							</li>
-							<li>
+							</a></li>
+							<li><a href="#page3">
 								<img src="statics/images/icon_huan@2x.png" />
 								<p>换</p>
-							</li>
+							</a></li>
 						</ul>
 					</div>
 					<img src="statics/images/img_01@2x.png" class="pic enter-bottom500" />
 				</div>
 			</div>
-			<!--第二屏-->
+			<!--第三屏-->
 			<div class="section section2 big-bg1">
 				<div class="pagewd">
 					<div class="swiper-container">
@@ -139,31 +212,31 @@
 					</div>
 				</div>
 			</div>
-			<!--第三屏-->
+			<!--第四屏-->
 			<div class="section section3 big-bg1">
 				<div class="pagewd">
 					<h2>时光信</h2>
 					<h6>给TA或未来的你写封信<br />尺书提供信件的保管和寄送服务<br />时光信分为在线信和亲笔信</h6>
 					<ul class="lis">
-						<li>
+						<li><a href="#page5">
 							<img src="statics/images/icon_xin01@2x.png" class="ico" />
 							<h3>在线信</h3>
 							<p>通过APP在线填写内容</p>
-						</li>
-						<li>
+						</a></li>
+						<li><a href="#page6">
 							<img src="statics/images/icon_xin02@2x.png" class="ico" />
 							<h3 class="bg2">亲笔信</h3>
 							<p>亲笔书写信件</p>
-						</li>
+						</a></li>
 					</ul>
 					<img src="statics/images/img_05@2x.png" class="pic" />
 				</div>
 			</div>
-			<!--第四屏-->
+			<!--第五屏-->
 			<div class="section section4 big-bg1">
 				<div class="pagewd">
 					<h2>在线信</h2>
-					<p>通过app线上写信，选择email或纸质信件寄送，设定收 信时间和地址。<br />email信件尺书系统会自动按时寄出。纸质信件由尺书打 印成纸质，并以快递方式寄出。</p>
+					<p>通过app线上写信，选择email或纸质信件寄送，设定收信时间和地址。</p>
 					<ul class="lis">
 						<li>
 							<span>email</span>
@@ -177,7 +250,7 @@
 					<img src="statics/images/img_06@2x.png" class="pic" />
 				</div>
 			</div>
-			<!--第五屏-->
+			<!--第六屏-->
 			<div class="section section5 big-bg1">
 				<div class="pagewd">
 					<h2>亲笔信</h2>
@@ -193,46 +266,21 @@
 							</li>
 							<li>
 								<img src="statics/images/icon_qinbixin03@2x.png" />
-								<p class="pc">到达未来收信时<br />间，尺书快递寄出</p>
-								<p class="app">到期快递寄出</p>
+								<p>到期快递寄出</p>
 							</li>
 						</ul>
 					</div>
 					<img src="statics/images/img_07@2x.png" class="pic" />
 				</div>
 			</div>
-			<!--第六屏-->
-			<div class="section section6">
-				<div class="pagewd">
-					<img src="" class="logo" />
-					<h3>给生活一点情怀</h3>
-					<div class="ta-c pc">
-						<a href="" class="btn"><i class="ico ico1"></i>App Store</a>
-					</div>
-					<div class="ta-c pc">
-						<a href="" class="btn btn2"><i class="ico ico2"></i>Android</a>
-					</div>
-					<div class="ta-c app">
-						<a href="#" class="btn download-btn">下载APP</a>
-					</div>
-					<div class="codeBox pc">
-						<i class="ico"></i>
-						<img src="" class="code" />
-					</div>
-					<div class="foot">
-						<p>Copyright 2008-2019  Benbaidesign Corporation, All Rights Reserved. </p>
-						<p>备案号：苏ICP备10234565</p>
-					</div>
-				</div>
-			</div>
 		</div>
 		
 		<!--微信浏览器下提示框-->
 		<div class="tipsMask">
-			<div class="cont" style="color: #525655;">
+			<div class="cont" style="color: ">
 				<big>链接打不开？</big>
-				<p>由于微信限制，请点击右上角<br />选择<span style="color: #329a5f;">“在浏览器中打开”</span></p>
-				
+				<p>由于微信限制，请点击右上角<br />选择<span>“在浏览器中打开”</span></p>
+				<img src="statics/images/arrow.png" class="arrow" />
 			</div>
 		</div>
 		

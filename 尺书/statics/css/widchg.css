@@ -50,14 +50,14 @@
 	.section3 .pic{width: auto; height: auto; max-height: calc(100% - 400px); right: 0; top: auto; bottom: 5%; transform: translate(0,35%); z-index: 0;}
 	.section3.active .pic{transform: translate(0,0);}
 	
-	.section4 h2{font-size:32px; line-height:36px; left: 30px; top: 90px; margin-top: 0;}
-	.section4 p{font-size:16px; line-height:24px; left: 0; top: 142px; margin-top: 0; width: 100%; padding: 0 30px;}
-	.section4 .lis{left: 0; top: 268px; margin-top: 0; width: 100%;}
+	.section4 h2{font-size:32px; line-height:36px; left: 30px; top: 108px; margin-top: 0;}
+	.section4 p{font-size:16px; line-height:30px; left: 0; top: 160px; margin-top: 0; width: 100%; padding: 0 30px;}
+	.section4 .lis{left: 0; top: 254px; margin-top: 0; width: 100%;}
 	.section4 .lis li{float: left; width: 50%; text-align: center;}
 	.section4 .lis li span{font-size:16px; line-height:30px; width:80px;height:30px; position: relative; left: auto; top: auto;}
 	.section4 .lis li div{height:auto;background:none; padding-left: 0; font-size:14px; line-height:18px; padding-right: 0; display: block; font-weight:400; margin-top: 12px;}
 	.section4 .lis li.bg2 div{background:none;}
-	.section4 .pic{max-width: 94%; width: auto; height: auto; max-height: calc(100% - 370px); left: 50%; top: auto; bottom: 0; transform: translate(-48%,100%);}
+	.section4 .pic{max-width: 94%; width: auto; height: auto; max-height: calc(100% - 370px); left: 50%; top: auto; bottom: 14px; transform: translate(-48%,100%);}
 	.section4.active .pic{transform: translate(-48%,0);}
 	
 	.section5 h2{font-size:32px; line-height:36px; left: 30px; top: 90px; margin-top: 0;}
