@@ -21,6 +21,7 @@
 			$(document).ready(function() {
 				$.fn.fullpage({
 					verticalCentered: false,
+					loopBottom:true,
 					// slidesColor: ['#0075D1', '#C2E5FF', '#FDF6E1', '#E9E9E9', '#F3F3F3', '#F9F3DC'],
 					anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
 					navigation: true,
@@ -51,6 +52,40 @@
 				$("#head .nav li a").click(function() {
 					$("#head .nav li a").removeClass("active");
 					$(this).addClass("active");
+				});
+				
+				/**
+				 * page4
+				 */
+				var height = $(window).height();
+				if(height <= 580){
+					$(".section3 .pic").css("bottom","1%");
+				}
+				else if(height <= 670){
+					$(".section3 .pic").css("bottom","2%");
+				}
+				else if(height <= 740){
+					$(".section3 .pic").css("bottom","5%");
+				}
+				else
+				{
+					$(".section3 .pic").css("bottom","10%");
+				}
+				$(window).resize(function(){
+					height = $(window).height();
+					if(height <= 580){
+						$(".section3 .pic").css("bottom","1%");
+					}
+					else if(height <= 670){
+						$(".section3 .pic").css("bottom","2%");
+					}
+					else if(height <= 740){
+						$(".section3 .pic").css("bottom","5%");
+					}
+					else
+					{
+						$(".section3 .pic").css("bottom","10%");
+					}
 				});
 				
 				/**
@@ -128,7 +163,7 @@
 						</li>
 					</ul>
 					<div class="fl btnBox">
-						<a href="#" target="_blank" class="btn download-btn">立即下载</a>
+						<a href="#page1" class="btn">立即下载</a>
 					</div>
 				</div>
 				<div class="clear"></div>
@@ -166,7 +201,7 @@
 			<div class="section section1">
 				<div class="pagewd">
 					<h2>广场</h2>
-					<h5>明信片交友、集福、分享的社区</h5>
+					<h5>明信片交友、收集、分享的社区</h5>
 					<div class="lis">
 						<!-- <div class="swiper-pagination"></div> -->
 						<ul>
