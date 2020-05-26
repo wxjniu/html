@@ -3,18 +3,18 @@ import axios from 'axios'
 axios.defaults.headers['Content-Type'] = 'application/json;charset=utf-8';
 axios.defaults.headers['apptype'] = '1';
 axios.defaults.headers['version'] = '2.0.0';
-// if (process.env.NODE_ENV == 'development') {
-//     axios.defaults.baseURL = '';}
-// else if (process.env.NODE_ENV == 'debug') {
-//     axios.defaults.baseURL = '';
-// }
-// else if (process.env.NODE_ENV == 'production') {
-//     axios.defaults.baseURL = '';
-// }
+if (process.env.NODE_ENV == 'development') {
+    axios.defaults.baseURL = '/api';}
+else if (process.env.NODE_ENV == 'debug') {
+    axios.defaults.baseURL = '';
+}
+else if (process.env.NODE_ENV == 'production') {
+    axios.defaults.baseURL = 'http://testapi.postotime.com';
+}
 // 创建axios实例
 const service = axios.create({
   // axios中请求配置有baseURL选项，表示请求URL公共部分
-  baseURL: '/api',
+  // baseURL: '/api',
   // 超时
   timeout: 10000
 });

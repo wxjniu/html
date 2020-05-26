@@ -8,9 +8,13 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '/',
-      name: 'Invit',
-      component: Invit
-    }
+      path: '*',
+      redirect: '/share/index',
+    },
+	{
+	  path: '/share/index',
+	  name: 'Invit',
+	  component: Invit
+	}
   ]
 })

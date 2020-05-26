@@ -1,86 +1,132 @@
 <template>
 	<div class="invit">
-		<div class="infor">
-			<div class="pub_list box1">
-				<div class="headImg" :style="'background-image: url('+ detail.userAvatarUrl +');'"></div>
-				<div class="pub_list_bd">
-					<div class="name">{{detail.userNickName}}</div>
-					<div class="score">靠谱度：{{detail.userReliable}}</div>
-				</div>
-				<div class="txt">
-					<div class="status">状态：当前有效</div>
-					<div class="time">最后动态：{{detail.lastEventTime}}</div>
-				</div>
-			</div>
-			<div class="pub_list box2">
-				<div><i class="ico ico1"></i>
-					<template v-if="detail.userGender == '1'">男</template>
-					<template v-else>女</template>
-				</div>
-				<div class="line"></div>
-				<div>{{detail.userAge}}岁</div>
-				<div class="line"></div>
-				<div><i class="ico ico2"></i>{{detail.coordinate}}</div>
-				<div class="pub_list_bd"><i class="ico ico3"></i>快递</div>
-			</div>
+		<div class="noneBox" v-if="!isRequest">
+		  <img src="../assets/cuowu_pic@2x.png" />
+		  <p>好像出了点问题...</p>
+		  <div class="btn" @click="refreshFn">点击刷新</div>
 		</div>
-
-		<div class="detail">
-			<div class="title"><i class="ico"></i>{{detail.title}}</div>
-			<div class="article">{{detail.content}}</div>
-			<div class="picBox" v-if="detail.imageList && detail.imageList.length > 0">
-				<img :src="item.url" v-for="(item,index) in detail.imageList" :key="index" />
+		<template v-else>
+			<div class="noneBox" v-if="detail.state === 3 || detail.state === 4">
+			  <img src="../assets/del_kong@2x.png" />
+			  <p>该帖子已经被
+			    <template v-if="detail.state === 3">禁用</template>
+			    <template v-if="detail.state === 4">删除</template>
+			    ...
+			  </p>
 			</div>
-			<!-- <div class="end">{{detail.lastJoinTime}} 参与过</div> -->
-		</div>
-
+			<template v-else>
+				<div class="infor">
+					<div class="pub_list box1">
+						<div class="headImg" :style="'background-image: url('+ detail.userAvatarUrl +');'"></div>
+						<div class="pub_list_bd">
+							<div class="name">{{detail.userNickName}}</div>
+							<div class="score">靠谱度：{{detail.userReliable}}</div>
+						</div>
+						<div class="txt">
+							<div class="status">状态：<!-- 当前有效 -->
+							  <template v-if="detail.state === 1">正常</template>
+							  <template v-else-if="detail.state === 2">暂停</template>
+							  <template v-else-if="detail.state === 3">禁用</template>
+							  <template v-else-if="detail.state === 4">删除</template>
+							</div>
+							<div class="time">最后动态：{{detail.lastEventTime}}</div>
+						</div>
+					</div>
+					<div class="pub_list box2">
+						<div>
+							<template v-if="detail.userGender === 1"><i class="ico ico1-1"></i>男</template>
+							<template v-else-if="detail.userGender === 2"><i class="ico ico1-2"></i>女</template>
+							<template v-else>未知</template>
+						</div>
+						<div class="line"></div>
+						<div>{{detail.userAge}}岁</div>
+						<div class="line"></div>
+						<div><i class="ico ico2"></i>{{detail.coordinate}}</div>
+						<div class="pub_list_bd">
+							<template v-if="detail.logistics === 1"><i class="ico ico3-1"></i>平信</template>
+							<template v-else-if="detail.logistics === 2"><i class="ico ico3-2"></i>挂号</template>
+							<template v-else-if="detail.logistics === 3"><i class="ico ico3-3"></i>快递</template>
+							<template v-else>None</template>
+						</div>
+					</div>
+				</div>
+				<div class="detail">
+					<div class="title">
+						<i class="ico ico1" v-if="detail.type === 2"></i>
+						<i class="ico ico2" v-if="detail.type === 3"></i>
+						<i class="ico ico3" v-if="detail.type === 1"></i>
+					{{detail.title}}</div>
+					<div class="article">{{detail.content}}</div>
+					<div class="picBox" v-if="detail.imageList && detail.imageList.length > 0">
+						<img :src="item.url" v-for="(item,index) in detail.imageList" :key="index" />
+					</div>
+					<!-- <div class="end">{{detail.lastJoinTime}} 参与过</div> -->
+				</div>
+			</template>
+		</template>
 	</div>
 </template>
 
-<script>
-	import {
-		getInvitDetail,
-		getInvitList
-	} from "@/api/api";
+<script>;
+	function getQueryVariable(variable)
+	{
+	       var query = window.location.search.substring(1);
+	       var vars = query.split("&");
+	       for (var i=0;i<vars.length;i++) {
+	               var pair = vars[i].split("=");
+	               if(pair[0] == variable){return pair[1];}
+	       }
+	       return(false);
+	};
+	import { getInvitDetail	} from "@/api/api";
 	export default {
 		name: 'Invit',
 		data() {
 			return {
-				detail: {}
+				detail: {},
+				isRequest:true
 			}
 		},
+		created() {
+			console.log("执行",'created');
+		},
 		mounted() {
+			console.log("执行",'mounted');
 			this.initData();
 		},
 		methods: {
 			initData() {
 				getInvitDetail({
-					code: '202005130001'
+					code: getQueryVariable('code')
 				}).then(res => {
 					if (res.code === 0) {
 						let imgs = res.data.imageList,imagelist=[];
 						for(let i = 0;i < imgs.length;i++){
-							if(imgs[i].url !== ''){
+							if(imgs[i].state === 0){
 								imagelist.push(imgs[i]);
 							}
 						}
 						res.data.imageList = imagelist;
 						this.detail = res.data;
+						this.isRequest = true;
 					} else {
+						this.isRequest = false;
 						alert(res.message);
 					}
 				});
-				getInvitList({
-				  PageSize:15,
-				  PageNo:1
-				},(res)=>{
-				});
+			},
+			//刷新
+			refreshFn(){
+				location.reload();
 			}
 		}
 	}
 </script>
 
 <style scoped>
+	.noneBox{text-align: center; position: fixed; left: 50%; top: 50%; transform: translate(-50%,-70%);}
+	.noneBox p {color: #A6A8AD; font-size: 12px; line-height: 20px; margin: 20px 0 60px;}
+	.noneBox .btn{width:107px;height:30px;background:rgba(255,119,91,1);border-radius:2px; line-height: 30px; font-size: 12px; color: #fff; display: inline-block;}
 	.invit .infor {
 		background: rgba(249, 249, 249, 1);
 		border-radius: 4px;
@@ -165,19 +211,30 @@
 		height: 11px;
 		background: url() no-repeat center;
 		background-size: contain;
-		vertical-align: middle;
+		vertical-align: text-bottom;
+		margin-right: 8px;
 	}
 
-	.invit .infor .box2 .ico1 {
-		background-image: url();
+	.invit .infor .box2 .ico1-1 {
+		background-image: url(../assets/boy_icon@2x.png);
+	}
+	
+	.invit .infor .box2 .ico1-2 {
+		background-image: url(../assets/girl_icon@2x.png);
 	}
 
 	.invit .infor .box2 .ico2 {
-		background-image: url();
+		background-image: url(../assets/addr-ico.png);
 	}
 
-	.invit .infor .box2 .ico3 {
-		background-image: url();
+	.invit .infor .box2 .ico3-1 {
+		background-image: url(../assets/pingy_unicon@2x.png);
+	}
+	.invit .infor .box2 .ico3-2 {
+		background-image: url(../assets/guah_unicon@2x.png);
+	}
+	.invit .infor .box2 .ico3-3 {
+		background-image: url(../assets/kuaid_unicon@2x.png);
 	}
 
 	.detail {
@@ -196,11 +253,14 @@
 		display: inline-block;
 		width: 25px;
 		height: 25px;
-		background: url() no-repeat center;
+		background: url(../assets/ji_icon@2x.png) no-repeat center;
 		background-size: contain;
 		vertical-align: middle;
 		margin-right: 10px;
 	}
+	.detail .title .ico1{background-image: url(../assets/hu_icon@2x.png);}
+	.detail .title .ico2{background-image: url(../assets/san_icon@2x.png);}
+	.detail .title .ico3{background-image: url(../assets/ji_icon@2x.png);}
 
 	.detail .article {
 		font-weight: 400;
