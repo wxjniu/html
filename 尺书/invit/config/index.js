@@ -13,6 +13,7 @@ module.exports = {
     proxyTable: {
       '/api': {
         target: 'http://testapi.postotime.com',
+		// target: 'https://api.postotime.com',
         changeOrigin: true,
         pathRewrite: {
           '^/api': ''
@@ -46,13 +47,13 @@ module.exports = {
 
   build: {
     // Template for index.html
-    index: path.resolve(__dirname, '../dist/index.html'),
+    index: path.resolve(__dirname, '../share/invitation.html'),
 
     // Paths
-    assetsRoot: path.resolve(__dirname, '../dist'),
+    assetsRoot: path.resolve(__dirname, '../share'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
-
+    assetsPublicPath: '/share/',
+		
     /**
      * Source Maps
      */
